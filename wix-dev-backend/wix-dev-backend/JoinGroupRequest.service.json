@@ -985,6 +985,47 @@
       ],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "JoinGroupRequest",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": ["To join a private group, a site member must submit a join group request, which can be approved or rejected by a group admin or a groups manager.\nWhen a join group request is approved, the site member becomes a group member."],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "_createdDate",
+          "type": [{"nativeType": "Date"}],
+          "doc": "Date and time the request was created.",
+          "in": "NA"
+        },
+                {
+          "name": "requestDetails",
+          "type": [{"referenceType": "wix-dev-backend.JoinGroupRequest.RequestDetails"}],
+          "doc": "Join group request details.",
+          "in": "NA"
+        },
+                {
+          "name": "siteMemberId",
+          "type": [{"nativeType": "string"}],
+          "doc": "Site member ID of requester",
+          "in": "NA"
+        },
+                {
+          "name": "status",
+          "type": [{"referenceType": "wix-dev-backend.JoinGroupRequest.RequestStatus"}],
+          "doc": "Join group request status.\n- `PENDING` - Pending join group request.\n- `APPROVED` - Approved join group request.\n- `REJECTED` - Rejected join group request.\n- `CANCELLED` - Cancelled join group request.",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
