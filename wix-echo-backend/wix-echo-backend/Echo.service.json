@@ -29,7 +29,13 @@
             {
         "name": "arg2",
         "type": [{"nativeType": "string"}],
-        "doc": "modified comment for arg2\n",
+        "doc": "modified comment for arg2",
+        "in": "NA"
+      },
+            {
+        "name": "options",
+        "type": [{"referenceType": "wix-echo-backend.Echo.EchoOptions"}],
+        "doc": "",
         "in": "NA"
       }
     ],
@@ -38,7 +44,7 @@
         "nativeType": "Promise",
         "typeParams": [{"nativeType": "string"}]
       }}],
-      "doc": ""
+      "doc": "modified comment for some message field\n"
     },
     "locations": [],
     "docs":     {
@@ -150,6 +156,70 @@
         "doc": "inner_message comment from EchoMessage proto def",
         "in": "NA"
       }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "EchoRequest",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "arg1",
+          "type": [{"nativeType": "string"}],
+          "doc": "1st part of the message",
+          "in": "NA"
+        },
+                {
+          "name": "arg2",
+          "type": [{"nativeType": "string"}],
+          "doc": "2nd part of the message",
+          "in": "NA"
+        },
+                {
+          "name": "titleField",
+          "type": [{"nativeType": "string"}],
+          "doc": "this field test translatable annotation",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "EchoResponse",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "echoMessage",
+          "type": [{"referenceType": "wix-echo-backend.Echo.EchoMessage"}],
+          "doc": "message result as EchoMessage",
+          "in": "NA"
+        },
+                {
+          "name": "message",
+          "type": [{"nativeType": "string"}],
+          "doc": "modified comment for some message field",
+          "in": "NA"
+        }
+      ],
       "labels": [],
       "enum": [],
       "customLabels": [],
