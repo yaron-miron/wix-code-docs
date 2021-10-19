@@ -2,8 +2,8 @@
   "name": "typescript-to-service-json",
   "mixes": [],
   "labels": [],
-  "docs": {
-    "summary": "135101 abcdefghijklmnopq",
+  "docs":   {
+    "summary": "135101 abcde",
     "description": [],
     "links": [],
     "examples": [],
@@ -11,67 +11,47 @@
   },
   "properties": [],
   "operations": [],
-  "clientEvents": [
-    {
-      "name": "echo135101",
-      "labels": [],
-      "nameParams": [],
-      "params": [
-        {
-          "name": "payload",
-          "type": [
-            {
-              "referenceType": "aaa.typescript-to-service-json.EchoRequest"
-            }
-          ],
-          "doc": "",
-          "in": "NA"
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "referenceType": "aaa.typescript-to-service-json.EchoResponse"
-          }
-        ],
-        "doc": ""
-      },
-      "locations": [],
-      "docs": {
-        "summary": "",
-        "description": [],
-        "links": [],
-        "examples": [],
-        "request": "NA"
-      },
-      "permissions": [],
-      "customLabels": [],
-      "dynamicCustomLabels": []
-    }
-  ],
+  "clientEvents": [  {
+    "name": "echo135101",
+    "labels": [],
+    "nameParams": [],
+    "params": [    {
+      "name": "payload",
+      "type": [{"referenceType": "All APIs.typescript-to-service-json.EchoRequest"}],
+      "doc": "",
+      "in": "NA"
+    }],
+    "ret":     {
+      "type": [{"referenceType": "All APIs.typescript-to-service-json.EchoResponse"}],
+      "doc": ""
+    },
+    "locations": [],
+    "docs":     {
+      "summary": "",
+      "description": [],
+      "links": [],
+      "examples": [],
+      "request": "NA"
+    },
+    "permissions": [],
+    "customLabels": [],
+    "dynamicCustomLabels": []
+  }],
   "callbacks": [],
-  "messages": [
-    {
+  "messages":   [
+        {
       "name": "EchoRequest",
       "locations": [],
-      "members": [
-        {
+      "members":       [
+                {
           "name": "arg1",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
+          "type": [{"nativeType": "string"}],
           "doc": "",
           "in": "NA"
         },
-        {
+                {
           "name": "arg2",
-          "type": [
-            {
-              "referenceType": "aaa.typescript-to-service-json.EchoResponse"
-            }
-          ],
+          "type": [{"referenceType": "All APIs.typescript-to-service-json.EchoResponse"}],
           "doc": "",
           "in": "NA"
         }
@@ -81,41 +61,29 @@
       "customLabels": [],
       "dynamicCustomLabels": []
     },
-    {
+        {
       "name": "EchoResponse",
       "locations": [],
-      "members": [
-        {
-          "name": "message",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "in": "NA"
-        }
-      ],
+      "members": [      {
+        "name": "message",
+        "type": [{"nativeType": "string"}],
+        "doc": "",
+        "in": "NA"
+      }],
       "labels": [],
       "enum": [],
       "customLabels": [],
       "dynamicCustomLabels": []
     },
-    {
+        {
       "name": "EchoResponseeee",
       "locations": [],
-      "members": [
-        {
-          "name": "message",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "in": "NA"
-        }
-      ],
+      "members": [      {
+        "name": "message",
+        "type": [{"nativeType": "string"}],
+        "doc": "",
+        "in": "NA"
+      }],
       "labels": [],
       "enum": [],
       "customLabels": [],
