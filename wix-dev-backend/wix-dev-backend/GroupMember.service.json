@@ -191,14 +191,20 @@
       "nameParams": [],
       "params":       [
                 {
-          "name": "siteMemberId",
+          "name": "memberId",
           "type": [{"nativeType": "string"}],
           "doc": "Site member ID.",
           "in": "NA"
         },
                 {
-          "name": "query",
-          "type": [{"referenceType": "wix-dev-backend.GroupMember.Query"}],
+          "name": "siteMemberId",
+          "type": [{"nativeType": "string"}],
+          "doc": "Site member ID.\n",
+          "in": "NA"
+        },
+                {
+          "name": "options",
+          "type": [{"referenceType": "wix-dev-backend.GroupMember.QueryMembershipsOptions"}],
           "doc": "",
           "in": "NA"
         }
@@ -1228,6 +1234,41 @@
         "ASC",
         "DESC"
       ],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "QueryMembershipsRequest",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "memberId",
+          "type": [{"nativeType": "string"}],
+          "doc": "Site member ID.",
+          "in": "NA"
+        },
+                {
+          "name": "query",
+          "type": [{"referenceType": "wix-dev-backend.GroupMember.Query"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "siteMemberId",
+          "type": [{"nativeType": "string"}],
+          "doc": "Site member ID.",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
       "customLabels": [],
       "dynamicCustomLabels": []
     }
