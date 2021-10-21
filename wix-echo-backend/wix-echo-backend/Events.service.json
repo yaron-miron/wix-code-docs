@@ -158,6 +158,27 @@
       "enum": [],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "Dispatched",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "echo",
+        "type": [{"referenceType": "wix-echo-backend.Events.EchoMessage"}],
+        "doc": "the message someone says",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
