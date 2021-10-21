@@ -421,6 +421,48 @@
       ],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "AssignRoleOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "role",
+        "type": [{"referenceType": "wix-dev-backend.GroupRole.GroupRole"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "UnassignRoleOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "role",
+        "type": [{"referenceType": "wix-dev-backend.GroupRole.GroupRole"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
