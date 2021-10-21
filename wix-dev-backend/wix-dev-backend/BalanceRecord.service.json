@@ -1955,6 +1955,190 @@
       ],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "GetBalanceSummaryOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "fields",
+        "type": [{"complexType":         {
+          "nativeType": "Array",
+          "typeParams": [{"nativeType": "string"}]
+        }}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListBalanceRecordsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "accountProfileId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "appliedAfter",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "appliedBefore",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "excludeTotal",
+          "type": [{"nativeType": "boolean"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "fields",
+          "type": [{"complexType":           {
+            "nativeType": "Array",
+            "typeParams": [{"nativeType": "string"}]
+          }}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "includeSummary",
+          "type": [{"nativeType": "boolean"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paging",
+          "type": [{"referenceType": "wix-dev-backend.BalanceRecord.Paging"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paymentCreatedAfter",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paymentCreatedBefore",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "payoutId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "profileId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "sort",
+          "type": [{"referenceType": "wix-dev-backend.BalanceRecord.Sorting"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "tags",
+          "type": [{"complexType":           {
+            "nativeType": "Array",
+            "typeParams": [{"referenceType": "wix-dev-backend.BalanceRecord.BalanceRecordTag"}]
+          }}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "transactionId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "types",
+          "type": [{"complexType":           {
+            "nativeType": "Array",
+            "typeParams": [{"referenceType": "wix-dev-backend.BalanceRecord.BalanceRecordType"}]
+          }}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "QueryBalanceRecordsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "excludeTotal",
+          "type": [{"nativeType": "boolean"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "fields",
+          "type": [{"complexType":           {
+            "nativeType": "Array",
+            "typeParams": [{"nativeType": "string"}]
+          }}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "includeSummary",
+          "type": [{"nativeType": "boolean"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "query",
+          "type": [{"referenceType": "wix-dev-backend.BalanceRecord.Query"}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
