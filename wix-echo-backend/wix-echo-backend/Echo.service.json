@@ -224,6 +224,48 @@
       "enum": [],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "Dispatched",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "echo",
+        "type": [{"referenceType": "wix-echo-backend.Echo.EchoMessage"}],
+        "doc": "the message someone says",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "EchoOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "titleField",
+        "type": [{"nativeType": "string"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
