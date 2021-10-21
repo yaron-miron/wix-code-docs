@@ -1271,6 +1271,90 @@
       "enum": [],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "AddGroupMembersOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "invitePrivateMembers",
+        "type": [{"nativeType": "boolean"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListGroupMembersOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "offset",
+        "type": [{"nativeType": "number"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListMembershipsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "offset",
+        "type": [{"nativeType": "number"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "QueryMembershipsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "query",
+        "type": [{"referenceType": "wix-dev-backend.GroupMember.Query"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
