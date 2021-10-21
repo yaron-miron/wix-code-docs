@@ -1272,6 +1272,104 @@
       ],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "ApproveGroupRequestsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "groupRequestIds",
+        "type": [{"complexType":         {
+          "nativeType": "Array",
+          "typeParams": [{"nativeType": "string"}]
+        }}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListGroupRequestsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "limit",
+          "type": [{"nativeType": "number"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "offset",
+          "type": [{"nativeType": "number"}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "QueryGroupRequestsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "query",
+        "type": [{"referenceType": "wix-dev-backend.GroupRequest.Query"}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "RejectGroupRequestsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members": [      {
+        "name": "rejections",
+        "type": [{"complexType":         {
+          "nativeType": "Array",
+          "typeParams": [{"referenceType": "wix-dev-backend.GroupRequest.Rejection"}]
+        }}],
+        "doc": "",
+        "in": "NA"
+      }],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
