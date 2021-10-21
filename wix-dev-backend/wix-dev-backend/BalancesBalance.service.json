@@ -895,6 +895,144 @@
       ],
       "customLabels": [],
       "dynamicCustomLabels": []
+    },
+        {
+      "name": "GetBalanceOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "payoutId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "profileId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "transactionId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListBalanceRecordsOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "paging",
+          "type": [{"referenceType": "wix-dev-backend.BalancesBalance.Paging"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paidAfter",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paidBefore",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paymentCreatedAfter",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "paymentCreatedBefore",
+          "type": [{"nativeType": "Date"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "payoutId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "profileId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "sort",
+          "type": [{"referenceType": "wix-dev-backend.BalancesBalance.Sorting"}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "transactionId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
+    },
+        {
+      "name": "ListBalancesOptions",
+      "locations": [],
+      "docs":       {
+        "summary": "",
+        "description": [""],
+        "links": [],
+        "examples": [],
+        "request": "NA"
+      },
+      "members":       [
+                {
+          "name": "balanceTypes",
+          "type": [{"complexType":           {
+            "nativeType": "Array",
+            "typeParams": [{"referenceType": "wix-dev-backend.BalancesBalance.BalanceType"}]
+          }}],
+          "doc": "",
+          "in": "NA"
+        },
+                {
+          "name": "profileId",
+          "type": [{"nativeType": "string"}],
+          "doc": "",
+          "in": "NA"
+        }
+      ],
+      "labels": [],
+      "enum": [],
+      "customLabels": [],
+      "dynamicCustomLabels": []
     }
   ],
   "relatedContent": [],
