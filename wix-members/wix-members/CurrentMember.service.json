@@ -26,7 +26,7 @@
         "nameParams": [],
         "params":
           [ { "name": "options",
-              "type": "wix-members.Members.FieldsetOptions",
+              "type": "wix-members.Members.FieldsetOptions2",
               "doc": "Fieldset options.",
               "optional": true } ],
         "ret":
