@@ -1,7 +1,8 @@
 { "name": "CurrentMember",
   "memberOf": "wix-members",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 16,
       "filename": "index.js" },
@@ -20,11 +21,12 @@
   "properties": [],
   "operations":
     [ { "name": "getMember",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "options",
-              "type": "wix-members-backend.Members.FieldsetOptions",
+              "type": "wix-members.Members.FieldsetOptions",
               "doc": "Fieldset options.",
               "optional": true } ],
         "ret":
@@ -34,7 +36,7 @@
                   [ "wix-members-backend.Members.Member" ] },
             "doc": "Fulfilled - Retrieved member information." },
         "locations":
-          [ { "lineno": 1,
+          [ { "lineno": 15,
               "filename": "getMember.js" } ],
         "docs":
           { "summary": "Retrieves the currently logged-in member.",
