@@ -1,7 +1,8 @@
 { "name": "CurrentMember",
   "memberOf": "wix-members",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 16,
       "filename": "index.js" },
@@ -20,11 +21,12 @@
   "properties": [],
   "operations":
     [ { "name": "getMember",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "options",
-              "type": "wix-members.Members.FieldsetOptions",
+              "type": "wix-members-backend.Members.FieldsetOptions",
               "doc": "Fieldset options.",
               "optional": true } ],
         "ret":
