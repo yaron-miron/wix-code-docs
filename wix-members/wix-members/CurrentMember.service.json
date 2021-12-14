@@ -34,7 +34,7 @@
                   [ "wix-members-backend.Members.Member" ] },
             "doc": "Fulfilled - Retrieved member information." },
         "locations":
-          [ { "lineno": 8,
+          [ { "lineno": 7,
               "filename": "getMember.js" } ],
         "docs":
           { "summary": "Retrieves the currently logged-in member.",
