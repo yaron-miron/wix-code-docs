@@ -1,0 +1,42 @@
+{ "name": "GroupsQueryBuilder_31395941396",
+  "memberOf": "wix-groups-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 8,
+      "filename": "shared.js" },
+  "docs":
+    { "summary": "Contains functionality for refining a groups query.",
+      "description":
+        [ "The `GroupsQueryBuilder` functions enable you to run, sort, filter, and control",
+          "which results a query returns.",
+          "",
+          "Typically, you build a query using any of the groups query functions,",
+          "refine the query by chaining `GroupsQueryBuilder` functions, and then execute the",
+          "query by chaining the [`find()`](#find) function.",
+          "",
+          "For example, the following code queries...:",
+          "",
+          "```javascript",
+          "import wixGroupsBackend from 'wix-groups-backend';",
+          "",
+          "wixGroupsBackend.queryGroups()",
+          ".eq(\"<property1>\", \"<value1>\")",
+          ".ascending(\"<property2>\")",
+          ".limit(5)",
+          ".find()",
+          ".then( (results) => {",
+          "console.log(results.items);",
+          "} );",
+          "```" ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

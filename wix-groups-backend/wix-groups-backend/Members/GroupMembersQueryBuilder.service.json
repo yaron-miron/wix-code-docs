@@ -2,7 +2,7 @@
   "memberOf": "wix-groups-backend.Members",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "removed" ],
   "location":
     { "lineno": 248,
       "filename": "members.js" },
