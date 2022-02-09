@@ -1,7 +1,8 @@
 { "name": "Authentication",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 68,
       "filename": "index.js" },
@@ -89,7 +90,8 @@
         "extra":
           {  } },
       { "name": "approveByToken",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "token",
@@ -690,7 +692,8 @@
         "extra":
           {  } },
       { "name": "login",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "email",
@@ -709,11 +712,14 @@
           [ { "lineno": 1,
               "filename": "login.js" } ],
         "docs":
-          { "summary": "Logs a member in with an email and password.",
+          { "summary": "Logs a registered member in with an email and password.",
             "description":
               [ "<!--ONLY:VELO-->",
                 "The `login()` function returns a Promise that resolves to a session token",
                 "used to log a member in to your site.",
+                "",
+                "The `login()` function only works with existing members. To register a new member use ",
+                "the [`register()` function](#register).",
                 "",
                 "> **Note:**",
                 "> This function replaces the deprecated",
@@ -810,7 +816,8 @@
         "extra":
           {  } },
       { "name": "register",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "email",
@@ -847,7 +854,7 @@
                 "#### Automatic vs. Manual Approval",
                 "",
                 "The `register()` function behaves differently depending on your site's",
-                "[member signup settings](https://support.wix.com/en/article/velo-enabling-custom-site-registration).",
+                "[member signup settings](https://support.wix.com/en/article/editing-your-member-signup-settings-for-the-default-form).",
                 "Details are outlined in the following table:",
                 "",
                 "| Signup Setting                                                  | Result                                                                                                                                                                                                                                                                                                                                            |",
@@ -1269,10 +1276,11 @@
         "members":
           [ { "name": "hideIgnoreMessage",
               "type": "boolean",
-              "doc": "Whether to hide the \"ignore this email\" message.\n\nIf `true`, the email tells the member\nthey can safely ignore\nif they did not request the password change.\n\nDefaults to `false`.",
+              "doc": "Whether to hide the \"ignore this email\" message.\n\nIf `false`, the email tells the member\nthey can safely ignore\nif they did not request the password change.\n\nDefaults to `false`.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     {  } }
