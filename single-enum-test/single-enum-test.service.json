@@ -1,0 +1,78 @@
+{
+  "name": "single-enum-test",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "single-enum-test",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "fooFunction",
+      "params": [
+        {
+          "name": "param",
+          "type": [
+            {
+              "referenceType": "single-enum-test.FooInput"
+            }
+          ],
+          "doc": null,
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "nativeType": "any"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "messages": [
+    {
+      "name": "FooInput",
+      "members": [
+        {
+          "name": "complex",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "single-enum-test.FooEnum"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "regular",
+          "type": [
+            {
+              "referenceType": "single-enum-test.FooEnum"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
+}
