@@ -50,7 +50,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "enums.FooEnum"
+                    "nativeType": "string"
                   }
                 ]
               }
@@ -65,7 +65,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": " One of:BAR, FOO"
         }
       ],
       "docs": {
