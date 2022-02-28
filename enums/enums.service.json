@@ -1,0 +1,78 @@
+{
+  "name": "enums",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "enums",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "fooFunction",
+      "params": [
+        {
+          "name": "param",
+          "type": [
+            {
+              "referenceType": "enums.FooInput"
+            }
+          ],
+          "doc": null,
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "nativeType": "any"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "messages": [
+    {
+      "name": "FooInput",
+      "members": [
+        {
+          "name": "complex",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "enums.FooEnum"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "regular",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
+}
