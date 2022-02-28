@@ -63,7 +63,7 @@
         ],
         "examples": [
           {
-            "title": "Title of PublicLongEcho example",
+            "title": "PublicLongEcho example",
             "body": [
               "",
               "    function publicLongEcho() {",
