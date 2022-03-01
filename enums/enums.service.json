@@ -56,16 +56,16 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nBAR,\nFOO"
         },
         {
           "name": "regular",
           "type": [
             {
-              "nativeType": "string"
+              "referenceType": "enums.FooEnum"
             }
           ],
-          "doc": " One of:BAR, FOO"
+          "doc": "One of:\nBAR,\nFOO"
         }
       ],
       "docs": {
