@@ -19,7 +19,7 @@
               "referenceType": "wix-dev-backend-test.Events.AlarmSnoozedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -61,7 +61,7 @@
               "referenceType": "wix-dev-backend-test.Events.AlarmTriggeredEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
