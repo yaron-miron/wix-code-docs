@@ -33,7 +33,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
