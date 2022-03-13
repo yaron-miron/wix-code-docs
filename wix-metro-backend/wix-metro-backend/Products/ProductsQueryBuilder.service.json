@@ -4,6 +4,7 @@
   "mixes": [],
   "callbacks": [],
   "extra": {},
+  "clientId": "wix-metro-backend-product.products.products-query-builder",
   "docs": {},
   "relatedGuides": [],
   "properties": [],
@@ -25,7 +26,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -39,96 +40,45 @@
         "doc": null
       },
       "docs": {
+        "summary": "Adds a sort to a query, sorting by the specified properties in ascending order.",
         "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "between",
-      "params": [
-        {
-          "name": "propertyName",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": null,
-          "required": false
-        },
-        {
-          "name": "rangeStart",
-          "type": [
-            {
-              "nativeType": "any"
-            }
-          ],
-          "doc": null,
-          "required": false
-        },
-        {
-          "name": "rangeEnd",
-          "type": [
-            {
-              "nativeType": "any"
-            }
-          ],
-          "doc": null,
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
-          {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
-          }
+          "The `ascending()` function refines a `ProductsQueryBuilder` to sort in ascending order of the specified properties. If you specify more than one property, `ascending()` sorts the results in ascending order by each property in the order they are listed.",
+          "",
+          "You can sort the following types:",
+          "",
+          "Number: Sorts numerically.",
+          "Date: Sorts by date and time.",
+          "String: Sorts lexicographically, so \"abc\" comes after \"XYZ\".",
+          "If a property contains a number as a String, that value will be sorted alphabetically and not numerically. Items that do not have a value for the specified sort property are ranked lowest."
         ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "contains",
-      "params": [
-        {
-          "name": "propertyName",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": null,
-          "required": false
-        },
-        {
-          "name": "value",
-          "type": [
-            {
-              "nativeType": "any"
-            }
-          ],
-          "doc": null,
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
+        "examples": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+            "title": "ascending example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .ascending('title')",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
           }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          ""
         ]
       }
     },
@@ -149,7 +99,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -163,8 +113,45 @@
         "doc": null
       },
       "docs": {
+        "summary": "Adds a sort to a query or sort, sorting by the specified properties in descending order.",
         "description": [
-          ""
+          "The `descending()` function refines a `ProductsQueryBuilder` to sort in descending order of the specified properties. If you specify more than one property, `descending()` sorts the results in descending order by each property in the order they are listed.",
+          "",
+          "You can sort the following types:",
+          "",
+          "Number: Sorts numerically.",
+          "Date: Sorts by date and time.",
+          "String: Sorts lexicographically, so \"abc\" comes after \"XYZ\".",
+          "If a property contains a number as a String, that value will be sorted alphabetically and not numerically. Items that do not have a value for the specified sort property are ranked lowest."
+        ],
+        "examples": [
+          {
+            "title": "descending example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .descending('title')",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -178,7 +165,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -188,7 +175,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -217,7 +204,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -227,7 +214,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -241,8 +228,42 @@
         "doc": null
       },
       "docs": {
+        "summary": "Refines a query to match items whose specified property value equals the specified value.",
         "description": [
-          ""
+          "The `eq()` function refines a `ProductsQueryBuilder` to only match items where the value of the specified property equals the specified value.",
+          "",
+          "It only matches values of the same type. For example, a number value stored as a String type does not match the same number stored as a Number type.",
+          "",
+          "Matching strings with eq() is case sensitive, so \"text\" is not equal to \"Text\"."
+        ],
+        "examples": [
+          {
+            "title": "eq example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .eq('title', 'some-title')",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -256,7 +277,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -266,7 +287,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -305,8 +326,37 @@
         "doc": null
       },
       "docs": {
+        "summary": "Returns the `ProductsQueryBuilder` that match the query.",
         "description": [
-          ""
+          "The `find()` function returns a Promise that resolves to the results found by the query and some information about the results. The Promise is rejected if find() is called with incorrect permissions or if any of the functions used to refine the query are invalid."
+        ],
+        "examples": [
+          {
+            "title": "find example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -320,7 +370,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -330,7 +380,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -359,7 +409,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -369,7 +419,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -398,7 +448,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -415,7 +465,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -444,7 +494,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -461,7 +511,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -490,7 +540,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -500,7 +550,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -529,7 +579,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -558,7 +608,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -587,7 +637,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -597,7 +647,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -626,7 +676,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -640,8 +690,42 @@
         "doc": null
       },
       "docs": {
+        "summary": "Limits the number of items the query returns.",
         "description": [
-          ""
+          "The `limit()` function defines the number of results a query returns in each page. Only one page of results is retrieved at a time. The `next()` and `prev() `functions are used to navigate the pages of a query result.",
+          "",
+          "By default, limit is set to 50.",
+          "",
+          "The maximum value that `limit()` can accept is 1000."
+        ],
+        "examples": [
+          {
+            "title": "limit example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .limit(10)",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -655,7 +739,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -665,7 +749,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -694,7 +778,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -704,7 +788,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -718,37 +802,42 @@
         "doc": null
       },
       "docs": {
+        "summary": "Refines a query to match items whose specified property value not equals the specified value.",
         "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "skip",
-      "params": [
-        {
-          "name": "skip",
-          "type": [
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": null,
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
-          {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
-          }
+          "The `ne()` function refines a `ProductsQueryBuilder` to only match items where the value of the specified property not equals the specified value.",
+          "",
+          "It only matches values of the same type. For example, a number value stored as a String type does not match the same number stored as a Number type.",
+          "",
+          "Matching strings with ne() is case sensitive, so \"text\" is not equal to \"Text\"."
         ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          ""
+        "examples": [
+          {
+            "title": "ne example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .ne('title', 'some-title')",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -762,7 +851,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -772,7 +861,7 @@
               "nativeType": "any"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -786,8 +875,38 @@
         "doc": null
       },
       "docs": {
+        "summary": "",
         "description": [
           ""
+        ],
+        "examples": [
+          {
+            "title": "startsWith example",
+            "body": [
+              "import { products } from 'wix-metro-backend';",
+              "//...",
+              "products",
+              "  .queryProducts()",
+              "  .startsWith('title', 'some-title')",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     }
