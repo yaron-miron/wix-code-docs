@@ -1,0 +1,680 @@
+{
+  "name": "ProductsQueryBuilder",
+  "memberOf": "undefined.wix-metro-backend",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "wix-metro-backend.wix-metro-backend.products-query-builder",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "ascending",
+      "params": [
+        {
+          "name": "propertyNames",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "descending",
+      "params": [
+        {
+          "name": "propertyNames",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "endsWith",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "eq",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "exists",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "find",
+      "params": [],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "undefined.wix-metro-backend.ProductsQueryResult"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ge",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "gt",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "hasAll",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "hasSome",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "in",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "isEmpty",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "isNotEmpty",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "le",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "limit",
+      "params": [
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "lt",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ne",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "startsWith",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "undefined.wix-metro-backend.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "messages": []
+}
