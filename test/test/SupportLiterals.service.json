@@ -1,0 +1,198 @@
+{
+  "name": "SupportLiterals",
+  "memberOf": "test",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "test-support-literals",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "supportLiterals",
+      "params": [
+        {
+          "name": "payload",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.ExampleInterface"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "nativeType": "any"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "messages": [
+    {
+      "name": "ABC",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ExampleInterface",
+      "members": [
+        {
+          "name": "foo",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.foo_3"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ExampleMessage",
+      "members": [
+        {
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "object"
+                  }
+                ]
+              }
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "OtherInterface",
+      "members": [
+        {
+          "name": "bar",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.bar_5"
+            }
+          ],
+          "doc": "Same name as another 'bar' in foo, it's supported because of different id."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "bar_4",
+      "members": [
+        {
+          "name": "baz",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "this is baz"
+        }
+      ],
+      "docs": {
+        "description": [
+          "this is bar"
+        ]
+      }
+    },
+    {
+      "name": "bar_5",
+      "members": [
+        {
+          "name": "mock",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.ABC"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "msg",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.ExampleMessage"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "Same name as another 'bar' in foo, it's supported because of different id."
+        ]
+      }
+    },
+    {
+      "name": "foo_3",
+      "members": [
+        {
+          "name": "bar",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.bar_4"
+            }
+          ],
+          "doc": "this is bar"
+        },
+        {
+          "name": "other",
+          "type": [
+            {
+              "referenceType": "test.SupportLiterals.OtherInterface"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
+}
