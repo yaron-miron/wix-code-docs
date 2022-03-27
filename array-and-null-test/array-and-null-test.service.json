@@ -1,0 +1,58 @@
+{
+  "name": "array-and-null-test",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "test-array-and-null",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [],
+  "messages": [
+    {
+      "name": "Foo",
+      "members": [
+        {
+          "name": "id",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "id comment"
+        },
+        {
+          "name": "price",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "number"
+                  }
+                ]
+              }
+            },
+            {
+              "nativeType": "null"
+            }
+          ],
+          "doc": "price comment"
+        }
+      ],
+      "docs": {
+        "description": [
+          "Typedoc treats export type differently from export interface, so we need to support it."
+        ]
+      }
+    }
+  ]
+}
