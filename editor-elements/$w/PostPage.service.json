@@ -4,7 +4,7 @@
     [ "$w.Element",
       "$w.HiddenCollapsedMixin" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PostPage.js" },
@@ -17,7 +17,8 @@
   "properties": [],
   "operations":
     [ { "name": "getPost",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params": [],
         "ret":
@@ -30,7 +31,7 @@
           [ { "lineno": 50,
               "filename": "PostPage.js" } ],
         "docs":
-          { "summary": "Gets the all the information associated with the current blog post.",
+          { "summary": "Getts the all the information associated with the current blog post.",
             "description":
               [ "The `getPost()` function returns a Promise that is resolved when all",
                 " of the information about the post shown on the `PostPage` is",
