@@ -1,0 +1,73 @@
+{
+  "name": "wix-alarm-backend",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "ambassador-alarm-v1-alarm",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [],
+  "messages": [
+    {
+      "name": "AlarmResponse",
+      "members": [
+        {
+          "name": "array",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "date",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "long",
+          "type": [
+            {
+              "nativeType": "Long"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "promise",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Promise",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
+}
