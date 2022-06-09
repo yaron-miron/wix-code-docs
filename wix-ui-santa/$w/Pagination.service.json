@@ -82,15 +82,24 @@
         "locations":
           [ { "lineno": 213,
               "filename": "Pagination.js" },
-            { "lineno": 230,
+            { "lineno": 239,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the navigation layout displayed in the pagination bar.",
             "description":
               [ "There are 3 types navigation layouts:",
                 " + `clickNumbers`: Displays the page numbers as clickable links.",
+                "",
+                "    ![](../assets/images/pagination-clickNumbers.png)",
                 " + `inputNumbers`: Allows the site visitor to input a desired page number.",
-                " + `arrowsOnly`: Hides the page numbers so that only the next and previous buttons are displayed." ],
+                "",
+                "    ![](../assets/images/pagination-inputNumbers.png)",
+                " + `arrowsOnly`: Hides the page numbers so that only the next and previous buttons are displayed.",
+                "",
+                "    ![](../assets/images/pagination-arrowsOnly.png)",
+                ">**Note:**",
+                ">",
+                ">When `navigationType` is set to `arrowsOnly` the pagination bar's `currentPage` and `totalPages` properties return `undefined`." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
@@ -109,8 +118,7 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -146,8 +154,7 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
