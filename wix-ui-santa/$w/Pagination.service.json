@@ -6,7 +6,8 @@
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
       "$w.ViewportMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Pagination.js" },
@@ -150,6 +151,72 @@
                   "body":
                     [ "$w(\"#myPagination\").onChange( (event) => {",
                       "  let newValue = event.target.currentPage;  // 4",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "Change" } },
+      { "name": "onNextClicked",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "handler",
+              "type": "$w.MouseEventHandler",
+              "doc": "The name of the function or\n the function expression to run when the **Next** button is clicked." } ],
+        "ret":
+          { "type": "$w.Pagination",
+            "doc": "The pagination bar on which the event is now registered." },
+        "locations":
+          [ { "lineno": 133,
+              "filename": "Pagination.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that runs when the **Next** button is clicked.",
+            "description":
+              [ "The `onNextClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
+            "links":
+              [ "[onPreviousClicked()](#onPreviousClicked)" ],
+            "examples":
+              [ { "title": "Set a pagination bar's 'onNextClicked' event handler",
+                  "body":
+                    [ "$w('#myPaginationBar').onNextClicked(() => {",
+                      "    //...",
+                      "    console.log('Next button clicked');",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "Change" } },
+      { "name": "onPreviousClicked",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "handler",
+              "type": "$w.MouseEventHandler",
+              "doc": "The name of the function or\n the function expression to run when the **Previous** button is clicked." } ],
+        "ret":
+          { "type": "$w.Pagination",
+            "doc": "The pagination bar on which the event is now registered." },
+        "locations":
+          [ { "lineno": 148,
+              "filename": "Pagination.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that runs when the **Previous** button is clicked.",
+            "description":
+              [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
+            "links":
+              [ "[onNextClicked()](#onNextClicked)" ],
+            "examples":
+              [ { "title": "Set a pagination bar's 'onPreviousClicked' event handler",
+                  "body":
+                    [ "$w('#myPaginationBar').onNextClicked(() => {",
+                      "    //...",
+                      "    console.log('Next button clicked');",
                       "});" ],
                   "extra":
                     {  } } ],
