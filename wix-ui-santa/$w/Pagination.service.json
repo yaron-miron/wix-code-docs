@@ -75,12 +75,14 @@
           {  } },
       { "name": "navigationType",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "get": true,
-        "set": false,
+        "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 201,
+          [ { "lineno": 213,
+              "filename": "Pagination.js" },
+            { "lineno": 230,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the navigation layout displayed in the pagination bar.",
@@ -110,10 +112,12 @@
         "labels":
           [ "changed" ],
         "get": true,
-        "set": false,
+        "set": true,
         "type": "boolean",
         "locations":
           [ { "lineno": 163,
+              "filename": "Pagination.js" },
+            { "lineno": 182,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's next page button is enabled.",
@@ -145,10 +149,12 @@
         "labels":
           [ "changed" ],
         "get": true,
-        "set": false,
+        "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 182,
+          [ { "lineno": 188,
+              "filename": "Pagination.js" },
+            { "lineno": 207,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's previous page button is enabled.",
