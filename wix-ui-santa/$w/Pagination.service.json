@@ -160,7 +160,7 @@
           { "eventType": "Change" } },
       { "name": "onNextClicked",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -179,7 +179,7 @@
             "links":
               [ "[onPreviousClicked()](#onPreviousClicked)" ],
             "examples":
-              [ { "title": "Set a pagination bar's 'onNextClicked' event handler",
+              [ { "title": "Set a pagination bar's `onNextClicked` event handler",
                   "body":
                     [ "$w('#myPaginationBar').onNextClicked(() => {",
                       "    //...",
@@ -193,7 +193,7 @@
           { "eventType": "Change" } },
       { "name": "onPreviousClicked",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -212,11 +212,11 @@
             "links":
               [ "[onNextClicked()](#onNextClicked)" ],
             "examples":
-              [ { "title": "Set a pagination bar's 'onPreviousClicked' event handler",
+              [ { "title": "Set a pagination bar's `onPreviousClicked` event handler",
                   "body":
-                    [ "$w('#myPaginationBar').onNextClicked(() => {",
+                    [ "$w('#myPaginationBar').onPreviousClicked(() => {",
                       "    //...",
-                      "    console.log('Next button clicked');",
+                      "    console.log('Previous button clicked');",
                       "});" ],
                   "extra":
                     {  } } ],
