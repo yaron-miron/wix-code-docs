@@ -73,6 +73,76 @@
               {  } },
         "extra":
           {  } },
+      { "name": "nextEnabled",
+        "labels":
+          [ "new" ],
+        "get": true,
+        "set": false,
+        "type": "boolean",
+        "locations":
+          [ { "lineno": 163,
+              "filename": "Pagination.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the pagination bar's next page button is enabled.",
+            "description":
+              [ "If you don't set `nextEnabled` in your code, the next page button follows the default behaviour defined by the ",
+                "pagination bar. This means the button is disabled when the final page of data is displayed.",
+                "",
+                ">**Note**:",
+                ">",
+                ">Once you set the value `nextEnabled` in your code the next page button stops following the pagination bar's defaults." ],
+            "links":
+              [ "[previousEnabled](#previousEnabled)" ],
+            "examples":
+              [ { "title": "Check whether a pagination bar's next page button is enabled",
+                  "body":
+                    [ "let nextPageCheck = $w('#myPaginationBar').nextEnabled; // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the status of a pagination bar's next page button",
+                  "body":
+                    [ "$w('#myPaginationBar').nextEnabled = false;" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "previousEnabled",
+        "labels":
+          [ "new" ],
+        "get": true,
+        "set": false,
+        "type": "boolean",
+        "locations":
+          [ { "lineno": 182,
+              "filename": "Pagination.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the pagination bar's previous page button is enabled.",
+            "description":
+              [ "If you don't set `previousEnabled` in your code, the previous page button follows the default behaviour defined by the ",
+                "pagination bar. This means the button is disabled when the first page of data is displayed.",
+                "",
+                ">**Note**:",
+                ">",
+                ">Once you set the value `previousEnabled` in your code the previous page button stops following the pagination bar's defaults." ],
+            "links":
+              [ "[nextEnabled](#nextEnabled)" ],
+            "examples":
+              [ { "title": "Check whether a pagination bar's previous page button is enabled",
+                  "body":
+                    [ "let previousPageCheck = $w('#myPaginationBar').previousEnabled; // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the status of a pagination bar's previous page button",
+                  "body":
+                    [ "$w('#myPaginationBar').previousEnabled = false;" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
       { "name": "totalPages",
         "labels": [],
         "get": true,
@@ -165,7 +235,7 @@
         "params":
           [ { "name": "handler",
               "type": "$w.MouseEventHandler",
-              "doc": "The name of the function or\n the function expression to run when the **Next** button is clicked." } ],
+              "doc": "The name of the function or\n the function expression to run when the next page button is clicked." } ],
         "ret":
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
@@ -173,7 +243,7 @@
           [ { "lineno": 133,
               "filename": "Pagination.js" } ],
         "docs":
-          { "summary": "Adds an event handler that runs when the **Next** button is clicked.",
+          { "summary": "Adds an event handler that runs when the pagination bar's next page button is clicked.",
             "description":
               [ "The `onNextClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
             "links":
@@ -198,7 +268,7 @@
         "params":
           [ { "name": "handler",
               "type": "$w.MouseEventHandler",
-              "doc": "The name of the function or\n the function expression to run when the **Previous** button is clicked." } ],
+              "doc": "The name of the function or\n the function expression to run when the previous page button is clicked." } ],
         "ret":
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
@@ -206,7 +276,7 @@
           [ { "lineno": 148,
               "filename": "Pagination.js" } ],
         "docs":
-          { "summary": "Adds an event handler that runs when the **Previous** button is clicked.",
+          { "summary": "Adds an event handler that runs when the pagination bar's previous page button is clicked.",
             "description":
               [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
             "links":
