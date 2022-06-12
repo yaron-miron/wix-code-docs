@@ -99,7 +99,7 @@
                 "    ![](../assets/images/pagination-arrowsOnly.png)",
                 ">**Note:**",
                 ">",
-                ">When `navigationType` is set to `arrowsOnly` the pagination bar's `currentPage` and `totalPages` properties return `undefined`." ],
+                ">When `navigationType` is set to `arrowsOnly`, the pagination bar's `currentPage` and `totalPages` properties return `undefined`." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
@@ -118,7 +118,8 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -139,7 +140,7 @@
             "links":
               [ "[previousEnabled](#previousEnabled)" ],
             "examples":
-              [ { "title": "Check whether a pagination bar's next page button is enabled",
+              [ { "title": "Check if a pagination bar's next page button is enabled",
                   "body":
                     [ "let nextPageCheck = $w('#myPaginationBar').nextEnabled; // true" ],
                   "extra":
@@ -154,7 +155,8 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -175,7 +177,7 @@
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
-              [ { "title": "Check whether a pagination bar's previous page button is enabled",
+              [ { "title": "Check if a pagination bar's previous page button is enabled",
                   "body":
                     [ "let previousPageCheck = $w('#myPaginationBar').previousEnabled; // true" ],
                   "extra":
