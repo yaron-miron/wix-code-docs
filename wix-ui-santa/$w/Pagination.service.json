@@ -117,8 +117,7 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -153,8 +152,7 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -274,7 +272,8 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -289,11 +288,11 @@
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's next page button is clicked.",
             "description":
-              [ "The `onNextClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
+              [ "The `onNextClicked()` event runs before the pagination bar's [`onChange()`](#onChange) event." ],
             "links":
               [ "[onPreviousClicked()](#onPreviousClicked)" ],
             "examples":
-              [ { "title": "Set a pagination bar's `onNextClicked` event handler",
+              [ { "title": "Set a pagination bar's onNextClicked event handler",
                   "body":
                     [ "$w('#myPaginationBar').onNextClicked(() => {",
                       "    //...",
@@ -304,9 +303,10 @@
             "extra":
               {  } },
         "extra":
-          { "eventType": "Change" } },
+          { "eventType": "onNextClicked" } },
       { "name": "onPreviousClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -321,11 +321,11 @@
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's previous page button is clicked.",
             "description":
-              [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()'](#onChange) event." ],
+              [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()`](#onChange) event." ],
             "links":
               [ "[onNextClicked()](#onNextClicked)" ],
             "examples":
-              [ { "title": "Set a pagination bar's `onPreviousClicked` event handler",
+              [ { "title": "Set a pagination bar's onPreviousClicked event handler",
                   "body":
                     [ "$w('#myPaginationBar').onPreviousClicked(() => {",
                       "    //...",
@@ -336,7 +336,7 @@
             "extra":
               {  } },
         "extra":
-          { "eventType": "Change" } } ],
+          { "eventType": "onNextClicked" } } ],
   "callbacks": [],
   "messages": [],
   "extra":
