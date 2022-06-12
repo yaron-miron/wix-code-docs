@@ -152,8 +152,7 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -273,7 +272,8 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -303,9 +303,10 @@
             "extra":
               {  } },
         "extra":
-          { "eventType": "onNextClicked" } },
+          { "eventType": "NextClicked" } },
       { "name": "onPreviousClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -335,7 +336,7 @@
             "extra":
               {  } },
         "extra":
-          { "eventType": "onNextClicked" } } ],
+          { "eventType": "PreviousClicked" } } ],
   "callbacks": [],
   "messages": [],
   "extra":
