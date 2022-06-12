@@ -152,7 +152,8 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -167,7 +168,7 @@
               [ "If you don't set `previousEnabled` in your code, the previous page button follows the pagination bar's default behavior.",
                 "This means the button is disabled when the first page of data is displayed.",
                 "",
-                ">**Note**:",
+                ">**Note**:  ",
                 ">Once you set the value of `previousEnabled` in your code the previous page button stops following the pagination bar's defaults." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
@@ -272,8 +273,7 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -305,8 +305,7 @@
         "extra":
           { "eventType": "onNextClicked" } },
       { "name": "onPreviousClicked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
