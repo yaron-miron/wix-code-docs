@@ -87,7 +87,7 @@
         "docs":
           { "summary": "Sets or gets the navigation layout displayed in the pagination bar.",
             "description":
-              [ "There are 3 types navigation layouts:",
+              [ "There are 3 types of navigation layouts:",
                 " + `clickNumbers`: Displays the page numbers as clickable links.",
                 "",
                 "    ![](../assets/images/pagination-clickNumbers.png)",
@@ -103,14 +103,14 @@
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
-              [ { "title": "Check whether a pagination bar's previous page button is enabled",
+              [ { "title": "Get a pagination bar's current navigation layout",
                   "body":
-                    [ "let previousPageCheck = $w('#myPaginationBar').previousEnabled; // true" ],
+                    [ "let navigationCheck = $w('#pagination1').navigationType; // 'arrowsOnly'" ],
                   "extra":
                     {  } },
-                { "title": "Set the status of a pagination bar's previous page button",
+                { "title": "Set a pagination bar's navigation layout",
                   "body":
-                    [ "$w('#myPaginationBar').previousEnabled = false;" ],
+                    [ "$w('#myPaginationBar').navigationType = 'arrowsOnly';" ],
                   "extra":
                     {  } } ],
             "extra":
