@@ -74,15 +74,14 @@
         "extra":
           {  } },
       { "name": "navigationType",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 213,
+          [ { "lineno": 211,
               "filename": "Pagination.js" },
-            { "lineno": 239,
+            { "lineno": 237,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the navigation layout displayed in the pagination bar.",
@@ -126,17 +125,16 @@
         "locations":
           [ { "lineno": 163,
               "filename": "Pagination.js" },
-            { "lineno": 182,
+            { "lineno": 181,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's next page button is enabled.",
             "description":
-              [ "If you don't set `nextEnabled` in your code, the next page button follows the default behaviour defined by the ",
-                "pagination bar. This means the button is disabled when the final page of data is displayed.",
+              [ "If you don't set `nextEnabled` in your code, the next page button follows the pagination bar's default behavior. ",
+                "This means the button is disabled when the final page of data is displayed.",
                 "",
-                ">**Note**:",
-                ">",
-                ">Once you set the value of `nextEnabled` in your code the next page button stops following the pagination bar's defaults." ],
+                ">**Note**:  ",
+                ">Once you set the value of `nextEnabled` in your code, the next page button stops following the pagination bar's defaults." ],
             "links":
               [ "[previousEnabled](#previousEnabled)" ],
             "examples":
@@ -161,18 +159,17 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 188,
+          [ { "lineno": 187,
               "filename": "Pagination.js" },
-            { "lineno": 207,
+            { "lineno": 205,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's previous page button is enabled.",
             "description":
-              [ "If you don't set `previousEnabled` in your code, the previous page button follows the default behaviour defined by the ",
-                "pagination bar. This means the button is disabled when the first page of data is displayed.",
+              [ "If you don't set `previousEnabled` in your code, the previous page button follows the pagination bar's default behavior.",
+                "This means the button is disabled when the first page of data is displayed.",
                 "",
                 ">**Note**:",
-                ">",
                 ">Once you set the value of `previousEnabled` in your code the previous page button stops following the pagination bar's defaults." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
