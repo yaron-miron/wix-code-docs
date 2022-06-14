@@ -148,7 +148,7 @@
                     [ "$w('#myPaginationBar').nextEnabled = false;" ],
                   "extra":
                     {  } },
-                { "title": "Restrict some pages to members with a specific role",
+                { "title": "Restrict some pages to members with a specific paid plan",
                   "body":
                     [ "import wixPaidPlans from 'wix-paid-plans'; ",
                       "",
