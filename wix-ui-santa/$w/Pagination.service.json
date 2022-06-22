@@ -117,8 +117,7 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -310,11 +309,12 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
-              "type": "$w.MouseEventHandler",
+              "type": "MouseEventHandler",
               "doc": "The name of the function or\n the function expression to run when the next page button is clicked." } ],
         "ret":
           { "type": "$w.Pagination",
