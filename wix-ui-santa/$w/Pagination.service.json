@@ -74,7 +74,8 @@
         "extra":
           {  } },
       { "name": "navigationType",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -117,7 +118,8 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -189,7 +191,8 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -310,7 +313,8 @@
           { "eventType": "Change" } },
       { "name": "onNextClicked",
         "labels":
-          [ "changed" ],
+          [ "changed",
+            "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -368,7 +372,8 @@
         "extra":
           { "eventType": "NextClicked" } },
       { "name": "onPreviousClicked",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
