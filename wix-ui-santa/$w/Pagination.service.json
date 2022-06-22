@@ -314,7 +314,7 @@
         "nameParams": [],
         "params":
           [ { "name": "handler",
-              "type": "MouseEventHandler",
+              "type": "$w.MouseEventHandler",
               "doc": "The name of the function or\n the function expression to run when the next page button is clicked." } ],
         "ret":
           { "type": "$w.Pagination",
