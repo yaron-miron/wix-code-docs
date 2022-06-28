@@ -75,7 +75,7 @@
           {  } },
       { "name": "navigationType",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -105,12 +105,12 @@
             "examples":
               [ { "title": "Get a pagination bar's current navigation layout",
                   "body":
-                    [ "let navigationCheck = $w('#pagination1').navigationType; // 'arrowsOnly'" ],
+                    [ "let navigationCheck = $w('#myPagination').navigationType; // 'arrowsOnly'" ],
                   "extra":
                     {  } },
                 { "title": "Set a pagination bar's navigation layout",
                   "body":
-                    [ "$w('#myPaginationBar').navigationType = 'arrowsOnly';" ],
+                    [ "$w('#myPagination').navigationType = 'arrowsOnly';" ],
                   "extra":
                     {  } } ],
             "extra":
@@ -119,23 +119,24 @@
           {  } },
       { "name": "nextEnabled",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "get": true,
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 165,
+          [ { "lineno": 163,
               "filename": "Pagination.js" },
-            { "lineno": 189,
+            { "lineno": 188,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's next page button is enabled.",
             "description":
               [ "If you don't set `nextEnabled` in your code, the next page button follows the pagination bar's default behavior. ",
-                "This means the button is disabled when the final page of data is displayed.",
+                "This means the button is disabled when the final page of data is displayed, and enabled otherwise.",
                 "",
                 ">**Note**:  ",
-                ">Once you set the value of `nextEnabled` in your code, the next page button stops following the pagination bar's defaults." ],
+                ">Once you set the value of `nextEnabled` in your code, the next page button stops following the pagination bar's defaults.",
+                ">Make sure to disable the next button in your code when the final page of data is displayed." ],
             "links":
               [ "[previousEnabled](#previousEnabled)" ],
             "examples":
@@ -154,8 +155,8 @@
                     [ "import wixPaidPlans from 'wix-paid-plans'; ",
                       "",
                       "$w.onReady(function () {",
-                      "    // Set an event handler to run every time the pagination bar's page changes.",
-                      "    $w('#myPaginationBar').onChange(() => {",
+                      "  // Set an event handler to run every time the pagination bar's page changes.",
+                      "  $w('#myPaginationBar').onChange(() => {",
                       "    const currentPage = $w('#myPaginationBar').currentPage;",
                       "    ",
                       "    // If the current page is 1-3 make sure the next button is enabled",
@@ -169,8 +170,8 @@
                       "      wixPaidPlans.getCurrentMemberOrders()",
                       "      .then((orders) => {",
                       "        orders.forEach((order) => {",
-                      "            // If the current member has an active premium account, enable the next button.",
-                      "            if (order.planName === 'Premium' && order.status === 'ACTIVE') {",
+                      "          // If the current member has an active premium account, enable the next button.",
+                      "          if (order.planName === 'Premium' && order.status === 'ACTIVE') {",
                       "            $w('#myPaginationBar').nextEnabled = true;",
                       "          }",
                       "        })",
@@ -185,19 +186,19 @@
                       "  })",
                       "});" ],
                   "extra":
-                    { "description": "This example implements custom logic for when a pagination bar's next button is enabled:\n * Pages 1-3: The next button is enabled.\n * Pages 4 and up: The code uses the Wix Paid Plans API to check if the current has an active 'Premium' plan subscription. \n   If they don't, the next button is disabled and the following pages can't be accessed.\n * The last page: The next button is disabled manually in the code." } } ],
+                    { "description": "This example implements custom logic for when a pagination bar's next button is enabled:\n * Pages 1-3: The next button is enabled.\n * Pages 4 and up: The code uses the Wix Paid Plans API to check if the current member has an active 'Premium' plan subscription. \n   If they don't, the next button is disabled and the following pages can't be accessed.\n * The last page: The next button is disabled manually in the code." } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "previousEnabled",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "get": true,
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 195,
+          [ { "lineno": 194,
               "filename": "Pagination.js" },
             { "lineno": 213,
               "filename": "Pagination.js" } ],
@@ -205,10 +206,11 @@
           { "summary": "Sets or gets whether the pagination bar's previous page button is enabled.",
             "description":
               [ "If you don't set `previousEnabled` in your code, the previous page button follows the pagination bar's default behavior.",
-                "This means the button is disabled when the first page of data is displayed.",
+                "This means the button is disabled when the first page of data is displayed, and enabled otherwise.",
                 "",
                 ">**Note**:  ",
-                ">Once you set the value of `previousEnabled` in your code the previous page button stops following the pagination bar's defaults." ],
+                ">Once you set the value of `previousEnabled` in your code the previous page button stops following the pagination bar's defaults.",
+                ">Make sure to disable the previous button in your code when the first page of data is displayed." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
@@ -313,8 +315,7 @@
           { "eventType": "Change" } },
       { "name": "onNextClicked",
         "labels":
-          [ "changed",
-            "removed" ],
+          [ "new" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -335,45 +336,19 @@
             "examples":
               [ { "title": "Set a pagination bar's onNextClicked event handler",
                   "body":
-                    [ "$w('#myPaginationBar').onNextClicked(() => {",
+                    [ "$w('#myPaginationBar').onNextClicked((event) => {",
                       "    //...",
-                      "    console.log('Next button clicked');",
-                      "});" ],
-                  "extra":
-                    {  } },
-                { "title": "Track analtyics for a pagination bar's next button",
-                  "body":
-                    [ "import wixData from 'wix-data';",
-                      "",
-                      "$w.onReady(function () {",
-                      "  $w('#myPaginationBar').onNextClicked(() => {",
-                      "    wixData.query('Analytics')",
-                      "      .hasAll('title', 'next-button')",
-                      "      .find()",
-                      "      .then((results) => {",
-                      "        let nextButtonAnalytics = results.items[0];",
-                      "        nextButtonAnalytics.count++;",
-                      "        nextButtonAnalytics.lastClicked = new Date();",
-                      "",
-                      "        wixData.update('Analytics', nextButtonAnalytics)",
-                      "          .then(() => {",
-                      "            console.log('Next button click recorded!')",
-                      "          })",
-                      "          .catch((error) => {",
-                      "            console.error(error)",
-                      "          });",
-                      "      })",
-                      "  })",
+                      "    let newValue = event.target.currentPage; // 4",
                       "});" ],
                   "extra":
                     {  } } ],
             "extra":
               {  } },
         "extra":
-          { "eventType": "NextClicked" } },
+          { "eventType": "nextClicked" } },
       { "name": "onPreviousClicked",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -383,7 +358,7 @@
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
         "locations":
-          [ { "lineno": 149,
+          [ { "lineno": 148,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's previous page button is clicked.",
@@ -399,37 +374,11 @@
                       "    console.log('Previous button clicked');",
                       "});" ],
                   "extra":
-                    {  } },
-                { "title": "Track analtyics for a pagination bar's previous button",
-                  "body":
-                    [ "import wixData from 'wix-data';",
-                      "",
-                      "$w.onReady(function () {",
-                      "  $w('#myPaginationBar').onPreviousClicked(() => {",
-                      "    wixData.query('Analytics')",
-                      "      .hasAll('title', 'previous-button')",
-                      "      .find()",
-                      "      .then((results) => {",
-                      "        let previousButtonAnalytics = results.items[0];",
-                      "        previousButtonAnalytics.count++;",
-                      "        previousButtonAnalytics.lastClicked = new Date();",
-                      "",
-                      "        wixData.update('Analytics', previousButtonAnalytics)",
-                      "          .then(() => {",
-                      "            console.log('Previous button click recorded!')",
-                      "          })",
-                      "          .catch((error) => {",
-                      "            console.error(error)",
-                      "          });",
-                      "      })",
-                      "  })",
-                      "});" ],
-                  "extra":
                     {  } } ],
             "extra":
               {  } },
         "extra":
-          { "eventType": "PreviousClicked" } } ],
+          { "eventType": "previousClicked" } } ],
   "callbacks": [],
   "messages": [],
   "extra":
