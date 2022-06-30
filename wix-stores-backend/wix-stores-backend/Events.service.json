@@ -727,7 +727,7 @@
               [ "The `onInventoryVariantUpdated()` event handler runs when a [product variant's inventory information](https://support.wix.com/en/article/wix-stores-adding-and-customizing-product-options#setting-inventory-preferences) - `inStock` and/or `quantity` fields - is changed.",
                 "",
                 "> **Notes:**",
-                "+ If a product does not have variants it will use the default variantId `“00000000-0000-0000-0000-000000000000”`.",
+                "+ If a product does not have variants it will use the default `variantId` `“00000000-0000-0000-0000-000000000000”`.",
                 "+ Backend events don't work when previewing your site." ],
             "links": [],
             "examples":
