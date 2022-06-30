@@ -664,8 +664,7 @@
         "extra":
           {  } },
       { "name": "onInventoryItemUpdated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -725,7 +724,7 @@
         "docs":
           { "summary": "An event that fires when the inventory information of a product variant is updated.",
             "description":
-              [ "The `onInventoryVariantUpdated()` event handler runs when a product variant's inventory information - `inStock` and/or `quantity` fields - is changed.",
+              [ "The `onInventoryVariantUpdated()` event handler runs when a [product variant's inventory information](https://support.wix.com/en/article/wix-stores-adding-and-customizing-product-options#setting-inventory-preferences) - `inStock` and/or `quantity` fields - is changed.",
                 "",
                 "> **Notes:**",
                 "+ If a product does not have variants it will use the default variantId `“00000000-0000-0000-0000-000000000000”`.",
