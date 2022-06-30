@@ -1,7 +1,8 @@
 { "name": "Events",
   "memberOf": "wix-stores-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "events.js" },
@@ -513,7 +514,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 485,
+          [ { "lineno": 486,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order fulfillment is created.",
@@ -575,7 +576,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 548,
+          [ { "lineno": 549,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order fulfillment is deleted.",
@@ -620,7 +621,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 522,
+          [ { "lineno": 523,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order fulfillment is updated.",
@@ -663,7 +664,8 @@
         "extra":
           {  } },
       { "name": "onInventoryItemUpdated",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -677,8 +679,8 @@
         "docs":
           { "summary": "An event that fires when an inventory item's information is updated.",
             "description":
-              [ "The `onInventoryItemUpdated()` event handler runs when information for an inventory item",
-                " is updated in a store.",
+              [ "The `onInventoryItemUpdated()` event handler runs when the [inventory item's tracking](https://support.wix.com/en/article/wix-stores-setting-how-you-manage-inventory-for-a-product#setting-how-you-manage-inventory)",
+                " is turned on or off - `trackInventory` boolean changes.",
                 "",
                 "> **Note:** Backend events don't work when previewing your site." ],
             "links": [],
@@ -708,7 +710,8 @@
         "extra":
           {  } },
       { "name": "onInventoryVariantUpdated",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -722,10 +725,11 @@
         "docs":
           { "summary": "An event that fires when the inventory information of a product variant is updated.",
             "description":
-              [ "The `onInventoryVariantUpdated()` event handler runs when inventory information for a product",
-                " variant is updated in a store.",
+              [ "The `onInventoryVariantUpdated()` event handler runs when a product variant's inventory information - `inStock` and/or `quantity` fields - is changed.",
                 "",
-                "> **Note:** Backend events don't work when previewing your site." ],
+                "> **Notes:**",
+                "+ If a product does not have variants it will use the default variantId `“00000000-0000-0000-0000-000000000000”`.",
+                "+ Backend events don't work when previewing your site." ],
             "links": [],
             "examples":
               [ { "title": "An event when product variant inventory information is updated",
@@ -891,7 +895,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 594,
+          [ { "lineno": 595,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order is canceled.",
@@ -1082,7 +1086,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 580,
+          [ { "lineno": 581,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order is marked as paid.",
@@ -1280,7 +1284,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 615,
+          [ { "lineno": 616,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An event that fires when an order is refunded.",
@@ -2254,7 +2258,7 @@
         "labels": [] },
       { "name": "FulfillmentCreatedEvent",
         "locations":
-          [ { "lineno": 501,
+          [ { "lineno": 502,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing fulfillment information that was created.",
@@ -2323,7 +2327,7 @@
         "labels": [] },
       { "name": "FulfillmentDeletedEvent",
         "locations":
-          [ { "lineno": 562,
+          [ { "lineno": 563,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing fulfillment information that was deleted.",
@@ -2368,7 +2372,7 @@
         "labels": [] },
       { "name": "FulfillmentUpdatedEvent",
         "locations":
-          [ { "lineno": 538,
+          [ { "lineno": 539,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing fulfillment information that was updated.",
@@ -2461,7 +2465,7 @@
         "labels": [] },
       { "name": "InventoryVariantUpdatedEvent",
         "locations":
-          [ { "lineno": 459,
+          [ { "lineno": 460,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing product variant information that was updated.",
@@ -2659,7 +2663,7 @@
         "labels": [] },
       { "name": "OrderCanceledEvent",
         "locations":
-          [ { "lineno": 608,
+          [ { "lineno": 609,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing information about a canceled order.",
@@ -2843,7 +2847,7 @@
         "labels": [] },
       { "name": "OrderRefundedEvent",
         "locations":
-          [ { "lineno": 629,
+          [ { "lineno": 630,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing information about a refunded order.",
@@ -3349,7 +3353,7 @@
         "labels": [] },
       { "name": "UpdatedVariantInventory",
         "locations":
-          [ { "lineno": 468,
+          [ { "lineno": 469,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing product variant that was updated.",
@@ -3406,7 +3410,7 @@
         "labels": [] },
       { "name": "VariantInventoryValue",
         "locations":
-          [ { "lineno": 477,
+          [ { "lineno": 478,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing a product variant value.",
