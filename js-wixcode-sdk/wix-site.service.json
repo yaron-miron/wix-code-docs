@@ -1,7 +1,6 @@
 { "name": "wix-site",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "site.js" },
@@ -21,13 +20,12 @@
         {  } },
   "properties":
     [ { "name": "currency",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 178,
+          [ { "lineno": 180,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets a code representing the site's currency.",
@@ -53,15 +51,14 @@
         "extra":
           {  } },
       { "name": "currentPage",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type":
           [ "wix-site.StructurePage",
             "wix-site.StructureLightbox" ],
         "locations":
-          [ { "lineno": 130,
+          [ { "lineno": 132,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets information about the current page or lightbox.",
@@ -107,13 +104,12 @@
         "extra":
           {  } },
       { "name": "language",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 159,
+          [ { "lineno": 161,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets a code representing the site's language.",
@@ -141,13 +137,12 @@
         "extra":
           {  } },
       { "name": "regionalSettings",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 142,
+          [ { "lineno": 144,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets the site's regional settings.",
@@ -173,13 +168,12 @@
         "extra":
           {  } },
       { "name": "revision",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 212,
+          [ { "lineno": 214,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets the site revision ID.",
@@ -215,13 +209,12 @@
         "extra":
           {  } },
       { "name": "timezone",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 195,
+          [ { "lineno": 197,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets the site's timezone.",
@@ -245,18 +238,32 @@
             "extra":
               {  } },
         "extra":
+          {  } },
+      { "name": "wixRouterSitemapEntry",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "wix-site.WixRouterSitemapEntry",
+        "locations":
+          [ { "lineno": 6,
+              "filename": "sitemap-entry.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
           {  } } ],
   "operations":
     [ { "name": "getSiteDisplayName",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
           { "type": "string",
             "doc": "The site display name." },
         "locations":
-          [ { "lineno": 119,
+          [ { "lineno": 121,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Gets the site display name.",
@@ -277,15 +284,14 @@
         "extra":
           {  } },
       { "name": "getSiteStructure",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
           { "type": "wix-site.SiteStructure",
             "doc": "An object that contains information about the site's pages, prefixes, and lightboxes." },
         "locations":
-          [ { "lineno": 105,
+          [ { "lineno": 107,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Returns information about the site's pages, prefixes, and lightboxes.",
@@ -444,8 +450,7 @@
         "extra":
           {  } },
       { "name": "prefetchPageResources",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "prefetchItems",
@@ -455,7 +460,7 @@
           { "type": "wix-site.PrefetchResult",
             "doc": "Results of a prefetch." },
         "locations":
-          [ { "lineno": 278,
+          [ { "lineno": 280,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Optimizes resource fetching of pages and lightboxes in the site so they will load faster.",
@@ -522,8 +527,7 @@
         "extra":
           {  } },
       { "name": "routerSitemap",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "routerPrefix",
@@ -535,10 +539,10 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-router.WixRouterSitemapEntry" ] } ] },
+                        [ "wix-site.WixRouterSitemapEntry" ] } ] },
             "doc": "Fulfilled - A list of sitemap entries.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 86,
+          [ { "lineno": 88,
               "filename": "site.js" } ],
         "docs":
           { "summary": "Returns the sitemap for a router or dynamic page prefix.",
@@ -610,7 +614,7 @@
   "messages":
     [ { "name": "PrefetchItems",
         "locations":
-          [ { "lineno": 238,
+          [ { "lineno": 240,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that contains information about which pages and lightboxes to\n prefetch resources for.",
@@ -656,11 +660,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PrefetchResult",
         "locations":
-          [ { "lineno": 256,
+          [ { "lineno": 258,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that is returned from a prefetch request.",
@@ -702,11 +705,10 @@
               "doc": "The errors that occurred." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PrefetchResultError",
         "locations":
-          [ { "lineno": 267,
+          [ { "lineno": 269,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that is returned when a resource prefetch is unsuccessful.",
@@ -754,11 +756,10 @@
               "doc": "The names of the lightbox for which prefetch failed." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Prefix",
         "locations":
-          [ { "lineno": 48,
+          [ { "lineno": 50,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that contains information about the site's prefixes.",
@@ -846,11 +847,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "SiteStructure",
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 17,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that contains information about the site's pages, prefixes, and lightboxes.",
@@ -1024,11 +1024,10 @@
               "doc": "The site's lightboxes." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "StructureLightbox",
         "locations":
-          [ { "lineno": 72,
+          [ { "lineno": 74,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that contains information about a lightbox on the site.",
@@ -1081,11 +1080,10 @@
               "doc": "The name of the lightbox." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "StructurePage",
         "locations":
-          [ { "lineno": 30,
+          [ { "lineno": 32,
               "filename": "site.js" } ],
         "docs":
           { "summary": "An object that contains information about a page on the site.",
@@ -1229,10 +1227,10 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
-    {  },
+    { "scopes":
+        [ "frontend" ] },
   "menuSections": "APIs",
   "FAQs":
     [ { "title": "How are dynamic pages listed in the site structure?",
