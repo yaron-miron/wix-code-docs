@@ -1,7 +1,8 @@
 { "name": "Effects",
   "memberOf": "$w",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 49,
       "filename": "EffectsMixin.js" },
@@ -116,7 +117,8 @@
           {  } } ],
   "operations":
     [ { "name": "applyEffects",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "effects",
@@ -143,7 +145,7 @@
                 "",
                 "![](images/effects_UI.png \"Create Effect Panel\")",
                 "",
-                "If you create 2 effects that each change properties in the **Adjust** section, and try to apply them together, only",
+                "If you create 2 effects that each change properties in the **Adjust** section and try to apply them together, only",
                 "one is visible on your site. The same is true for 2 effects that change properties in the **Design** section.",
                 "",
                 ">**Note:** This function can only be used in Editor X." ],
@@ -260,7 +262,8 @@
         "extra":
           {  } },
       { "name": "toggleEffects",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "effects",
@@ -288,7 +291,7 @@
                 "",
                 "![](images/effects_UI.png \"Create Effect Panel\")",
                 "",
-                "If you create 2 effects that each change properties in the **Adjust** section, and try to apply them together, only",
+                "If you create 2 effects that each change properties in the **Adjust** section and try to apply them together, only",
                 "one is visible on your site. The same is true for 2 effects that change properties in the **Design** section.",
                 "",
                 ">**Note:**",
