@@ -10,8 +10,10 @@
       "$w.ReadOnlyMixin",
       "$w.ClickableMixin",
       "$w.StyleMixin",
-      "$w.RequiredMixin" ],
-  "labels": [],
+      "$w.RequiredMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "TextBox.js" },
@@ -32,7 +34,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 100,
+          [ { "lineno": 101,
               "filename": "TextBox.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the text box's styles.",
@@ -71,9 +73,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 28,
               "filename": "TextBox.js" },
-            { "lineno": 59,
+            { "lineno": 60,
               "filename": "TextBox.js" } ],
         "docs":
           { "summary": "Sets or gets a text input's value.",
@@ -117,9 +119,9 @@
         "type": "string",
         "defaultValue": "\"soft\"",
         "locations":
-          [ { "lineno": 66,
+          [ { "lineno": 67,
               "filename": "TextBox.js" },
-            { "lineno": 93,
+            { "lineno": 94,
               "filename": "TextBox.js" } ],
         "docs":
           { "summary": "Determines if the text contains line breaks when its value is read.",

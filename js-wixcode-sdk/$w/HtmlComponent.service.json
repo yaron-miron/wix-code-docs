@@ -1,8 +1,10 @@
 { "name": "HtmlComponent",
   "memberOf": "$w",
   "mixes":
-    [ "$w.IFrame" ],
-  "labels": [],
+    [ "$w.IFrame",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 13,
       "filename": "HtmlComponent.js" },
@@ -29,9 +31,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 67,
+          [ { "lineno": 68,
               "filename": "HtmlComponent.js" },
-            { "lineno": 74,
+            { "lineno": 75,
               "filename": "HtmlComponent.js" } ],
         "docs":
           { "summary": "Sets or gets whether the HTML Component displays scrollbars.",
@@ -69,9 +71,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 36,
               "filename": "HtmlComponent.js" },
-            { "lineno": 42,
+            { "lineno": 43,
               "filename": "HtmlComponent.js" } ],
         "docs":
           { "summary": "Sets or gets the URL of the HTML Component's code.",
@@ -110,7 +112,7 @@
         "ret":
           { "type": "$w.HtmlComponent" },
         "locations":
-          [ { "lineno": 220,
+          [ { "lineno": 221,
               "filename": "HtmlComponent.js" } ],
         "docs":
           { "summary": "Allows the HTML Component to be put into full screen mode.",
@@ -139,7 +141,7 @@
           { "type": "$w.HtmlComponent",
             "doc": "The HTML Code element that triggered the event." },
         "locations":
-          [ { "lineno": 170,
+          [ { "lineno": 171,
               "filename": "HtmlComponent.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the HTML Component\n sends a message.",
@@ -255,7 +257,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 101,
+          [ { "lineno": 102,
               "filename": "HtmlComponent.js" } ],
         "docs":
           { "summary": "Sends a message to the HTML Component.",

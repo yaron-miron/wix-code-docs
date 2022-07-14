@@ -5,8 +5,10 @@
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
       "$w.ContainableMixin",
-      "$w.StyleMixin" ],
-  "labels": [],
+      "$w.StyleMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Box.js" },
@@ -30,7 +32,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 26,
+          [ { "lineno": 27,
               "filename": "Box.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the box's styles.",

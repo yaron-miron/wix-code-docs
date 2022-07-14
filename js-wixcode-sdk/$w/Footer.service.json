@@ -4,8 +4,10 @@
     [ "$w.Element",
       "$w.ClickableMixin",
       "$w.ContainableMixin",
-      "$w.StyleMixin" ],
-  "labels": [],
+      "$w.StyleMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Footer.js" },
@@ -38,7 +40,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 32,
+          [ { "lineno": 33,
               "filename": "Footer.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the footer's styles.",

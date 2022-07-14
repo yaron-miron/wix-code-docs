@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Element",
-      "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+      "$w.HiddenCollapsedMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "AccountNavBar.js" },

@@ -3,8 +3,10 @@
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin",
-      "$w.Background" ],
-  "labels": [],
+      "$w.Background",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "MediaBox.js" },

@@ -5,8 +5,10 @@
       "$w.ClickableMixin",
       "$w.ContainableMixin",
       "$w.HiddenCollapsedMixin",
-      "$w.StyleMixin" ],
-  "labels": [],
+      "$w.StyleMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Form.js" },
@@ -34,7 +36,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 26,
+          [ { "lineno": 27,
               "filename": "Form.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the styles of the form.",

@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin",
-      "$w.StyleMixin" ],
-  "labels": [],
+      "$w.StyleMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "QuickActionBar.js" },
@@ -22,9 +24,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 43,
+          [ { "lineno": 44,
               "filename": "QuickActionBar.js" },
-            { "lineno": 67,
+            { "lineno": 68,
               "filename": "QuickActionBar.js" } ],
         "docs":
           { "summary": "Sets or gets a quick action bar's alignment.",
@@ -59,9 +61,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 75,
               "filename": "QuickActionBar.js" },
-            { "lineno": 95,
+            { "lineno": 96,
               "filename": "QuickActionBar.js" } ],
         "docs":
           { "summary": "Sets or gets a quick action bar's color scheme.",
@@ -93,9 +95,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 102,
+          [ { "lineno": 103,
               "filename": "QuickActionBar.js" },
-            { "lineno": 123,
+            { "lineno": 124,
               "filename": "QuickActionBar.js" } ],
         "docs":
           { "summary": "Sets or gets whether a quick action bar's color scheme is inverted.",
@@ -128,9 +130,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 18,
               "filename": "QuickActionBar.js" },
-            { "lineno": 36,
+            { "lineno": 37,
               "filename": "QuickActionBar.js" } ],
         "docs":
           { "summary": "Sets or gets whether a quick action bar's labels are shown.",
@@ -167,7 +169,7 @@
           { "type": "$w.QuickActionBar",
             "doc": "The quick action bar that triggered the event." },
         "locations":
-          [ { "lineno": 130,
+          [ { "lineno": 131,
               "filename": "QuickActionBar.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an item in a quick action bar is\n clicked.",

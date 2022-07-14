@@ -1,8 +1,10 @@
 { "name": "MenuContainer",
   "memberOf": "$w",
   "mixes":
-    [ "$w.Element" ],
-  "labels": [],
+    [ "$w.Element",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "MenuContainer.js" },
@@ -29,7 +31,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the mobile menu has finished closing." },
         "locations":
-          [ { "lineno": 33,
+          [ { "lineno": 34,
               "filename": "MenuContainer.js" } ],
         "docs":
           { "summary": "Closes a mobile menu.",
@@ -67,7 +69,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the mobile menu has finished opening." },
         "locations":
-          [ { "lineno": 18,
+          [ { "lineno": 19,
               "filename": "MenuContainer.js" } ],
         "docs":
           { "summary": "Opens a mobile menu.",

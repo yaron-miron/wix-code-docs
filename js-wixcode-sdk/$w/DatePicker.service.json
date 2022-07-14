@@ -8,8 +8,10 @@
       "$w.FocusMixin",
       "$w.ReadOnlyMixin",
       "$w.ClickableMixin",
-      "$w.RequiredMixin" ],
-  "labels": [],
+      "$w.RequiredMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "DatePicker.js" },
@@ -27,9 +29,9 @@
         "type": "string",
         "defaultValue": "'MM/DD/YYYY'",
         "locations":
-          [ { "lineno": 41,
+          [ { "lineno": 42,
               "filename": "DatePicker.js" },
-            { "lineno": 66,
+            { "lineno": 67,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the format of the date displayed in the date picker.",
@@ -70,9 +72,9 @@
             "typeParams":
               [ "$w.DatePicker.DateRange" ] },
         "locations":
-          [ { "lineno": 231,
+          [ { "lineno": 232,
               "filename": "DatePicker.js" },
-            { "lineno": 271,
+            { "lineno": 272,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets ranges of dates that a site visitor can't select.",
@@ -191,9 +193,9 @@
             "typeParams":
               [ "Date" ] },
         "locations":
-          [ { "lineno": 278,
+          [ { "lineno": 279,
               "filename": "DatePicker.js" },
-            { "lineno": 306,
+            { "lineno": 307,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "**Deprecated.** This property will continue to work, but a newer version is available at [`disabledDateRanges`](https://www.wix.com/velo/reference/$w/datepicker/disableddateranges).",
@@ -242,9 +244,9 @@
             "typeParams":
               [ "number" ] },
         "locations":
-          [ { "lineno": 313,
+          [ { "lineno": 314,
               "filename": "DatePicker.js" },
-            { "lineno": 347,
+            { "lineno": 348,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the days of the week that a site visitor can't select.",
@@ -329,9 +331,9 @@
             "typeParams":
               [ "$w.DatePicker.DateRange" ] },
         "locations":
-          [ { "lineno": 173,
+          [ { "lineno": 174,
               "filename": "DatePicker.js" },
-            { "lineno": 223,
+            { "lineno": 224,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets ranges of dates that a site visitor can select.",
@@ -466,9 +468,9 @@
         "type": "Date",
         "defaultValue": "undefined",
         "locations":
-          [ { "lineno": 107,
+          [ { "lineno": 108,
               "filename": "DatePicker.js" },
-            { "lineno": 133,
+            { "lineno": 134,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the latest date that a site visitor can select.",
@@ -511,9 +513,9 @@
         "type": "Date",
         "defaultValue": "undefined",
         "locations":
-          [ { "lineno": 140,
+          [ { "lineno": 141,
               "filename": "DatePicker.js" },
-            { "lineno": 166,
+            { "lineno": 167,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the earliest date that a site visitor can select.",
@@ -554,9 +556,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 354,
+          [ { "lineno": 355,
               "filename": "DatePicker.js" },
-            { "lineno": 386,
+            { "lineno": 387,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the date picker's timezone.",
@@ -603,9 +605,9 @@
         "set": true,
         "type": "Date",
         "locations":
-          [ { "lineno": 72,
+          [ { "lineno": 73,
               "filename": "DatePicker.js" },
-            { "lineno": 100,
+            { "lineno": 101,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the value of the date picker.",
@@ -783,7 +785,7 @@
   "messages":
     [ { "name": "DateRange",
         "locations":
-          [ { "lineno": 23,
+          [ { "lineno": 24,
               "filename": "DatePicker.js" } ],
         "docs":
           { "summary": "An object containing the start and end dates of a range of dates.",

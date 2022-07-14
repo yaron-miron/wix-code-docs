@@ -4,8 +4,10 @@
     [ "$w.Element",
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
-      "$w.ContainableMixin" ],
-  "labels": [],
+      "$w.ContainableMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "MultiStateBox.js" },
@@ -27,7 +29,7 @@
         "set": false,
         "type": "$w.State",
         "locations":
-          [ { "lineno": 45,
+          [ { "lineno": 46,
               "filename": "MultiStateBox.js" } ],
         "docs":
           { "summary": "Gets the multi-state box's current state.",
@@ -53,7 +55,7 @@
             "typeParams":
               [ "$w.State" ] },
         "locations":
-          [ { "lineno": 92,
+          [ { "lineno": 93,
               "filename": "MultiStateBox.js" } ],
         "docs":
           { "summary": "Gets a list of all the states contained in the multi-state box.",
@@ -85,7 +87,7 @@
                   [ "$w.State" ] },
             "doc": "Fulfilled - The state that the multi-state box changed to.\nRejected - Error message: If no argument was provided or the argument is not a string or an existing state." },
         "locations":
-          [ { "lineno": 59,
+          [ { "lineno": 60,
               "filename": "MultiStateBox.js" } ],
         "docs":
           { "summary": "Change the multi-state box's current state to a specific state.",
@@ -173,7 +175,7 @@
           { "type": "$w.MultiStateBox",
             "doc": "The multi-state box on which the event is now registered." },
         "locations":
-          [ { "lineno": 23,
+          [ { "lineno": 24,
               "filename": "MultiStateBox.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the multi-state box moves to a new state.",

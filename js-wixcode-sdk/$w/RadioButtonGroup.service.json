@@ -8,8 +8,10 @@
       "$w.FocusMixin",
       "$w.ClickableMixin",
       "$w.StyleMixin",
-      "$w.RequiredMixin" ],
-  "labels": [],
+      "$w.RequiredMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "RadioButtonGroup.js" },
@@ -34,9 +36,9 @@
               [ "$w.RadioButtonGroup.Option" ] },
         "defaultValue": "An empty array",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 36,
               "filename": "RadioButtonGroup.js" },
-            { "lineno": 73,
+            { "lineno": 74,
               "filename": "RadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options in a radio button group.",
@@ -96,9 +98,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 127,
+          [ { "lineno": 128,
               "filename": "RadioButtonGroup.js" },
-            { "lineno": 155,
+            { "lineno": 156,
               "filename": "RadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the index of the selected option.",
@@ -136,7 +138,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 162,
+          [ { "lineno": 163,
               "filename": "RadioButtonGroup.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the radio button group's styles.",
@@ -174,9 +176,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 80,
+          [ { "lineno": 81,
               "filename": "RadioButtonGroup.js" },
-            { "lineno": 120,
+            { "lineno": 121,
               "filename": "RadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the value of the selected option.",
@@ -226,7 +228,7 @@
   "messages":
     [ { "name": "Option",
         "locations":
-          [ { "lineno": 25,
+          [ { "lineno": 26,
               "filename": "RadioButtonGroup.js" } ],
         "docs":
           { "summary": "An object used by the `options` property that contains the attributes of a radio button item.",

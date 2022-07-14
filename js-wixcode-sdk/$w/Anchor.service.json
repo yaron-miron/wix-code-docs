@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Node",
-      "$w.ViewportMixin" ],
-  "labels": [],
+      "$w.ViewportMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Anchor.js" },
@@ -22,7 +24,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 18,
               "filename": "Anchor.js" } ],
         "docs":
           { "summary": "Gets the name of an anchor.",
