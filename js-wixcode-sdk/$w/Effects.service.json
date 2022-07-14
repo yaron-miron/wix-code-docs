@@ -2,7 +2,7 @@
   "memberOf": "$w",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 49,
       "filename": "EffectsMixin.js" },
@@ -261,7 +261,8 @@
         "extra":
           {  } },
       { "name": "toggleEffects",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "effects",
@@ -281,7 +282,7 @@
               [ "This function toggles the state of the effects specified in the function call.",
                 "This means, for example, that if an effect included in the call was previously applied, it's removed and is no longer visible on your site.",
                 "",
-                " * Effects adjust the appearance of an element or alter it's design characteristics. ",
+                "Effects adjust the appearance of an element or alter it's design characteristics. ",
                 "You can't simultaneously apply 2 effects that both change either the appeareance or design properties. ",
                 "If you try to do this, only one of the effects is visible on your site.",
                 "",

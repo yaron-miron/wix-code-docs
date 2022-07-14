@@ -9,8 +9,7 @@
       "$w.StyleMixin",
       "$w.RequiredMixin",
       "$w.EffectsMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 57,
       "filename": "UploadButton.js" },

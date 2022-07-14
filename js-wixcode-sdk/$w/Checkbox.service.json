@@ -11,8 +11,7 @@
       "$w.RequiredMixin",
       "$w.CheckedMixin",
       "$w.EffectsMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "Checkbox.js" },

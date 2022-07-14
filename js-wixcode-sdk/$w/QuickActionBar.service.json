@@ -4,8 +4,7 @@
     [ "$w.HiddenCollapsedMixin",
       "$w.StyleMixin",
       "$w.EffectsMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "QuickActionBar.js" },
