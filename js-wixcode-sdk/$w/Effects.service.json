@@ -1,8 +1,7 @@
 { "name": "Effects",
   "memberOf": "$w",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 49,
       "filename": "EffectsMixin.js" },
@@ -261,8 +260,7 @@
         "extra":
           {  } },
       { "name": "toggleEffects",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "effects",
