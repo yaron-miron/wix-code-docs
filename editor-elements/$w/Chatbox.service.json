@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Element",
-      "$w.HiddenMixin" ],
-  "labels": [],
+      "$w.HiddenMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 121,
       "filename": "chatbox.js" },
@@ -29,7 +31,7 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 220,
+          [ { "lineno": 221,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Indicates if an element appears on all pages or only on the current page.",
@@ -55,7 +57,7 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 151,
+          [ { "lineno": 152,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Indicates if the chatbox is visible or hidden.",
@@ -99,7 +101,7 @@
         "type": "boolean",
         "defaultValue": "true",
         "locations":
-          [ { "lineno": 177,
+          [ { "lineno": 178,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Indicates if the element is actually visible.",
@@ -124,7 +126,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 447,
+          [ { "lineno": 448,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Indicates if the chatbox is maximized.",
@@ -159,7 +161,7 @@
         "type": "$w.Node",
         "defaultValue": "null",
         "locations":
-          [ { "lineno": 196,
+          [ { "lineno": 197,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element property is not relevant for Chatbox.</b>",
@@ -194,7 +196,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chat box focuses on the channel." },
         "locations":
-          [ { "lineno": 415,
+          [ { "lineno": 416,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Expands the chatbox and focuses it on the specified chat channel.",
@@ -256,7 +258,7 @@
                   [ "$w.Chatbox.Channel" ] },
             "doc": "Fulfilled - When the information associated with the specific channel has been retrieved." },
         "locations":
-          [ { "lineno": 461,
+          [ { "lineno": 462,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Gets a chatbox channel.",
@@ -366,7 +368,7 @@
                         [ "$w.Chatbox.Channel" ] } ] },
             "doc": "Fulfilled - When the list of channels has been retrieved." },
         "locations":
-          [ { "lineno": 435,
+          [ { "lineno": 436,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Gets a list of available chat channels for a site visitor.",
@@ -430,7 +432,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chatbox is maximized." },
         "locations":
-          [ { "lineno": 385,
+          [ { "lineno": 386,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Expands the chatbox and sets its [`maximized`](#maximized) property to `true`.",
@@ -477,7 +479,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chatbox is minimized." },
         "locations":
-          [ { "lineno": 400,
+          [ { "lineno": 401,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Collapses the chatbox and sets its [`maximized`](#maximized) property to `false`.",
@@ -523,7 +525,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 355,
+          [ { "lineno": 356,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "An event that fires when the chatbox is maximized.",
@@ -551,7 +553,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 310,
+          [ { "lineno": 311,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "An event that fires when a site visitor receives a chat message.",
@@ -598,7 +600,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 327,
+          [ { "lineno": 328,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "An event that fires when a site visitor sends a chat message.",
@@ -644,7 +646,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 343,
+          [ { "lineno": 344,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "An event that fires when the chatbox is minimized.",
@@ -673,7 +675,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 261,
+          [ { "lineno": 262,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element event is not relevant for Chatbox.</b>",
@@ -705,7 +707,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 285,
+          [ { "lineno": 286,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element event is not relevant for Chatbox.</b>",
@@ -738,7 +740,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the scroll is complete." },
         "locations":
-          [ { "lineno": 238,
+          [ { "lineno": 239,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element function is not relevant for Chatbox.</b>",
@@ -774,7 +776,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the message is sent." },
         "locations":
-          [ { "lineno": 366,
+          [ { "lineno": 367,
               "filename": "chatbox.js" } ],
         "docs":
           { "summary": "Sends a chat message from a site visitor.",
