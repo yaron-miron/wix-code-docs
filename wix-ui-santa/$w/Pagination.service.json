@@ -5,8 +5,10 @@
       "$w.DisabledMixin",
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
-      "$w.ViewportMixin" ],
-  "labels": [],
+      "$w.ViewportMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Pagination.js" },
@@ -38,9 +40,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 60,
+          [ { "lineno": 61,
               "filename": "Pagination.js" },
-            { "lineno": 87,
+            { "lineno": 88,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the current page.",
@@ -78,9 +80,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 95,
               "filename": "Pagination.js" },
-            { "lineno": 126,
+            { "lineno": 127,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the total number of pages shown in a pagination bar.",
@@ -129,7 +131,7 @@
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
         "locations":
-          [ { "lineno": 32,
+          [ { "lineno": 33,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar\n is changed.",

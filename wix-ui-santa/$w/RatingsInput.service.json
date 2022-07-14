@@ -7,8 +7,10 @@
       "$w.HiddenCollapsedMixin",
       "$w.FocusMixin",
       "$w.ClickableMixin",
-      "$w.ViewportMixin" ],
-  "labels": [],
+      "$w.ViewportMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "ratingsInput.js" },
@@ -25,9 +27,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 37,
               "filename": "ratingsInput.js" },
-            { "lineno": 69,
+            { "lineno": 70,
               "filename": "ratingsInput.js" } ],
         "docs":
           { "summary": "Sets or gets the rating value.",
@@ -76,7 +78,7 @@
           { "type": "$w.RatingsInput",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 20,
+          [ { "lineno": 21,
               "filename": "ratingsInput.js" } ],
         "docs":
           { "summary": "Sets the function that runs when a user's mouse enters one of the rating icons.",

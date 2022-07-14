@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Element",
-      "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+      "$w.HiddenCollapsedMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "VideoPlayer.js" },
@@ -30,7 +32,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 95,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Gets the current play time from the beginning of the current video, in seconds.",
@@ -53,9 +55,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 52,
               "filename": "VideoPlayer.js" },
-            { "lineno": 71,
+            { "lineno": 72,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Sets or gets the description of a video.\n > **Notes:**\n > - Setting a video description only works when a video player is presenting a\n >   video uploaded to your site.\n > - Getting a video description does not work when a video player is presenting a\n >   video from Facebook, Twitch, or YouTube.",
@@ -81,7 +83,7 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 109,
+          [ { "lineno": 110,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Gets the total play time of the current video, in seconds.",
@@ -102,7 +104,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 152,
+          [ { "lineno": 153,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Indicates if the volume is currently muted.",
@@ -126,7 +128,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 78,
+          [ { "lineno": 79,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Indicates if a video is currently playing.",
@@ -150,9 +152,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 206,
+          [ { "lineno": 207,
               "filename": "VideoPlayer.js" },
-            { "lineno": 235,
+            { "lineno": 236,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Sets or gets the image shown in the video player before the video is played.",
@@ -192,9 +194,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 168,
+          [ { "lineno": 169,
               "filename": "VideoPlayer.js" },
-            { "lineno": 199,
+            { "lineno": 200,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Sets or gets the file location of the current video.",
@@ -241,9 +243,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 24,
+          [ { "lineno": 25,
               "filename": "VideoPlayer.js" },
-            { "lineno": 44,
+            { "lineno": 45,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Sets or gets the title displayed in a video player.\n > **Notes:**\n > - Setting a video title only works when a video player is presenting a\n >   video uploaded to your site.\n > - Getting a video title does not work when a video player is presenting a\n >   video from Facebook, Twitch, or YouTube.",
@@ -269,9 +271,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 123,
               "filename": "VideoPlayer.js" },
-            { "lineno": 145,
+            { "lineno": 146,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Sets or gets the video player volume.",
@@ -311,7 +313,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the volume has been muted." },
         "locations":
-          [ { "lineno": 322,
+          [ { "lineno": 323,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Mutes video volume.",
@@ -345,7 +347,7 @@
           { "type": "$w.VideoPlayer",
             "doc": "The video player that triggered the event." },
         "locations":
-          [ { "lineno": 402,
+          [ { "lineno": 403,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback has ended.",
@@ -377,7 +379,7 @@
           { "type": "$w.VideoPlayer",
             "doc": "The video player that triggered the event." },
         "locations":
-          [ { "lineno": 382,
+          [ { "lineno": 383,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback is paused.",
@@ -409,7 +411,7 @@
           { "type": "$w.VideoPlayer",
             "doc": "The video player that triggered the event." },
         "locations":
-          [ { "lineno": 362,
+          [ { "lineno": 363,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback is started or restarted.",
@@ -440,7 +442,7 @@
         "ret":
           { "type": "$w.VideoPlayer" },
         "locations":
-          [ { "lineno": 422,
+          [ { "lineno": 423,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback progresses.",
@@ -470,7 +472,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When playback has been paused." },
         "locations":
-          [ { "lineno": 260,
+          [ { "lineno": 261,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Pauses playback.",
@@ -509,7 +511,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When playback begins or resumes." },
         "locations":
-          [ { "lineno": 242,
+          [ { "lineno": 243,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Begins or resumes playback.",
@@ -551,7 +553,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the playback has been moved to the specified time." },
         "locations":
-          [ { "lineno": 348,
+          [ { "lineno": 349,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Moves playback to the specified time, in seconds.",
@@ -585,7 +587,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When playback has been stopped." },
         "locations":
-          [ { "lineno": 278,
+          [ { "lineno": 279,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Pauses playback.",
@@ -627,7 +629,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When playback has been toggled." },
         "locations":
-          [ { "lineno": 299,
+          [ { "lineno": 300,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Toggles playback.",
@@ -671,7 +673,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the volume has been unmuted." },
         "locations":
-          [ { "lineno": 335,
+          [ { "lineno": 336,
               "filename": "VideoPlayer.js" } ],
         "docs":
           { "summary": "Unmutes video volume.",

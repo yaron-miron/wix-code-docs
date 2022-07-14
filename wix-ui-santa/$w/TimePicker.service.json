@@ -7,8 +7,10 @@
       "$w.HiddenCollapsedMixin",
       "$w.RequiredMixin",
       "$w.ReadOnlyMixin",
-      "$w.FormElement" ],
-  "labels": [],
+      "$w.FormElement",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "TimePicker.js" },
@@ -31,9 +33,9 @@
             "typeParams":
               [ "$w.TimePicker.TimeSlot" ] },
         "locations":
-          [ { "lineno": 192,
+          [ { "lineno": 193,
               "filename": "TimePicker.js" },
-            { "lineno": 225,
+            { "lineno": 226,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the time slots that are available for a time picker.",
@@ -81,9 +83,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 65,
+          [ { "lineno": 66,
               "filename": "TimePicker.js" },
-            { "lineno": 111,
+            { "lineno": 112,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets the number of minutes the time picker steps.",
@@ -142,9 +144,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 118,
+          [ { "lineno": 119,
               "filename": "TimePicker.js" },
-            { "lineno": 141,
+            { "lineno": 142,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets whether the time picker uses 12-hour or 24-hour format.",
@@ -181,9 +183,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 22,
+          [ { "lineno": 23,
               "filename": "TimePicker.js" },
-            { "lineno": 58,
+            { "lineno": 59,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "Sets or gets a time picker's value.",
@@ -232,7 +234,7 @@
   "messages":
     [ { "name": "TimeSlot",
         "locations":
-          [ { "lineno": 147,
+          [ { "lineno": 148,
               "filename": "TimePicker.js" } ],
         "docs":
           { "summary": "An object representing an available time slot for a time picker.",

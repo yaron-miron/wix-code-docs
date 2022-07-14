@@ -3,8 +3,10 @@
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin",
-      "$w.StyleMixin" ],
-  "labels": [],
+      "$w.StyleMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "ProgressBar.js" },
@@ -32,7 +34,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 28,
               "filename": "ProgressBar.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the progress bar's styles.",
@@ -73,9 +75,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 89,
+          [ { "lineno": 90,
               "filename": "ProgressBar.js" },
-            { "lineno": 113,
+            { "lineno": 114,
               "filename": "ProgressBar.js" } ],
         "docs":
           { "summary": "Sets or gets a progress bar's target value.",
@@ -115,9 +117,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 55,
+          [ { "lineno": 56,
               "filename": "ProgressBar.js" },
-            { "lineno": 82,
+            { "lineno": 83,
               "filename": "ProgressBar.js" } ],
         "docs":
           { "summary": "Sets or gets a progress bar's value.",

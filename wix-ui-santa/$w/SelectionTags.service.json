@@ -7,8 +7,10 @@
       "$w.ClickableMixin",
       "$w.StyleMixin",
       "$w.RequiredMixin",
-      "$w.ValidatableMixin" ],
-  "labels": [],
+      "$w.ValidatableMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "SelectionTagsList.js" },
@@ -35,9 +37,9 @@
               [ "$w.SelectionTags.Option" ] },
         "defaultValue": "An empty array",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 37,
               "filename": "SelectionTagsList.js" },
-            { "lineno": 67,
+            { "lineno": 68,
               "filename": "SelectionTagsList.js" } ],
         "docs":
           { "summary": "Sets or gets a list of items which will be rendered as tags.",
@@ -99,9 +101,9 @@
             "typeParams":
               [ "number" ] },
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 75,
               "filename": "SelectionTagsList.js" },
-            { "lineno": 94,
+            { "lineno": 95,
               "filename": "SelectionTagsList.js" } ],
         "docs":
           { "summary": "Sets or gets the indices of the selected options.",
@@ -133,7 +135,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 136,
+          [ { "lineno": 137,
               "filename": "SelectionTagsList.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the selection tags' styles.",
@@ -175,9 +177,9 @@
             "typeParams":
               [ "string" ] },
         "locations":
-          [ { "lineno": 101,
+          [ { "lineno": 102,
               "filename": "SelectionTagsList.js" },
-            { "lineno": 129,
+            { "lineno": 130,
               "filename": "SelectionTagsList.js" } ],
         "docs":
           { "summary": "Sets or gets the values of the selected options.",
@@ -259,7 +261,7 @@
   "messages":
     [ { "name": "Option",
         "locations":
-          [ { "lineno": 24,
+          [ { "lineno": 25,
               "filename": "SelectionTagsList.js" } ],
         "docs":
           { "summary": "An object used by the [`options`](#options) property that contains the attributes of the selection tag item.",

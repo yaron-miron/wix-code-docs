@@ -8,8 +8,10 @@
       "$w.ReadOnlyMixin",
       "$w.HiddenCollapsedMixin",
       "$w.FocusMixin",
-      "$w.ClickableMixin" ],
-  "labels": [],
+      "$w.ClickableMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 50,
       "filename": "AddressInput.js" },
@@ -26,9 +28,9 @@
         "set": true,
         "type": "$w.AddressInput.AddressFilter",
         "locations":
-          [ { "lineno": 151,
+          [ { "lineno": 152,
               "filename": "AddressInput.js" },
-            { "lineno": 170,
+            { "lineno": 171,
               "filename": "AddressInput.js" } ],
         "docs":
           { "summary": "Sets or gets the filter of the address input.",
@@ -68,9 +70,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 125,
+          [ { "lineno": 126,
               "filename": "AddressInput.js" },
-            { "lineno": 144,
+            { "lineno": 145,
               "filename": "AddressInput.js" } ],
         "docs":
           { "summary": "Sets or gets the placeholder of the address input.",
@@ -100,9 +102,9 @@
         "set": true,
         "type": "$w.AddressInput.Address",
         "locations":
-          [ { "lineno": 70,
+          [ { "lineno": 71,
               "filename": "AddressInput.js" },
-            { "lineno": 118,
+            { "lineno": 119,
               "filename": "AddressInput.js" } ],
         "docs":
           { "summary": "Sets or gets the value of the address input.",

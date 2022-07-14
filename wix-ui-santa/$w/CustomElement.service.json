@@ -2,8 +2,10 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.Element",
-      "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+      "$w.HiddenCollapsedMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "CustomElement.js" },
@@ -57,9 +59,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 113,
+          [ { "lineno": 114,
               "filename": "CustomElement.js" },
-            { "lineno": 130,
+            { "lineno": 131,
               "filename": "CustomElement.js" } ],
         "docs":
           { "summary": "Sets or gets the SEO markup to be rendered for search engine bots.",
@@ -123,7 +125,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 79,
+          [ { "lineno": 80,
               "filename": "CustomElement.js" } ],
         "docs":
           { "summary": "Registers a callback function in Velo for an event triggered from the custom element.",
@@ -376,7 +378,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 52,
+          [ { "lineno": 53,
               "filename": "CustomElement.js" } ],
         "docs":
           { "summary": "Sets an HTML attribute on the custom element's DOM node.",

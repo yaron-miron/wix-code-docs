@@ -7,8 +7,10 @@
       "$w.DisabledMixin",
       "$w.FocusMixin",
       "$w.StyleMixin",
-      "$w.RequiredMixin" ],
-  "labels": [],
+      "$w.RequiredMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "SignatureInput.js" },
@@ -56,7 +58,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 52,
               "filename": "SignatureInput.js" } ],
         "docs":
           { "summary": "Gets an object containing information about the signature input element's styles.",
@@ -95,7 +97,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 77,
+          [ { "lineno": 78,
               "filename": "SignatureInput.js" } ],
         "docs":
           { "summary": "Gets the value of a signature input.",
@@ -174,7 +176,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 129,
+          [ { "lineno": 130,
               "filename": "SignatureInput.js" } ],
         "docs":
           { "summary": "Clears the signature.",
@@ -215,7 +217,7 @@
           { "type": "$w.SignatureInput",
             "doc": "The signature input element on which the event is now registered." },
         "locations":
-          [ { "lineno": 105,
+          [ { "lineno": 106,
               "filename": "SignatureInput.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when a signature input element's value\n is changed by a site visitor.",

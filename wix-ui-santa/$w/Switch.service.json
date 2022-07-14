@@ -7,8 +7,10 @@
       "$w.FocusMixin",
       "$w.ClickableMixin",
       "$w.ValueMixin",
-      "$w.CheckedMixin" ],
-  "labels": [],
+      "$w.CheckedMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Switch.js" },
@@ -25,9 +27,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 20,
               "filename": "Switch.js" },
-            { "lineno": 39,
+            { "lineno": 40,
               "filename": "Switch.js" } ],
         "docs":
           { "summary": "Sets or gets whether a switch is on or off.",
@@ -58,7 +60,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 43,
+          [ { "lineno": 44,
               "filename": "Switch.js" } ],
         "docs":
           { "summary": "**Note: This standard element property is not relevant for Switch. Use [`checked`](#checked) instead.**",
