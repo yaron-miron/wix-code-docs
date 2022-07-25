@@ -6,8 +6,7 @@
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
       "$w.ViewportMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "Pagination.js" },
@@ -34,8 +33,7 @@
         {  } },
   "properties":
     [ { "name": "currentPage",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -77,8 +75,7 @@
         "extra":
           {  } },
       { "name": "navigationType",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -229,8 +226,7 @@
         "extra":
           {  } },
       { "name": "totalPages",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -279,8 +275,7 @@
           {  } } ],
   "operations":
     [ { "name": "onChange",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -319,8 +314,7 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -352,8 +346,7 @@
         "extra":
           { "eventType": "nextClicked" } },
       { "name": "onPreviousClicked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
