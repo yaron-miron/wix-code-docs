@@ -6,7 +6,8 @@
       "$w.HiddenCollapsedMixin",
       "$w.ClickableMixin",
       "$w.ViewportMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Pagination.js" },
@@ -75,7 +76,8 @@
         "extra":
           {  } },
       { "name": "navigationType",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -98,7 +100,7 @@
                 "",
                 "    ![](../assets/images/pagination-arrowsOnly.png)",
                 ">**Note:**  ",
-                ">When `navigationType` is set to `arrowsOnly`, the pagination bar's `currentPage` and `totalPages` properties return `undefined`." ],
+                ">When `navigationType` is set to `arrowsOnly`, the [`currentPage`](#currentPage) and [`totalPages`](#totalPages) properties return `undefined`." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
             "examples":
@@ -314,7 +316,8 @@
         "extra":
           { "eventType": "Change" } },
       { "name": "onNextClicked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -329,7 +332,7 @@
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's next page button is clicked.",
             "description":
-              [ "The `onNextClicked()` event runs before the pagination bar's [`onChange()`](#onChange) event and before its [`currentPage`](#currentPage) property is updated." ],
+              [ "The `onNextClicked()` event gets triggered before the pagination bar's [`onChange()`](#onChange) event and before its [`currentPage`](#currentPage) property is updated." ],
             "links":
               [ "[onPreviousClicked()](#onPreviousClicked)" ],
             "examples":
