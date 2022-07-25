@@ -34,14 +34,15 @@
         {  } },
   "properties":
     [ { "name": "currentPage",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
         "locations":
           [ { "lineno": 60,
               "filename": "Pagination.js" },
-            { "lineno": 87,
+            { "lineno": 89,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the current page.",
@@ -55,7 +56,9 @@
                 " elements connected to that dataset.",
                 "",
                 " Getting the `currentPage` property returns the index of the current page.",
-                " > **Note:** Page numbers begin with 1." ],
+                " > **Note:**  ",
+                " > * Page numbers begin with 1.",
+                " > * When [`navigationType`](#navigationType) is set to `arrowsOnly`, the `currentPage` property returns `undefined`." ],
             "links":
               [ "[totalPages](#totalPages)" ],
             "examples":
@@ -75,14 +78,14 @@
           {  } },
       { "name": "navigationType",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 219,
+          [ { "lineno": 224,
               "filename": "Pagination.js" },
-            { "lineno": 245,
+            { "lineno": 249,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the navigation layout displayed in the pagination bar.",
@@ -97,8 +100,7 @@
                 " + `arrowsOnly`: Hides the page numbers so that only the next and previous buttons are displayed.",
                 "",
                 "    ![](../assets/images/pagination-arrowsOnly.png)",
-                ">**Note:**",
-                ">",
+                ">**Note:**  ",
                 ">When `navigationType` is set to `arrowsOnly`, the pagination bar's `currentPage` and `totalPages` properties return `undefined`." ],
             "links":
               [ "[nextEnabled](#nextEnabled)" ],
@@ -118,15 +120,14 @@
         "extra":
           {  } },
       { "name": "nextEnabled",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 163,
+          [ { "lineno": 168,
               "filename": "Pagination.js" },
-            { "lineno": 188,
+            { "lineno": 193,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's next page button is enabled.",
@@ -192,15 +193,14 @@
         "extra":
           {  } },
       { "name": "previousEnabled",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 194,
+          [ { "lineno": 199,
               "filename": "Pagination.js" },
-            { "lineno": 213,
+            { "lineno": 218,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets whether the pagination bar's previous page button is enabled.",
@@ -229,14 +229,15 @@
         "extra":
           {  } },
       { "name": "totalPages",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 96,
               "filename": "Pagination.js" },
-            { "lineno": 126,
+            { "lineno": 131,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Sets or gets the total number of pages shown in a pagination bar.",
@@ -255,7 +256,10 @@
                 " Getting the `totalPages` property returns the total number of pages available",
                 " for selection in the pagination bar. If the pagination bar is",
                 " connected to a dataset, the initial `totalPages` value is calculated based",
-                " on the total number of items in the dataset and the dataset's page size." ],
+                " on the total number of items in the dataset and the dataset's page size.",
+                "",
+                ">**Note:**  ",
+                ">When [`navigationType`](#navigationType) is set to `arrowsOnly`, the `totalPages` property returns `undefined`." ],
             "links":
               [ "[currentPage](#currentPage)" ],
             "examples":
@@ -275,7 +279,8 @@
           {  } } ],
   "operations":
     [ { "name": "onChange",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -298,7 +303,7 @@
                 "",
                 " When a pagination bar is connected to a dataset, changing the [dataset's",
                 " current page](wix-dataset/introduction#wix-dataset_introduction_dataset-pages) using dataset functions, such",
-                " as [`nextPage()`](wix-dataset.Dataset.html#nextPage), do not trigger `change`",
+                " as [`nextPage()`](wix-dataset.Dataset.html#nextPage), doesn't trigger `change`",
                 " events on the pagination bar." ],
             "links": [],
             "examples":
@@ -315,7 +320,7 @@
           { "eventType": "Change" } },
       { "name": "onNextClicked",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -325,20 +330,20 @@
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
         "locations":
-          [ { "lineno": 133,
+          [ { "lineno": 138,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's next page button is clicked.",
             "description":
-              [ "The `onNextClicked()` event runs before the pagination bar's [`onChange()`](#onChange) event." ],
+              [ "The `onNextClicked()` event runs before the pagination bar's [`onChange()`](#onChange) event and before its [`currentPage`](#currentPage) property is updated." ],
             "links":
               [ "[onPreviousClicked()](#onPreviousClicked)" ],
             "examples":
               [ { "title": "Set a pagination bar's onNextClicked event handler",
                   "body":
                     [ "$w('#myPaginationBar').onNextClicked((event) => {",
-                      "    //...",
-                      "    let newValue = event.target.currentPage; // 4",
+                      "  //...",
+                      "  let newValue = event.target.totalPages; // 4",
                       "});" ],
                   "extra":
                     {  } } ],
@@ -348,7 +353,7 @@
           { "eventType": "nextClicked" } },
       { "name": "onPreviousClicked",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -358,20 +363,20 @@
           { "type": "$w.Pagination",
             "doc": "The pagination bar on which the event is now registered." },
         "locations":
-          [ { "lineno": 148,
+          [ { "lineno": 153,
               "filename": "Pagination.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the pagination bar's previous page button is clicked.",
             "description":
-              [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()`](#onChange) event." ],
+              [ "The `onPreviousClicked()` event gets triggered before the pagination bar's [`onChange()`](#onChange) event and before its [`currentPage`](#currentPage) property is updated." ],
             "links":
               [ "[onNextClicked()](#onNextClicked)" ],
             "examples":
               [ { "title": "Set a pagination bar's onPreviousClicked event handler",
                   "body":
-                    [ "$w('#myPaginationBar').onPreviousClicked(() => {",
-                      "    //...",
-                      "    console.log('Previous button clicked');",
+                    [ "$w('#myPaginationBar').onPreviousClicked((event) => {",
+                      "  //...",
+                      "  let newValue = event.target.totalPages; // 4",
                       "});" ],
                   "extra":
                     {  } } ],
