@@ -1,7 +1,8 @@
 { "name": "Style",
   "memberOf": "$w",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "StyleMixin.js" },
@@ -309,7 +310,47 @@
               {  } },
         "extra":
           {  } } ],
-  "operations": [],
+  "operations":
+    [ { "name": "removeProperty",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "property",
+              "type": "string",
+              "doc": "The name of the style property to remove.\n\nOne of:\n + [`'backgroundColor'`](https://www.wix.com/velo/reference/$w/style/backgroundcolor)\n + [`'borderColor'`](https://www.wix.com/velo/reference/$w/style/bordercolor)\n + [`'borderRadius'`](https://www.wix.com/velo/reference/$w/style/borderradius)\n + [`'borderWidth'`](https://www.wix.com/velo/reference/$w/style/borderwidth)\n + [`'color'`](https://www.wix.com/velo/reference/$w/style/color)\n + [`'foregroundColor'`](https://www.wix.com/velo/reference/$w/style/foregroundcolor)" } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 87,
+              "filename": "StyleMixin.js" } ],
+        "docs":
+          { "summary": "Removes the value of an element's [style](https://www.wix.com/velo/reference/$w/style) property that \nwas set using code.",
+            "description":
+              [ "The removed style property's value defaults to the one set in the Editor." ],
+            "links": [],
+            "examples":
+              [ { "title": "Remove a style property from an element",
+                  "body":
+                    [ "$w('#myButton').style.removeProperty('backgroundColor');" ],
+                  "extra":
+                    {  } },
+                { "title": "Remove a style property from a button on mouse out",
+                  "body":
+                    [ "$w.onReady(() => {",
+                      "    ",
+                      "    //...",
+                      "",
+                      "\t$w('#myButton').onMouseOut(() => {",
+                      "\t\t$w('#myButton').style.removeProperty('backgroundColor');",
+                      "\t});",
+                      " });" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
   "callbacks": [],
   "messages": [],
   "extra":

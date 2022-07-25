@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.Node",
       "$w.ViewportMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Element.js" },
@@ -84,7 +85,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 59,
+          [ { "lineno": 58,
               "filename": "Element.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the mouse pointer is moved\n onto the element.\n\n You can also [define an event handler using the Properties and Events panel](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events).",
@@ -119,7 +120,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 77,
+          [ { "lineno": 76,
               "filename": "Element.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the mouse pointer is moved\n off of the element.\n\n You can also [define an event handler using the Properties and Events panel](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events).",
@@ -142,7 +143,65 @@
             "extra":
               {  } },
         "extra":
-          { "eventType": "mouseleave" } } ],
+          { "eventType": "mouseleave" } },
+      { "name": "removeEventHandler",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "eventType",
+              "type": "string",
+              "doc": "The type of event handler to remove.\n\nThe same as the name of the function used to add the event handler without\nthe initial `on`. For example, the `eventType` value for a handler added with \n[`onMouseIn()`](https://www.wix.com/velo/reference/$w/element/onmousein) is `'mouseIn'`.\n\nCase insensitive." },
+            { "name": "eventHandler",
+              "type": "Function",
+              "doc": "The event handler function to remove." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 93,
+              "filename": "Element.js" } ],
+        "docs":
+          { "summary": "Removes an event handler from an element.",
+            "description":
+              [ "You can use `removeEventHandler` to remove both dynamic event handlers added using code and static ones added through",
+                "the [**Properties & Events**](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events#adding-an-event-handler-to-an-element) panel.",
+                "",
+                ">**Note:**  ",
+                "> * You can only use `removeEventHandler` to remove an event handler set using a [named function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions#the_function_expression_function_expression). Event handlers set using [anonymous functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions#the_function_expression_function_expression) can't be removed.",
+                "> * If you add multiple event handlers to an element using the same function, `removeEventHandler` removes them all." ],
+            "links": [],
+            "examples":
+              [ { "title": "Remove a dynamic event handler from an element",
+                  "body":
+                    [ "// Example of a dynamic event handler",
+                      "function myFunction(){",
+                      "  //...",
+                      "  console.log('The mouse pointer is on myElement');",
+                      "}",
+                      "$w('#mElement').onMouseIn(myFunction);",
+                      "//...",
+                      "",
+                      "// Remove the event handler",
+                      "$w('#myElement').removeEventHandler('mouseIn',myFunction);" ],
+                  "extra":
+                    {  } },
+                { "title": "Remove a static event handler from an element",
+                  "body":
+                    [ "// Example of a static event handler function",
+                      "export function myElement_mouseIn(event) {",
+                      "\t//...",
+                      "    console.log('The mouse pointer is on myElement');",
+                      "}",
+                      "//...",
+                      "",
+                      "// Remove the event handler",
+                      "$w('#myElement').removeEventHandler('mouseIn',myElement_mouseIn);" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
   "callbacks": [],
   "messages": [],
   "extra":
