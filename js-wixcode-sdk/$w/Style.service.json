@@ -313,7 +313,7 @@
   "operations":
     [ { "name": "removeProperty",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "property",
@@ -337,13 +337,11 @@
                     {  } },
                 { "title": "Remove a style property from a button on mouse out",
                   "body":
-                    [ "$w.onReady(() => {",
-                      "    ",
-                      "    //...",
-                      "",
-                      "\t$w('#myButton').onMouseOut(() => {",
-                      "\t\t$w('#myButton').style.removeProperty('backgroundColor');",
-                      "\t});",
+                    [ "$w.onReady(() => { ",
+                      "  //...",
+                      "  $w('#myButton').onMouseOut(() => {",
+                      "    $w('#myButton').style.removeProperty('backgroundColor');",
+                      "  });",
                       " });" ],
                   "extra":
                     {  } } ],

@@ -146,7 +146,7 @@
           { "eventType": "mouseleave" } },
       { "name": "removeEventHandler",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "eventType",
@@ -178,8 +178,8 @@
                       "  //...",
                       "  console.log('The mouse pointer is on myElement');",
                       "}",
-                      "$w('#mElement').onMouseIn(myFunction);",
-                      "//...",
+                      "",
+                      "$w('#myElement').onMouseIn(myFunction);",
                       "",
                       "// Remove the event handler",
                       "$w('#myElement').removeEventHandler('mouseIn',myFunction);" ],
@@ -189,10 +189,9 @@
                   "body":
                     [ "// Example of a static event handler function",
                       "export function myElement_mouseIn(event) {",
-                      "\t//...",
-                      "    console.log('The mouse pointer is on myElement');",
+                      "  //...",
+                      "  console.log('The mouse pointer is on myElement');",
                       "}",
-                      "//...",
                       "",
                       "// Remove the event handler",
                       "$w('#myElement').removeEventHandler('mouseIn',myElement_mouseIn);" ],
