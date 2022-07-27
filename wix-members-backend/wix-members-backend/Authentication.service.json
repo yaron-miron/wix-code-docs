@@ -1,10 +1,9 @@
 { "name": "Authentication",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
-    { "lineno": 70,
+    { "lineno": 71,
       "filename": "index.js" },
   "docs":
     { "summary": "The Authentication API contains functionality for authenticating users from backend code.",
@@ -90,8 +89,7 @@
         "extra":
           {  } },
       { "name": "approveByToken",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "token",
@@ -813,8 +811,7 @@
         "extra":
           {  } },
       { "name": "register",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "email",
@@ -1115,17 +1112,18 @@
                 "",
                 "The set password link is valid for 3 hours,",
                 "and it can be used only once.",
-                "If the link expires, the original password remains." ],
+                "If the link expires, no changes are made to the password." ],
             "links": [],
             "examples":
               [ { "title": "Email a member with a link to set their password",
                   "body":
                     [ "import { authentication } from 'wix-members-backend';",
                       "",
-                      "// Sample options value:",
-                      "// {",
-                      "//   hideIgnoreMessage: false",
-                      "// }",
+                      "/* Sample options value:",
+                      "* {",
+                      "*   hideIgnoreMessage: false",
+                      "* }",
+                      "*/",
                       "",
                       "export function mySendSetPasswordEmailFunction(email, options) {",
                       "  return authentication.sendSetPasswordEmail(email, options)",
