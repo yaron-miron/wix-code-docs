@@ -1,0 +1,7 @@
+{
+  "name": "@wix/ambassador-metroinspector-v1-echo",
+  "fingerprint": "some-fingerprint",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "echo",
+  "module": "ambassador-metroinspector-v1-echo"
+}
