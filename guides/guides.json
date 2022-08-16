@@ -19,7 +19,7 @@
           "isMdFile": true
         },
         {
-          "name": "Users & Contacts",
+          "name": "Members & Contacts",
           "url": "./overview-users.md",
           "isMdFile": true
         },
@@ -129,6 +129,11 @@
           "isMdFile": true
         },
         {
+          "name": "SendGrid Templates",
+          "url": "../package-readmes/sendgrid-templates.md",
+          "isMdFile": true
+        },
+        {
           "name": "SEO Structured Data for Products",
           "url": "../package-readmes/seoStructuredDataProducts.md",
           "isMdFile": true
@@ -151,6 +156,11 @@
         {
           "name": "Wix Stores: Bundle Products",
           "url": "../package-readmes/storesBundle.md",
+          "isMdFile": true
+        },
+        {
+          "name": "Wix Stores: Data Requests",
+          "url": "../package-readmes/storesDataReq.md",
           "isMdFile": true
         },
         {
@@ -182,7 +192,12 @@
           "name": "Zapier Integration",
           "url": "../package-readmes/zapier.md",
           "isMdFile": true
-        },        
+        },
+        {
+          "name": "Zoho Integration",
+          "url": "../package-readmes/zoho.md",
+          "isMdFile": true
+        },  
         {
           "name": "Zoom Integration",
           "url": "../package-readmes/zoom.md",
