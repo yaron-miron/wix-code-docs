@@ -3,8 +3,10 @@
   "mixes":
     [ "$w.Element",
       "$w.ClickableMixin",
-      "$w.ContainableMixin" ],
-  "labels": [],
+      "$w.ContainableMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "Page.js" },
@@ -38,7 +40,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 32,
+          [ { "lineno": 33,
               "filename": "Page.js" } ],
         "docs":
           { "summary": "Gets the page's [SEO description](https://support.wix.com/en/article/adding-seo-page-titles-and-descriptions-meta-tags).",
@@ -69,7 +71,7 @@
             "typeParams":
               [ "string" ] },
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 52,
               "filename": "Page.js" } ],
         "docs":
           { "summary": "Gets the page's keywords.",
@@ -96,7 +98,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 69,
+          [ { "lineno": 70,
               "filename": "Page.js" } ],
         "docs":
           { "summary": "Gets the page's title.",
@@ -131,7 +133,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 95,
               "filename": "Page.js" } ],
         "docs":
           { "summary": "Indicates if the page is included in the site's menu.",

@@ -30,7 +30,7 @@
             "typeParams":
               [ "string" ] },
         "locations":
-          [ { "lineno": 176,
+          [ { "lineno": 177,
               "filename": "EffectsMixin.js" } ],
         "docs":
           { "summary": "Gets an element's currently applied effects.",
@@ -77,7 +77,7 @@
             "typeParams":
               [ "string" ] },
         "locations":
-          [ { "lineno": 156,
+          [ { "lineno": 157,
               "filename": "EffectsMixin.js" } ],
         "docs":
           { "summary": "Gets all of the effects defined for an element.",
@@ -117,8 +117,7 @@
           {  } } ],
   "operations":
     [ { "name": "applyEffects",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "effects",
@@ -180,7 +179,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 138,
+          [ { "lineno": 139,
               "filename": "EffectsMixin.js" } ],
         "docs":
           { "summary": "Removes all of an element's applied effects.",
@@ -282,7 +281,8 @@
           { "summary": "Toggles the state of one or more of an element's effects.",
             "description":
               [ "This function toggles the state of the effects specified in the function call.",
-                "This means, for example, that if an effect included in the call was previously applied, it's removed and is no longer visible on your site.",
+                "This means that if an effect included in the call was previously applied, it's removed and is no longer visible on your site. On the other hand, if",
+                "an effect included in the call wasn't previously applied, it gets applied when you call the function and becomes visible on your site.",
                 "",
                 "The Effects panel in Editor X has two sections, **Adjust** and **Design**, that allow you to adjust the appearance of an element or change its design characteristics.",
                 "You can't simultaneously apply 2 effects that both change properties in the same section. ",

@@ -3,8 +3,10 @@
   "mixes":
     [ "$w.Element",
       "$w.Background",
-      "$w.ContainableMixin" ],
-  "labels": [],
+      "$w.ContainableMixin",
+      "$w.EffectsMixin" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "State.js" },
@@ -21,7 +23,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 15,
               "filename": "State.js" } ],
         "docs":
           { "summary": "Gets the state's ID.",
