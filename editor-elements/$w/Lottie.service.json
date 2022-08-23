@@ -4,8 +4,7 @@
     [ "$w.Element",
       "$w.FocusMixin",
       "$w.HiddenCollapsedMixin",
-      "$w.ClickableMixin",
-      "$w.EffectsMixin" ],
+      "$w.ClickableMixin" ],
   "labels":
     [ "changed" ],
   "location":
@@ -42,9 +41,9 @@
         "type": "string",
         "defaultValue": "An empty string",
         "locations":
-          [ { "lineno": 77,
+          [ { "lineno": 76,
               "filename": "Lottie.js" },
-            { "lineno": 99,
+            { "lineno": 98,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Sets or gets a Lottie animation's alt text.",
@@ -80,9 +79,9 @@
         "type": "boolean",
         "defaultValue": "true",
         "locations":
-          [ { "lineno": 126,
+          [ { "lineno": 125,
               "filename": "Lottie.js" },
-            { "lineno": 138,
+            { "lineno": 137,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Sets or gets whether the Lottie animation plays in a loop.",
@@ -109,9 +108,9 @@
         "type": "number",
         "defaultValue": "1",
         "locations":
-          [ { "lineno": 106,
+          [ { "lineno": 105,
               "filename": "Lottie.js" },
-            { "lineno": 119,
+            { "lineno": 118,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Sets or gets the Lottie animation's playback speed.",
@@ -140,9 +139,9 @@
         "type": "string",
         "defaultValue": "Current URL in the UI",
         "locations":
-          [ { "lineno": 37,
+          [ { "lineno": 36,
               "filename": "Lottie.js" },
-            { "lineno": 70,
+            { "lineno": 69,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Sets or gets the source of the Lottie animation.",
@@ -254,7 +253,7 @@
           { "type": "void",
             "doc": "This function does not return anything." },
         "locations":
-          [ { "lineno": 157,
+          [ { "lineno": 156,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Pauses playback.",
@@ -279,7 +278,7 @@
           { "type": "void",
             "doc": "This function does not return anything." },
         "locations":
-          [ { "lineno": 144,
+          [ { "lineno": 143,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Begins or resumes playback.",
@@ -304,7 +303,7 @@
           { "type": "void",
             "doc": "This function does not return anything." },
         "locations":
-          [ { "lineno": 170,
+          [ { "lineno": 169,
               "filename": "Lottie.js" } ],
         "docs":
           { "summary": "Stops the playback.",

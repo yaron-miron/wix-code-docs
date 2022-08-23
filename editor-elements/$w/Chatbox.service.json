@@ -4,8 +4,7 @@
     [ "$w.Element",
       "$w.HiddenMixin",
       "$w.EffectsMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 121,
       "filename": "chatbox.js" },
