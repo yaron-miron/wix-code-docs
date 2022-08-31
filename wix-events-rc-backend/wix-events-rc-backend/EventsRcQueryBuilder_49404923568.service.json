@@ -1,0 +1,42 @@
+{ "name": "EventsRcQueryBuilder_49404923568",
+  "memberOf": "wix-events-rc-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 92,
+      "filename": "shared.js" },
+  "docs":
+    { "summary": "Contains functionality for refining a eventsRc query.",
+      "description":
+        [ "The `EventsRcQueryBuilder` functions enable you to run, sort, filter, and control",
+          "which results a query returns.",
+          "",
+          "Typically, you build a query using any of the eventsRc query functions,",
+          "refine the query by chaining `EventsRcQueryBuilder` functions, and then execute the",
+          "query by chaining the [`find()`](#find) function.",
+          "",
+          "For example, the following code queries...:",
+          "",
+          "```javascript",
+          "import wixEventsRcBackend from 'wix-eventsRc-backend';",
+          "",
+          "wixEventsRcBackend.queryEventsRc()",
+          ".eq(\"<property1>\", \"<value1>\")",
+          ".ascending(\"<property2>\")",
+          ".limit(5)",
+          ".find()",
+          ".then( (results) => {",
+          "console.log(results.items);",
+          "} );",
+          "```" ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
