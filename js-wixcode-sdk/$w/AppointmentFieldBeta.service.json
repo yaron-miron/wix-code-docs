@@ -1,4 +1,4 @@
-{ "name": "AppointmentField",
+{ "name": "AppointmentFieldBeta",
   "memberOf": "$w",
   "mixes":
     [ "$w.FormElement",
@@ -8,7 +8,7 @@
       "$w.ClickableMixin",
       "$w.RequiredMixin" ],
   "labels":
-    [ "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 1,
       "filename": "AppointmentField.js" },
@@ -16,10 +16,10 @@
     { "summary": "Use an `AppointmentField` to select dates, times, and timezones for scheduling appointments.",
       "description":
         [ "An appointment field contains a date picker, time picker, and a timezone dropdown.",
-          "Use an appointment field to schedule appointments by setting the [`dateTimeRanges`]($w/appointmentfield/dateTimeRanges)property for times when appointments are available, or just use it as a date and time picker.  Set days of the week that are not selectable for appointments by using [`disabledDaysOfWeek`]($w/appointmentfield/disabledDaysOfWeek) and set the earliest and latest dates that you can select using [`minDate`]($w/appointmentfield/minDate) and [`maxDate`]($w/appointmentfield/maxDate).",
+          "Use an appointment field to schedule appointments by setting the [`dateTimeRanges`]($w/AppointmentFieldBeta/dateTimeRanges)property for times when appointments are available, or just use it as a date and time picker.  Set days of the week that are not selectable for appointments by using [`disabledDaysOfWeek`]($w/AppointmentFieldBeta/disabledDaysOfWeek) and set the earliest and latest dates that you can select using [`minDate`]($w/AppointmentFieldBeta/minDate) and [`maxDate`]($w/AppointmentFieldBeta/maxDate).",
           "",
-          "Use the time zone dropdown to display the dates and times in the selected time zone. The default time zone that is used when setting the [`dateTimeRanges`]($w/appointmentfield/dateTimeRanges) property is the site's time zone, set in the [Language & Region](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fsettings/language-and-region/) settings page.",
-          "The time zone for the [`value`]($w/appointmentfield/value) property is according to the browser's locale and timezone.",
+          "Use the time zone dropdown to display the dates and times in the selected time zone. The default time zone that is used when setting the [`dateTimeRanges`]($w/AppointmentFieldBeta/dateTimeRanges) property is the site's time zone, set in the [Language & Region](https://www.wix.com/my-account/site-selector/?buttonText=Select%20Site&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fsettings/language-and-region/) settings page.",
+          "The time zone for the [`value`]($w/AppointmentFieldBeta/value) property is according to the browser's locale and timezone.",
           "",
           "![Appointment Field](images/appointmentField.png 'Appointment Field')" ],
       "links": [],
@@ -31,7 +31,7 @@
         "labels": [],
         "get": true,
         "set": true,
-        "type": "$w.AppointmentField.dateTimeRangeInfo",
+        "type": "$w.AppointmentFieldBeta.dateTimeRangeInfo",
         "locations":
           [ { "lineno": 290,
               "filename": "AppointmentField.js" },
@@ -601,7 +601,7 @@
               "type":
                 { "name": "Array",
                   "typeParams":
-                    [ "$w.AppointmentField.dateTimeRange" ] },
+                    [ "$w.AppointmentFieldBeta.dateTimeRange" ] },
               "doc": "Array of dateTimeRange objects." } ],
         "extra":
           {  },

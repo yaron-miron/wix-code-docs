@@ -1,6 +1,7 @@
 { "name": "$w",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "wixCode.js" },
@@ -711,11 +712,12 @@
         "extra":
           {  } },
       { "name": "ViewChangeOperation",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "options",
-              "type": "$w.AppointmentField.OperationOptions",
+              "type": "$w.AppointmentFieldBeta.OperationOptions",
               "doc": "An object containing information about the current year and month displayed in the date picker or appointment field." } ],
         "ret":
           { "type": "*" },
