@@ -93,9 +93,7 @@
           "|`description`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`startsWith()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#startsWith)|",
           "|`sku`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`startsWith()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#startsWith),[`ascending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#descending)|",
           "|`price`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`ascending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#descending)|",
-          "|`numericId`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`lt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#lt),[`le()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#le),[`gt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#gt),[`ge()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ge),[`ascending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#descending)|",
-          "|`lastUpdated`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`gt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#gt),[`lt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#lt),[`ascending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#descending)|",
-          "|`createdDate`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`gt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#gt),[`lt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#lt)|"
+          "|`numericId`|[`eq()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#eq),[`ne()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ne),[`exists()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#exists),[`in()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#in),[`hasSome()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#hasSome),[`lt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#lt),[`le()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#le),[`gt()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#gt),[`ge()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ge),[`ascending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-stores-backend.v2.Products.ProductsQueryBuilder#descending)|"
         ],
         "examples": [
           {
@@ -1032,17 +1030,6 @@
       "name": "Product",
       "members": [
         {
-          "name": "_createdDate",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Date and time the product was created."
-        },
-        {
           "name": "_id",
           "readOnly": true,
           "optional": true,
@@ -1170,17 +1157,6 @@
           "doc": "Inventory item ID - ID referencing the inventory system."
         },
         {
-          "name": "lastUpdated",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Date and time the product was last updated."
-        },
-        {
           "name": "manageVariants",
           "optional": true,
           "type": [
@@ -1299,7 +1275,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Custom SEO data for the product.\ncom.wixpress.advanced.seo.SeoSchema seo_data = 27;\nProduct ribbon. Used to highlight relevant information about a product. For example, \"Sale\", \"New Arrival\", \"Sold Out\"."
+          "doc": "Date and time the product was last updated.\ngoogle.protobuf.Timestamp last_updated = 24 [(wix.api.readOnly) = true];\nDate and time the product was created.\ngoogle.protobuf.Timestamp created_date = 34 [(wix.api.readOnly) = true];\nCustom SEO data for the product.\ncom.wixpress.advanced.seo.SeoSchema seo_data = 27;\nProduct ribbon. Used to highlight relevant information about a product. For example, \"Sale\", \"New Arrival\", \"Sold Out\"."
         },
         {
           "name": "ribbons",
