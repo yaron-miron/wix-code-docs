@@ -726,6 +726,88 @@
       "isVeloEvent": false
     },
     {
+      "name": "skip",
+      "params": [
+        {
+          "name": "skip",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Number of items to skip in the query results before returning the results.",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-stores-backend-v2.Collections.CollectionsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Sets the number of items to skip before returning query results.",
+        "description": [
+          "The `skip()` function defines the number of results to skip before returning new query results.",
+          "For example, if you query a collection and 50 items match your query, but you set `skip()` to `10`, the first 10 items that match are ignored, and the 11th through 50th items are returned."
+        ],
+        "examples": [
+          {
+            "title": "Add a `skip` to a query",
+            "body": [
+              "import { collections } from 'wix-stores-backend.v2';",
+              "export async function myQueryFunction() {",
+              "  const results = await collections.queryCollections().skip(10).find();",
+              "",
+              "  if (results.items.length > 0) {",
+              "    const items = results.items;",
+              "    const firstItem = items[0];",
+              "    const pageSize = results.pageSize;",
+              "    const hasNext = results.hasNext();",
+              "    const hasPrev = results.hasPrev();",
+              "    const length = results.length;",
+              "    const query = results.query;",
+              "",
+              "    return items;",
+              "  } else {",
+              "    // Handle if no matching items found",
+              "  }",
+              "}",
+              ""
+            ]
+          },
+          {
+            "title": "Create a query, add a `skip`, and run it",
+            "body": [
+              "import { collections } from 'wix-stores-backend.v2';",
+              "export async function myQueryFunction() {",
+              "  const results = await collections.queryCollections().skip(10).find();",
+              "",
+              "  if (results.items.length > 0) {",
+              "    const items = results.items;",
+              "    const firstItem = items[0];",
+              "    const pageSize = results.pageSize;",
+              "    const hasNext = results.hasNext();",
+              "    const hasPrev = results.hasPrev();",
+              "    const length = results.length;",
+              "    const query = results.query;",
+              "",
+              "    return items;",
+              "  } else {",
+              "    // Handle if no matching items found",
+              "  }",
+              "}",
+              ""
+            ]
+          }
+        ]
+      },
+      "isVeloEvent": false
+    },
+    {
       "name": "startsWith",
       "params": [
         {
