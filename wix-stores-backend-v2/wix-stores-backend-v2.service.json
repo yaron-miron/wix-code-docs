@@ -7,7 +7,38 @@
   "clientId": "wix-stores-backend.v2",
   "docs": {},
   "relatedGuides": [],
-  "properties": [],
+  "properties": [
+    {
+      "name": "collections",
+      "type": [
+        {
+          "referenceType": "wix-stores-backend-v2.Collections"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      },
+      "hidden": true
+    },
+    {
+      "name": "products",
+      "type": [
+        {
+          "referenceType": "wix-stores-backend-v2.Products"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      },
+      "hidden": true
+    }
+  ],
   "operations": [],
   "messages": []
 }
