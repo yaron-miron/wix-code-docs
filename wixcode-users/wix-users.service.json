@@ -1,6 +1,7 @@
 { "name": "wix-users",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "users.js" },
@@ -139,7 +140,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the token has been applied." },
         "locations":
-          [ { "lineno": 904,
+          [ { "lineno": 925,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-members.authentication.applySessionToken()](https://www.wix.com/velo/reference/wix-members/authentication/applysessiontoken).",
@@ -514,7 +515,7 @@
         "ret":
           { "type": "wix-users.PolicyDetails" },
         "locations":
-          [ { "lineno": 985,
+          [ { "lineno": 1006,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-window.consentPolicy.getCurrentConsentPolicy()](https://www.wix.com/velo/reference/wix-window/consentPolicy-obj/getcurrentconsentpolicy).",
@@ -610,7 +611,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the user has been logged in.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 853,
+          [ { "lineno": 874,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-members.authentication.login()](https://www.wix.com/velo/reference/wix-members/authentication/login).",
@@ -761,7 +762,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 1180,
+          [ { "lineno": 1201,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-window.consentPolicy.onConsentPolicyChanged()](https://www.wix.com/velo/reference/wix-window/consentPolicy-obj/onconsentpolicychanged).",
@@ -1128,7 +1129,7 @@
                   [ "wix-users.RegistrationResult" ] },
             "doc": "Fulfilled - When the user has been registered.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 771,
+          [ { "lineno": 792,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-members.authentication.register()](https://www.wix.com/velo/reference/wix-members/authentication/register).",
@@ -1270,7 +1271,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the reset is complete.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 1042,
+          [ { "lineno": 1063,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-window.consentPolicy.resetConsentPolicy()](https://www.wix.com/velo/reference/wix-window/consentPolicy-obj/resetconsentpolicy).",
@@ -1355,7 +1356,7 @@
                   [ "wix-users.PolicyDetails" ] },
             "doc": "Fulfilled - All the details of the visitor's consent policy, including if the the current policy is the default site policy and the policy's allowed cookies.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 1100,
+          [ { "lineno": 1121,
               "filename": "users.js" } ],
         "docs":
           { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-window.consentPolicy.setConsentPolicy()](https://www.wix.com/velo/reference/wix-window/consentPolicy-obj/setconsentpolicy).",
@@ -1462,7 +1463,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 1165,
+          [ { "lineno": 1186,
               "filename": "users.js" } ],
         "docs":
           { "summary": "Function that runs when a visitor's consent policy was changed using [`setConsentPolicy()`](#setConsentPolicy).",
@@ -1495,7 +1496,7 @@
   "messages":
     [ { "name": "ConsentPolicyChangedEvent",
         "locations":
-          [ { "lineno": 1172,
+          [ { "lineno": 1193,
               "filename": "users.js" } ],
         "docs":
           { "summary": "The event that occurred when the consent policy changed.",
@@ -1534,6 +1535,58 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ContactInfo",
+        "locations":
+          [ { "lineno": 758,
+              "filename": "users.js" } ],
+        "docs":
+          { "summary": "An object that contains information about a site contact.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "firstName",
+              "type": "string",
+              "doc": "Contact's first name.",
+              "optional": true },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Contact's last name.",
+              "optional": true },
+            { "name": "picture",
+              "type": "string",
+              "doc": "Contact's image source.",
+              "optional": true },
+            { "name": "emails",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of contact's email addresses.\n When creating a contact, if no phone number is\n provided, at least one email address must be provided.",
+              "optional": true },
+            { "name": "loginEmail",
+              "type": "string",
+              "doc": "Email address the contact who is also\n a member uses to log into the system.",
+              "optional": true },
+            { "name": "phones",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of contact's phone numbers. \n When creating a contact, if no email is\n provided, at least one phone number must be provided.",
+              "optional": true },
+            { "name": "labels",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of contact's labels. [Labels](https://support.wix.com/en/article/creating-contact-labels)\n are used to organize contacts. When setting the `labels` property, you can\n only list labels that already exist in your site's [Contacts List](https://support.wix.com/en/article/accessing-your-contact-list).",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "LoginOptions",
         "locations":
           [ { "lineno": 418,
@@ -1587,7 +1640,7 @@
         "labels": [] },
       { "name": "Policy",
         "locations":
-          [ { "lineno": 1250,
+          [ { "lineno": 1271,
               "filename": "users.js" } ],
         "docs":
           { "summary": "The current visitor's  consent policy settings.",
@@ -1643,7 +1696,7 @@
         "labels": [] },
       { "name": "PolicyDetails",
         "locations":
-          [ { "lineno": 1238,
+          [ { "lineno": 1259,
               "filename": "users.js" } ],
         "docs":
           { "summary": "The complete details of the current user's consent policy.",
@@ -1681,7 +1734,7 @@
               {  } },
         "members":
           [ { "name": "contactInfo",
-              "type": "wix-crm.ContactInfo",
+              "type": "wix-users.ContactInfo",
               "doc": "Contact information.",
               "optional": true },
             { "name": "privacyStatus",
@@ -1690,10 +1743,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "RegistrationResult",
         "locations":
-          [ { "lineno": 758,
+          [ { "lineno": 779,
               "filename": "users.js" } ],
         "docs":
           { "summary": "An object that contains information about the results of a site registration.",
@@ -1735,8 +1789,7 @@
           {  },
         "labels": [] } ],
   "extra":
-    { "scopes":
-        [ "frontend" ] },
+    {  },
   "menuSections": "APIs",
   "relatedContent":
     [ { "icon": "article",
