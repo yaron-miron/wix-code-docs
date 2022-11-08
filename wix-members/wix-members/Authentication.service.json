@@ -778,7 +778,7 @@
                   [ "wix-members.Authentication.RegistrationResult" ] },
             "doc": "Fulfilled - When the member is registered.\nRejected - Error message." },
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 55,
               "filename": "register.js" } ],
         "docs":
           { "summary": "Registers a new site member.",
@@ -1011,10 +1011,6 @@
                   "typeParams":
                     [ "string" ] },
               "doc": "List of contact's labels. [Labels](https://support.wix.com/en/article/creating-contact-labels)\n are used to organize contacts. When setting the `labels` property, you can\n only list labels that already exist in your site's [Contact List](https://support.wix.com/en/article/accessing-your-contact-list).",
-              "optional": true },
-            { "name": "language",
-              "type": "string",
-              "doc": "Contact's language.",
               "optional": true } ],
         "extra":
           {  },
@@ -1105,7 +1101,7 @@
         "labels": [] },
       { "name": "RegistrationResult",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 35,
               "filename": "register.js" } ],
         "docs":
           { "links": [],
