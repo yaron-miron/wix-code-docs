@@ -53,6 +53,7 @@
             "title": "Add an `ascending` sort to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().ascending('_id').find();",
               "",
@@ -77,6 +78,7 @@
             "title": "Create a query, add an `ascending` sort, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().ascending('_id').find();",
               "",
@@ -145,6 +147,7 @@
             "title": "Add a `descending` sort to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().descending('_id').find();",
               "",
@@ -169,6 +172,7 @@
             "title": "Create a query, add a `descending` sort, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().descending('_id').find();",
               "",
@@ -238,6 +242,7 @@
             "title": "Add an `eq` filter to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().eq('_id', '').find();",
               "",
@@ -262,6 +267,7 @@
             "title": "Create a query, add an `eq` filter, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().eq('_id', '').find();",
               "",
@@ -356,6 +362,7 @@
             "title": "Run a query with no filters",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().find();",
               "",
@@ -380,6 +387,7 @@
             "title": "Perform a `find` on a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().find();",
               "",
@@ -456,6 +464,7 @@
             "title": "Add a `hasSome` filter to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections",
               "    .queryCollections()",
@@ -483,6 +492,7 @@
             "title": "Create a query, add a `hasSome` filter, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections",
               "    .queryCollections()",
@@ -584,6 +594,7 @@
             "title": "Add a `limit` to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().limit(10).find();",
               "",
@@ -608,6 +619,7 @@
             "title": "Create a query, add a `limit`, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().limit(10).find();",
               "",
@@ -677,6 +689,7 @@
             "title": "Add an `ne` filter to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().ne('_id', '').find();",
               "",
@@ -701,6 +714,7 @@
             "title": "Create a query, add an `ne` filter, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().ne('_id', '').find();",
               "",
@@ -759,6 +773,7 @@
             "title": "Add a `skip` to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().skip(10).find();",
               "",
@@ -783,6 +798,7 @@
             "title": "Create a query, add a `skip`, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections().skip(10).find();",
               "",
@@ -852,6 +868,7 @@
             "title": "Add a `startsWith` filter to a query",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections();",
               "  startsWith('_id', 'L').find();",
@@ -877,6 +894,7 @@
             "title": "Create a query, add a `startsWith` filter, and run it",
             "body": [
               "import { collections } from 'wix-stores-backend.v2';",
+              "",
               "export async function myQueryFunction() {",
               "  const results = await collections.queryCollections();",
               "  startsWith('_id', 'L').find();",
