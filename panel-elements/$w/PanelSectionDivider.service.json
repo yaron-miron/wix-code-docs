@@ -10,7 +10,8 @@
   "docs":
     { "summary": "Displays a section heading in the panel.",
       "description":
-        [ "A Panel Section Divider allows the app creator to divide a panel into several sections and name each one of them. ![Section Divider](images/section_divider.png)" ],
+        [ "A Panel Section Divider allows the app creator to divide a panel into several sections and name each one of them.  ",
+          "![Section Divider](images/section_divider.png)" ],
       "links": [],
       "examples": [],
       "extra":
@@ -24,9 +25,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 34,
+          [ { "lineno": 35,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 46,
+            { "lineno": 47,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -34,7 +35,7 @@
             "examples":
               [ { "title": "Get an element's label",
                   "body":
-                    [ "let label = $w(\"#myElement\").label;  // \"My Element Label\"" ],
+                    [ "let label = $w(\"#myElement\").label;  // \"My element's label\"" ],
                   "extra":
                     {  } },
                 { "title": "Set an element's label",
@@ -53,9 +54,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 15,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 28,
+            { "lineno": 29,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",

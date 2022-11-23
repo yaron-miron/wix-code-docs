@@ -53,7 +53,7 @@
             "examples":
               [ { "title": "Get an element's label",
                   "body":
-                    [ "let label = $w(\"#myElement\").label;  // \"My Element Label\"" ],
+                    [ "let label = $w(\"#myElement\").label;  // \"My element's label\"" ],
                   "extra":
                     {  } },
                 { "title": "Set an element's label",
