@@ -1,0 +1,291 @@
+{ "name": "PanelTextInput",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.HiddenCollapsedMixin" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "PanelTextInput.js" },
+  "docs":
+    { "summary": "An input element for capturing small amounts of text.",
+      "description":
+        [ "A text input is an input field that receives strings." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "autoFocus",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "boolean",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 134,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 146,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the input field is in focus.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "label",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 56,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 68,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets the label of an element.",
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's label",
+                  "body":
+                    [ "let label = $w(\"#myElement\").label;  // \"Submit\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's label",
+                  "body":
+                    [ "$w(\"#myElement\").label = \"New Label\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "placeholder",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 75,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 87,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets the placeholder text of an element.",
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's placeholder",
+                  "body":
+                    [ "let label = $w(\"#myElement\").placeholder;  // \"Type your name\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's placeholder",
+                  "body":
+                    [ "$w(\"#myElement\").placeholder = \"New Placeholder\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "prefix",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 94,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 106,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets text that is displayed before the text input field.",
+            "links": [],
+            "examples":
+              [ { "title": "Get a text input's prefix",
+                  "body":
+                    [ "let tooltip = $w(\"#myElement\").prefix;  // \"Mr.\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a text input's prefix",
+                  "body":
+                    [ "$w(\"#myElement\").prefix = \"New prefix\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "readOnly",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "boolean",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 114,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 126,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether a user can modify the value of the input element.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "selectTextOnFocus",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "boolean",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 153,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 165,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the input field content is automatically selected on focus.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "tooltip",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 36,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 50,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's tooltip.",
+            "description":
+              [ "Setting the `tooltip` property defines the text that is displayed when a user hovers on an element's ![tooltip-icon](images/tooltip-icon.png) icon." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's tooltip",
+                  "body":
+                    [ "let tooltip = $w(\"#myElement\").tooltip;  // \"Tooltip text\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's tooltip",
+                  "body":
+                    [ "$w(\"#myElement\").tooltip = \"New tooltip\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "usePatternValidation",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "boolean",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 172,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 184,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the input field uses regex validation.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "value",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "locations":
+          [ { "lineno": 14,
+              "filename": "PanelTextInput.js" },
+            { "lineno": 30,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's value.",
+            "description":
+              [ "To reset the element, restoring any placeholder text, set the value",
+                " property to `null` or `undefined`.",
+                "",
+                "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's value",
+                  "body":
+                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's value",
+                  "body":
+                    [ "$w(\"#myElement\").value = \"42\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations":
+    [ { "name": "onChange",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "handler",
+              "type": "$w.EventHandler",
+              "doc": "The name of the function or\n the function expression to run when the element's value changes." } ],
+        "ret":
+          { "type": "$w.Element",
+            "doc": "The element on which the event is now registered." },
+        "locations":
+          [ { "lineno": 194,
+              "filename": "PanelTextInput.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
+            "description":
+              [ "An element receives a `change` event when a user changes the value",
+                " in an input element.",
+                "",
+                " A `change` event is not triggered when you change an element's value using",
+                " the element's [`value`](#value) property.",
+                "",
+                " Because `onChange()` is fired before validations are performed, do not check",
+                " any of the validation properties in the `onChange()` event handler. For example,",
+                " do not code an if statement that checks the `valid` property in the `onChange()`",
+                " because the property at this point contains values prior to the `onChange()`.",
+                "",
+                " You can also [define an event handler using the Properties and Events panel](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events)." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get the value of the element that was changed",
+                  "body":
+                    [ "$w(\"#myElement\").onChange( (event) => {",
+                      "  let newValue = event.target.value;  // \"new value\"",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "change" } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    { "queryable": true } }
