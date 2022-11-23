@@ -1,0 +1,85 @@
+{ "name": "PanelSectionDivider",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.HiddenCollapsedMixin" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "PanelSectionDivider.js" },
+  "docs":
+    { "summary": "Displays a section heading in the panel.",
+      "description":
+        [ "A Panel Section Divider allows the app creator to divide a panel into several sections and name each one of them.  ",
+          "",
+          " ![Section Divider](images/section_divider.png)" ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "label",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 36,
+              "filename": "PanelSectionDivider.js" },
+            { "lineno": 48,
+              "filename": "PanelSectionDivider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the label of an element.",
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's label",
+                  "body":
+                    [ "let label = $w(\"#myElement\").label;  // \"My element's label\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's label",
+                  "body":
+                    [ "$w(\"#myElement\").label = \"New Label\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "tooltip",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "PanelSectionDivider.js" },
+            { "lineno": 30,
+              "filename": "PanelSectionDivider.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's tooltip.",
+            "description":
+              [ "Setting the `tooltip` property defines the text that is displayed when a user hovers on an element's ![tooltip-icon](images/tooltip-icon.png) icon." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's tooltip",
+                  "body":
+                    [ "let tooltip = $w(\"#myElement\").tooltip;  // \"Tooltip text\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's tooltip",
+                  "body":
+                    [ "$w(\"#myElement\").tooltip = \"New tooltip\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    { "queryable": true } }
