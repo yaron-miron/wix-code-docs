@@ -3,7 +3,7 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelThumbnails.js" },
@@ -89,27 +89,24 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
           { "name": "Array",
             "typeParams":
-              [ "Object" ] },
+              [ "$w.PanelThumbnails.option" ] },
         "defaultValue": "empty array",
         "locations":
           [ { "lineno": 183,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 201,
+            { "lineno": 197,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the thumbnail selector.",
             "description":
-              [ "Setting the `options` property sets all the options available to a user.",
-                "`options` is an array of option objects. Each option object contains:",
-                "* `label` (string): The option's label, displayed below the thumbnail",
-                "* `value` (string): The option's value, which is used in code",
-                "* `illustration` ({svgId: SVGElement}): The thumbnail illustration in SVG format" ],
+              [ "Setting the `options` property sets all the options available to a user." ],
             "links": [],
             "examples": [],
             "extra":
@@ -253,7 +250,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 208,
+          [ { "lineno": 224,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -284,6 +281,50 @@
         "extra":
           { "eventType": "change" } } ],
   "callbacks": [],
-  "messages": [],
+  "messages":
+    [ { "name": "illustration",
+        "locations":
+          [ { "lineno": 215,
+              "filename": "PanelThumbnails.js" } ],
+        "docs":
+          { "summary": "An object representing an SVG illustration.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "svgId",
+              "type": "string",
+              "doc": "An SVG element" },
+            { "type": "$w.PanelThumbnails.illustration" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "option",
+        "locations":
+          [ { "lineno": 204,
+              "filename": "PanelThumbnails.js" } ],
+        "docs":
+          { "summary": "An object representing a thumbnail selector option.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "label",
+              "type": "string",
+              "doc": "The option's label, displayed below the thumbnail" },
+            { "name": "value",
+              "type": "string",
+              "doc": "The option's value, which is used in code" },
+            { "name": "illustration",
+              "type": "$w.PanelThumbnails.illustration",
+              "doc": "The thumbnail illustration in SVG format" },
+            { "type": "$w.PanelThumbnails.option" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] } ],
   "extra":
     { "queryable": true } }
