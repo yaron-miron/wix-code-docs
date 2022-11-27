@@ -89,7 +89,8 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -105,7 +106,7 @@
         "docs":
           { "summary": "Sets or gets the options in the thumbnail selector.",
             "description":
-              [ "Setting the `options` property sets all the options available to a user." ],
+              [ "`options` is an array of objects, each representing an option available to a user." ],
             "links": [],
             "examples": [],
             "extra":
@@ -297,8 +298,7 @@
               "doc": "An SVG element" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "option",
         "locations":
           [ { "lineno": 204,
@@ -321,7 +321,6 @@
               "doc": "The thumbnail illustration in SVG format" } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     { "queryable": true } }
