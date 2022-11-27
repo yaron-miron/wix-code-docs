@@ -89,8 +89,7 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type":
@@ -250,7 +249,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 224,
+          [ { "lineno": 222,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -284,7 +283,7 @@
   "messages":
     [ { "name": "illustration",
         "locations":
-          [ { "lineno": 215,
+          [ { "lineno": 214,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "An object representing an SVG illustration.",
@@ -295,12 +294,11 @@
         "members":
           [ { "name": "svgId",
               "type": "string",
-              "doc": "An SVG element" },
-            { "type": "$w.PanelThumbnails.illustration" } ],
+              "doc": "An SVG element" } ],
         "extra":
           {  },
         "labels":
-          [ "new" ] },
+          [ "changed" ] },
       { "name": "option",
         "locations":
           [ { "lineno": 204,
@@ -320,11 +318,10 @@
               "doc": "The option's value, which is used in code" },
             { "name": "illustration",
               "type": "$w.PanelThumbnails.illustration",
-              "doc": "The thumbnail illustration in SVG format" },
-            { "type": "$w.PanelThumbnails.option" } ],
+              "doc": "The thumbnail illustration in SVG format" } ],
         "extra":
           {  },
         "labels":
-          [ "new" ] } ],
+          [ "changed" ] } ],
   "extra":
     { "queryable": true } }
