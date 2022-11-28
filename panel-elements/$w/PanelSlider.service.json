@@ -1,53 +1,32 @@
-{ "name": "PanelTextInput",
+{ "name": "PanelSlider",
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
   "labels":
-    [ "changed" ],
+    [ "new" ],
   "location":
     { "lineno": 1,
-      "filename": "PanelTextInput.js" },
+      "filename": "PanelSlider.js" },
   "docs":
-    { "summary": "An input element for capturing small amounts of text.",
+    { "summary": "Sliders allow users to select a number from a given range.",
       "description":
-        [ "A text input is an input field that receives strings." ],
+        [ "Sliders offer your users a way to input a number by sliding a \"handle\" one way or the other along a track. You can set the range of values for the slider and also its default value." ],
       "links": [],
       "examples": [],
       "extra":
         {  } },
   "properties":
-    [ { "name": "autoFocus",
-        "labels":
-          [ "changed" ],
-        "get": true,
-        "set": true,
-        "type": "boolean",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 159,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 171,
-              "filename": "PanelTextInput.js" } ],
-        "docs":
-          { "summary": "Sets or gets whether the input field is in focus.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "divider",
-        "labels":
-          [ "changed" ],
+    [ { "name": "divider",
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 95,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 112,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 76,
+              "filename": "PanelSlider.js" },
+            { "lineno": 93,
+              "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed beneath the element.",
             "description":
@@ -62,17 +41,16 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 56,
-              "filename": "PanelTextInput.js" },
+              "filename": "PanelSlider.js" },
             { "lineno": 68,
-              "filename": "PanelTextInput.js" } ],
+              "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
             "links": [],
@@ -91,140 +69,101 @@
               {  } },
         "extra":
           {  } },
-      { "name": "maxLength",
-        "labels":
-          [ "changed" ],
+      { "name": "max",
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 257,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 269,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 167,
+              "filename": "PanelSlider.js" },
+            { "lineno": 179,
+              "filename": "PanelSlider.js" } ],
         "docs":
-          { "summary": "Sets or gets the maximum length of input text.",
+          { "summary": "Sets or gets the slider's maximum value.",
             "links": [],
             "examples": [],
             "extra":
               {  } },
         "extra":
           {  } },
-      { "name": "placeholder",
-        "labels":
-          [ "changed" ],
+      { "name": "min",
+        "labels": [],
         "get": true,
         "set": true,
-        "type": "string",
-        "defaultValue": "Empty string",
+        "type": "number",
+        "defaultValue": "false",
         "locations":
-          [ { "lineno": 75,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 87,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 146,
+              "filename": "PanelSlider.js" },
+            { "lineno": 158,
+              "filename": "PanelSlider.js" } ],
         "docs":
-          { "summary": "Sets or gets the placeholder text of an element.",
+          { "summary": "Sets or gets the slider's minimum value.",
             "links": [],
-            "examples":
-              [ { "title": "Get an element's placeholder",
-                  "body":
-                    [ "let label = $w(\"#myElement\").placeholder;  // \"Type your name\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set an element's placeholder",
-                  "body":
-                    [ "$w(\"#myElement\").placeholder = \"New Placeholder\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
           {  } },
-      { "name": "prefix",
-        "labels":
-          [ "changed" ],
-        "get": true,
-        "set": true,
-        "type": "string",
-        "defaultValue": "Empty string",
-        "locations":
-          [ { "lineno": 119,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 131,
-              "filename": "PanelTextInput.js" } ],
-        "docs":
-          { "summary": "Sets or gets text that is displayed before the text input field.",
-            "links": [],
-            "examples":
-              [ { "title": "Get a text input's prefix",
-                  "body":
-                    [ "let tooltip = $w(\"#myElement\").prefix;  // \"Mr.\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set a text input's prefix",
-                  "body":
-                    [ "$w(\"#myElement\").prefix = \"New prefix\";" ],
-                  "extra":
-                    {  } } ],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "readOnly",
-        "labels":
-          [ "changed" ],
+      { "name": "showNumericInput",
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 139,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 151,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 126,
+              "filename": "PanelSlider.js" },
+            { "lineno": 138,
+              "filename": "PanelSlider.js" } ],
         "docs":
-          { "summary": "Sets or gets whether a user can modify the value of the input element.",
+          { "summary": "Sets or gets whether the slider's numeric input field is displayed.",
             "links": [],
             "examples": [],
             "extra":
               {  } },
         "extra":
           {  } },
-      { "name": "regexPattern",
-        "labels":
-          [ "changed" ],
+      { "name": "step",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 188,
+              "filename": "PanelSlider.js" },
+            { "lineno": 200,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the slider's step value.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "suffix",
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 217,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 229,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 100,
+              "filename": "PanelSlider.js" },
+            { "lineno": 118,
+              "filename": "PanelSlider.js" } ],
         "docs":
-          { "summary": "Sets or gets the regex validation pattern.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "selectTextOnFocus",
-        "labels":
-          [ "changed" ],
-        "get": true,
-        "set": true,
-        "type": "boolean",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 178,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 190,
-              "filename": "PanelTextInput.js" } ],
-        "docs":
-          { "summary": "Sets or gets whether the input field content is automatically selected on focus.",
+          { "summary": "Sets or gets the slider's numeric input suffix.",
+            "description":
+              [ "The suffix can be:",
+                "* `\"number\"`",
+                "* `\"percentage\"`",
+                "* `\"pixels\"`",
+                "* `\"angle\"`" ],
             "links": [],
             "examples": [],
             "extra":
@@ -232,17 +171,16 @@
         "extra":
           {  } },
       { "name": "tooltip",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 36,
-              "filename": "PanelTextInput.js" },
+              "filename": "PanelSlider.js" },
             { "lineno": 50,
-              "filename": "PanelTextInput.js" } ],
+              "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
             "description":
@@ -263,57 +201,16 @@
               {  } },
         "extra":
           {  } },
-      { "name": "usePatternValidation",
-        "labels":
-          [ "changed" ],
-        "get": true,
-        "set": true,
-        "type": "boolean",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 197,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 209,
-              "filename": "PanelTextInput.js" } ],
-        "docs":
-          { "summary": "Sets or gets whether the input field uses regex validation.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "validationMessage",
-        "labels":
-          [ "changed" ],
-        "get": true,
-        "set": true,
-        "type": "string",
-        "defaultValue": "Empty string",
-        "locations":
-          [ { "lineno": 238,
-              "filename": "PanelTextInput.js" },
-            { "lineno": 250,
-              "filename": "PanelTextInput.js" } ],
-        "docs":
-          { "summary": "Sets or gets the error message displayed when regex validation fails.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
-        "type": "string",
+        "type": "number",
         "locations":
           [ { "lineno": 14,
-              "filename": "PanelTextInput.js" },
+              "filename": "PanelSlider.js" },
             { "lineno": 30,
-              "filename": "PanelTextInput.js" } ],
+              "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
             "description":
@@ -349,8 +246,8 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 283,
-              "filename": "PanelTextInput.js" } ],
+          [ { "lineno": 214,
+              "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
             "description":
