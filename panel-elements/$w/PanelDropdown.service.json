@@ -1,15 +1,16 @@
-{ "name": "PanelThumbnails",
+{ "name": "PanelDropdown",
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "new" ],
   "location":
     { "lineno": 1,
-      "filename": "PanelThumbnails.js" },
+      "filename": "PanelDropdown.js" },
   "docs":
-    { "summary": "Thumbnails allow users to select an option using a set of thumbnail images.",
+    { "summary": "Dropdowns are used for selecting one of a number of options.",
       "description":
-        [ "Thumbnails allow users to select an option using a set of thumbnail images." ],
+        [ "Dropdowns consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code." ],
       "links": [],
       "examples": [],
       "extra":
@@ -22,10 +23,10 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 75,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 92,
-              "filename": "PanelThumbnails.js" } ],
+          [ { "lineno": 95,
+              "filename": "PanelDropdown.js" },
+            { "lineno": 112,
+              "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed beneath the element.",
             "description":
@@ -47,9 +48,9 @@
         "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 56,
-              "filename": "PanelThumbnails.js" },
+              "filename": "PanelDropdown.js" },
             { "lineno": 68,
-              "filename": "PanelThumbnails.js" } ],
+              "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
             "links": [],
@@ -68,25 +69,6 @@
               {  } },
         "extra":
           {  } },
-      { "name": "numberOfColumns",
-        "labels": [],
-        "get": true,
-        "set": true,
-        "type": "number",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 99,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 111,
-              "filename": "PanelThumbnails.js" } ],
-        "docs":
-          { "summary": "Sets or gets the number of thumbnail columns.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
       { "name": "options",
         "labels": [],
         "get": true,
@@ -94,15 +76,15 @@
         "type":
           { "name": "Array",
             "typeParams":
-              [ "$w.PanelThumbnails.option" ] },
+              [ "$w.PanelDropdown.option" ] },
         "defaultValue": "empty array",
         "locations":
-          [ { "lineno": 183,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 197,
-              "filename": "PanelThumbnails.js" } ],
+          [ { "lineno": 120,
+              "filename": "PanelDropdown.js" },
+            { "lineno": 134,
+              "filename": "PanelDropdown.js" } ],
         "docs":
-          { "summary": "Sets or gets the options in the thumbnail group.",
+          { "summary": "Sets or gets the options in the dropdown.",
             "description":
               [ "`options` is an array of objects, each representing an option available to a user." ],
             "links": [],
@@ -111,63 +93,31 @@
               {  } },
         "extra":
           {  } },
-      { "name": "showEmptyThumbnail",
-        "labels": [],
-        "get": true,
-        "set": true,
-        "type": "boolean",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 143,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 155,
-              "filename": "PanelThumbnails.js" } ],
-        "docs":
-          { "summary": "Sets or gets whether an empty thumbnail is shown.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "showLabels",
-        "labels": [],
-        "get": true,
-        "set": true,
-        "type": "boolean",
-        "defaultValue": "false",
-        "locations":
-          [ { "lineno": 163,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 175,
-              "filename": "PanelThumbnails.js" } ],
-        "docs":
-          { "summary": "Sets or gets whether the thumbnail labels are shown.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } },
-      { "name": "thumbnailHeight",
+      { "name": "placeholder",
         "labels": [],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "false",
+        "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 119,
-              "filename": "PanelThumbnails.js" },
-            { "lineno": 135,
-              "filename": "PanelThumbnails.js" } ],
+          [ { "lineno": 76,
+              "filename": "PanelDropdown.js" },
+            { "lineno": 88,
+              "filename": "PanelDropdown.js" } ],
         "docs":
-          { "summary": "Sets or gets the thumbnail's height ratio.",
-            "description":
-              [ "The height ratio can be:",
-                "* `\"Fixed ratio (1:1)\"`",
-                "* `\"Fluid\"`" ],
+          { "summary": "Sets or gets the placeholder text of an element.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get an element's placeholder",
+                  "body":
+                    [ "let label = $w(\"#myElement\").placeholder;  // \"Type your name\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's placeholder",
+                  "body":
+                    [ "$w(\"#myElement\").placeholder = \"New Placeholder\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -180,9 +130,9 @@
         "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 36,
-              "filename": "PanelThumbnails.js" },
+              "filename": "PanelDropdown.js" },
             { "lineno": 50,
-              "filename": "PanelThumbnails.js" } ],
+              "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
             "description":
@@ -210,9 +160,9 @@
         "type": "string",
         "locations":
           [ { "lineno": 14,
-              "filename": "PanelThumbnails.js" },
+              "filename": "PanelDropdown.js" },
             { "lineno": 30,
-              "filename": "PanelThumbnails.js" } ],
+              "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
             "description":
@@ -248,8 +198,8 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 222,
-              "filename": "PanelThumbnails.js" } ],
+          [ { "lineno": 151,
+              "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
             "description":
@@ -280,29 +230,12 @@
           { "eventType": "change" } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "illustration",
+    [ { "name": "option",
         "locations":
-          [ { "lineno": 214,
-              "filename": "PanelThumbnails.js" } ],
+          [ { "lineno": 141,
+              "filename": "PanelDropdown.js" } ],
         "docs":
-          { "summary": "An object representing an SVG illustration.",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "members":
-          [ { "name": "svgId",
-              "type": "string",
-              "doc": "An SVG element" } ],
-        "extra":
-          {  },
-        "labels": [] },
-      { "name": "option",
-        "locations":
-          [ { "lineno": 204,
-              "filename": "PanelThumbnails.js" } ],
-        "docs":
-          { "summary": "An object representing a thumbnail group option.",
+          { "summary": "An object representing a checkbox option.",
             "links": [],
             "examples": [],
             "extra":
@@ -313,10 +246,7 @@
               "doc": "The option's label, displayed below the thumbnail" },
             { "name": "value",
               "type": "string",
-              "doc": "The option's value, which is used in code" },
-            { "name": "illustration",
-              "type": "$w.PanelThumbnails.illustration",
-              "doc": "The thumbnail illustration in SVG format" } ],
+              "doc": "The option's value, which is used in code" } ],
         "extra":
           {  },
         "labels": [] } ],
