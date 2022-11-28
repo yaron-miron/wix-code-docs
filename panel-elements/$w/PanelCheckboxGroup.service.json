@@ -2,7 +2,8 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelCheckboxGroup.js" },
@@ -22,9 +23,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 76,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 92,
+            { "lineno": 93,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed beneath the element.",
@@ -46,9 +47,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 57,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 68,
+            { "lineno": 69,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -78,9 +79,9 @@
               [ "$w.PanelCheckboxGroup.option" ] },
         "defaultValue": "empty array",
         "locations":
-          [ { "lineno": 100,
+          [ { "lineno": 101,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 114,
+            { "lineno": 115,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the thumbnail selector.",
@@ -99,9 +100,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 37,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 50,
+            { "lineno": 51,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -124,20 +125,25 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
-        "type": "string",
+        "type":
+          { "name": "Array",
+            "typeParams":
+              [ "string" ] },
         "locations":
           [ { "lineno": 14,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 30,
+            { "lineno": 31,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
-          { "summary": "Sets or gets an element's value.",
+          { "summary": "Sets or gets the value of the selected options.",
             "description":
-              [ "To reset the element, set the value",
-                " property to `null` or `undefined`.",
+              [ "Setting the `value` property sets the `options` with those values to be the selected options. You must set the `value` property to values that exist in the [`options`](#options) list.",
+                "To reset the checkbox group to have no options selected, set the `value` property to an empty array, `null` or `undefined`.",
+                "Getting the `value` property returns the values of the currently selected options. If no value is selected, the value property returns an empty array.",
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
@@ -168,7 +174,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 131,
+          [ { "lineno": 132,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -202,7 +208,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 121,
+          [ { "lineno": 122,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",

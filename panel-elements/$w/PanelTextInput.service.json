@@ -2,8 +2,7 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "PanelTextInput.js" },
@@ -17,8 +16,7 @@
         {  } },
   "properties":
     [ { "name": "autoFocus",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -37,8 +35,7 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -62,8 +59,7 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -92,8 +88,7 @@
         "extra":
           {  } },
       { "name": "maxLength",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -112,8 +107,7 @@
         "extra":
           {  } },
       { "name": "placeholder",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -142,8 +136,7 @@
         "extra":
           {  } },
       { "name": "prefix",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -172,8 +165,7 @@
         "extra":
           {  } },
       { "name": "readOnly",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -192,8 +184,7 @@
         "extra":
           {  } },
       { "name": "regexPattern",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -212,8 +203,7 @@
         "extra":
           {  } },
       { "name": "selectTextOnFocus",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -232,8 +222,7 @@
         "extra":
           {  } },
       { "name": "tooltip",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -264,8 +253,7 @@
         "extra":
           {  } },
       { "name": "usePatternValidation",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -284,8 +272,7 @@
         "extra":
           {  } },
       { "name": "validationMessage",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -304,8 +291,7 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
