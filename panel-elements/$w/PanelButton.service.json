@@ -3,7 +3,7 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -117,7 +117,48 @@
               {  } },
         "extra":
           {  } } ],
-  "operations": [],
+  "operations":
+    [ { "name": "onClick",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "handler",
+              "type": "$w.MouseEventHandler",
+              "doc": "The name of the function or\n the function expression to run when the element is clicked." } ],
+        "ret":
+          { "type": "$w.Element",
+            "doc": "The element to which the event handler was added." },
+        "locations":
+          [ { "lineno": 92,
+              "filename": "PanelButton.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that runs when the element is clicked.",
+            "description":
+              [ "An element receives a `click` event when a user clicks on the element",
+                " and releases.",
+                "",
+                " When a user double-clicks an element, two `click` events are fired",
+                " before a `doubleClick` event is also fired.",
+                "",
+                " You can also [define an event handler using the Properties and Events panel](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events).",
+                " ",
+                "![Properties and Events panel](images/properties_and_events.png \"Properties and Events panel\")",
+                "",
+                " This will automatically add the required code for the selected element and event:",
+                "",
+                " ```javascript ",
+                "    export function button1_click(event) {",
+                "       // This function was added from the Properties & Events panel. To learn more, visit http://wix.to/UcBnC-4",
+                "       // Add your code for this event here: ",
+                "     }  ",
+                "```" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "click" } } ],
   "callbacks": [],
   "messages": [],
   "extra":
