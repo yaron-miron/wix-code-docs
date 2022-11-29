@@ -1,0 +1,124 @@
+{ "name": "PanelButton",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.HiddenCollapsedMixin" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "PanelButton.js" },
+  "docs":
+    { "summary": "A button on your panel.",
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "buttonLabel",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 51,
+              "filename": "PanelButton.js" },
+            { "lineno": 63,
+              "filename": "PanelButton.js" } ],
+        "docs":
+          { "summary": "Sets or gets the button's label (the text that appears on the button).",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "divider",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 69,
+              "filename": "PanelButton.js" },
+            { "lineno": 86,
+              "filename": "PanelButton.js" } ],
+        "docs":
+          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+            "description":
+              [ "The divider type can be:",
+                "* `\"long\"`",
+                "* `\"short\"`",
+                "* `\"none\"`" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "label",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 33,
+              "filename": "PanelButton.js" },
+            { "lineno": 45,
+              "filename": "PanelButton.js" } ],
+        "docs":
+          { "summary": "Sets or gets the text above the button (field title).",
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's label",
+                  "body":
+                    [ "let label = $w(\"#myElement\").label;  // \"My element's label\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's label",
+                  "body":
+                    [ "$w(\"#myElement\").label = \"New Label\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "tooltip",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 13,
+              "filename": "PanelButton.js" },
+            { "lineno": 27,
+              "filename": "PanelButton.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's tooltip.",
+            "description":
+              [ "Setting the `tooltip` property defines the text that is displayed when a user hovers on an element's ![tooltip-icon](images/tooltip-icon.png) icon." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's tooltip",
+                  "body":
+                    [ "let tooltip = $w(\"#myElement\").tooltip;  // \"Tooltip text\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's tooltip",
+                  "body":
+                    [ "$w(\"#myElement\").tooltip = \"New tooltip\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    { "queryable": true } }

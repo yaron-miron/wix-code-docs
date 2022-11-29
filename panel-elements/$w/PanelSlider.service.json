@@ -1,0 +1,281 @@
+{ "name": "PanelSlider",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.HiddenCollapsedMixin" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "PanelSlider.js" },
+  "docs":
+    { "summary": "Sliders allow users to select a number from a given range.",
+      "description":
+        [ "Sliders offer your users a way to input a number by sliding a \"handle\" one way or the other along a track. You can set the range of values for the slider and also its default value." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "divider",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 75,
+              "filename": "PanelSlider.js" },
+            { "lineno": 92,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+            "description":
+              [ "The divider type can be:",
+                "* `\"long\"`",
+                "* `\"short\"`",
+                "* `\"none\"`" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "label",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 55,
+              "filename": "PanelSlider.js" },
+            { "lineno": 67,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the label of an element.",
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's label",
+                  "body":
+                    [ "let label = $w(\"#myElement\").label;  // \"My element's label\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's label",
+                  "body":
+                    [ "$w(\"#myElement\").label = \"New Label\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "max",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 166,
+              "filename": "PanelSlider.js" },
+            { "lineno": 178,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the slider's maximum value.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "min",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 145,
+              "filename": "PanelSlider.js" },
+            { "lineno": 157,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the slider's minimum value.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "showNumericInput",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "boolean",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 125,
+              "filename": "PanelSlider.js" },
+            { "lineno": 137,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the slider's numeric input field is displayed.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "step",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "defaultValue": "false",
+        "locations":
+          [ { "lineno": 187,
+              "filename": "PanelSlider.js" },
+            { "lineno": 199,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the slider's step value.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "suffix",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 99,
+              "filename": "PanelSlider.js" },
+            { "lineno": 117,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the slider's numeric input suffix.",
+            "description":
+              [ "The suffix can be:",
+                "* `\"number\"`",
+                "* `\"percentage\"`",
+                "* `\"pixels\"`",
+                "* `\"angle\"`" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "tooltip",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 35,
+              "filename": "PanelSlider.js" },
+            { "lineno": 49,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's tooltip.",
+            "description":
+              [ "Setting the `tooltip` property defines the text that is displayed when a user hovers on an element's ![tooltip-icon](images/tooltip-icon.png) icon." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's tooltip",
+                  "body":
+                    [ "let tooltip = $w(\"#myElement\").tooltip;  // \"Tooltip text\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's tooltip",
+                  "body":
+                    [ "$w(\"#myElement\").tooltip = \"New tooltip\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "value",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "locations":
+          [ { "lineno": 14,
+              "filename": "PanelSlider.js" },
+            { "lineno": 29,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets an element's value.",
+            "description":
+              [ "Sets or gets the value of the slider. `value` is not bound by the [`min`](#min) or",
+                "[`max`](#max) values set for the slider.",
+                "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's value",
+                  "body":
+                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's value",
+                  "body":
+                    [ "$w(\"#myElement\").value = \"42\";" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations":
+    [ { "name": "onChange",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "handler",
+              "type": "$w.EventHandler",
+              "doc": "The name of the function or\n the function expression to run when the element's value changes." } ],
+        "ret":
+          { "type": "$w.Element",
+            "doc": "The element on which the event is now registered." },
+        "locations":
+          [ { "lineno": 213,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
+            "description":
+              [ "An element receives a `change` event when a user changes the value",
+                " in an input element.",
+                "",
+                " A `change` event is not triggered when you change an element's value using",
+                " the element's [`value`](#value) property.",
+                "",
+                " Because `onChange()` is fired before validations are performed, do not check",
+                " any of the validation properties in the `onChange()` event handler. For example,",
+                " do not code an if statement that checks the `valid` property in the `onChange()`",
+                " because the property at this point contains values prior to the `onChange()`.",
+                "",
+                " You can also [define an event handler using the Properties and Events panel](https://support.wix.com/en/article/velo-reacting-to-user-actions-using-events)." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get the value of the element that was changed",
+                  "body":
+                    [ "$w(\"#myElement\").onChange( (event) => {",
+                      "  let newValue = event.target.value;  // \"new value\"",
+                      "});" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "eventType": "change" } } ],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    { "queryable": true } }
