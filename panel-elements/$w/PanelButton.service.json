@@ -2,8 +2,7 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -106,8 +105,7 @@
         "extra":
           {  } },
       { "name": "prefixIcon",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -178,8 +176,7 @@
         "extra":
           {  } },
       { "name": "suffixIcon",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -287,7 +284,6 @@
               "doc": "An SVG element" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] } ],
+        "labels": [] } ],
   "extra":
     { "queryable": true } }

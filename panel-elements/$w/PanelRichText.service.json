@@ -1,0 +1,120 @@
+{ "name": "PanelRichText",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.HiddenCollapsedMixin" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "PanelRichText.js" },
+  "docs":
+    { "summary": "A rich text element is used to display text followed by a link.",
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties":
+    [ { "name": "alignCenter",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 72,
+              "filename": "PanelRichText.js" },
+            { "lineno": 84,
+              "filename": "PanelRichText.js" } ],
+        "docs":
+          { "summary": "Sets or gets whether the text is centered.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "content",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "locations":
+          [ { "lineno": 12,
+              "filename": "PanelRichText.js" },
+            { "lineno": 23,
+              "filename": "PanelRichText.js" } ],
+        "docs":
+          { "summary": "Sets or gets the rich text content.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "divider",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 93,
+              "filename": "PanelRichText.js" },
+            { "lineno": 110,
+              "filename": "PanelRichText.js" } ],
+        "docs":
+          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+            "description":
+              [ "The divider type can be:",
+                "* `\"long\"`",
+                "* `\"short\"`",
+                "* `\"none\"`" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "richTextLabel",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 30,
+              "filename": "PanelRichText.js" },
+            { "lineno": 42,
+              "filename": "PanelRichText.js" } ],
+        "docs":
+          { "summary": "The link's text.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "richTextLink",
+        "labels": [],
+        "get": true,
+        "set": true,
+        "type": "string",
+        "defaultValue": "Empty string",
+        "locations":
+          [ { "lineno": 51,
+              "filename": "PanelRichText.js" },
+            { "lineno": 63,
+              "filename": "PanelRichText.js" } ],
+        "docs":
+          { "summary": "The link's URL.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    { "queryable": true } }
