@@ -2,7 +2,8 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelRadioButtonGroup.js" },
@@ -16,7 +17,8 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -27,7 +29,7 @@
             { "lineno": 92,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
-          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+          { "summary": "Sets or gets the type of divider displayed under the element.",
             "description":
               [ "The divider type can be:",
                 "* `\"long\"`",

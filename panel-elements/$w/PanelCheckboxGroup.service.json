@@ -29,7 +29,7 @@
             { "lineno": 93,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
-          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+          { "summary": "Sets or gets the type of divider displayed under the element.",
             "description":
               [ "The divider type can be:",
                 "* `\"long\"`",

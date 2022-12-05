@@ -3,7 +3,7 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelRichText.js" },
@@ -52,7 +52,8 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -63,7 +64,7 @@
             { "lineno": 110,
               "filename": "PanelRichText.js" } ],
         "docs":
-          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+          { "summary": "Sets or gets the type of divider displayed under the element.",
             "description":
               [ "The divider type can be:",
                 "* `\"long\"`",

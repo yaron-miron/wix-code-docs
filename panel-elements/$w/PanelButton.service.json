@@ -4,7 +4,7 @@
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -34,7 +34,8 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -45,7 +46,7 @@
             { "lineno": 206,
               "filename": "PanelButton.js" } ],
         "docs":
-          { "summary": "Sets or gets the type of divider displayed beneath the element.",
+          { "summary": "Sets or gets the type of divider displayed under the element.",
             "description":
               [ "The divider type can be:",
                 "* `\"long\"`",
