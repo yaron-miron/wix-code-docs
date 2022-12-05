@@ -4,8 +4,7 @@
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
   "labels":
-    [ "changed",
-      "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -17,8 +16,7 @@
         {  } },
   "properties":
     [ { "name": "buttonLabel",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -36,8 +34,7 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -80,8 +77,7 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -109,8 +105,7 @@
         "extra":
           {  } },
       { "name": "prefixIcon",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -129,8 +124,7 @@
         "extra":
           {  } },
       { "name": "size",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -154,8 +148,7 @@
         "extra":
           {  } },
       { "name": "skin",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -183,8 +176,7 @@
         "extra":
           {  } },
       { "name": "suffixIcon",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -235,8 +227,7 @@
           {  } } ],
   "operations":
     [ { "name": "onClick",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
