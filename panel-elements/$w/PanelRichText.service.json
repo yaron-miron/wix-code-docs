@@ -1,7 +1,8 @@
 { "name": "PanelRichText",
   "memberOf": "$w",
   "mixes":
-    [ "$w.HiddenCollapsedMixin" ],
+    [ "$w.HiddenCollapsedMixin",
+      "$w.Element" ],
   "labels":
     [ "changed" ],
   "location":
@@ -21,9 +22,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 72,
+          [ { "lineno": 73,
               "filename": "PanelRichText.js" },
-            { "lineno": 84,
+            { "lineno": 85,
               "filename": "PanelRichText.js" } ],
         "docs":
           { "summary": "Sets or gets whether the text is centered.",
@@ -39,9 +40,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 12,
+          [ { "lineno": 13,
               "filename": "PanelRichText.js" },
-            { "lineno": 23,
+            { "lineno": 24,
               "filename": "PanelRichText.js" } ],
         "docs":
           { "summary": "Sets or gets the rich text content.",
@@ -52,16 +53,15 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 93,
+          [ { "lineno": 94,
               "filename": "PanelRichText.js" },
-            { "lineno": 110,
+            { "lineno": 111,
               "filename": "PanelRichText.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -83,9 +83,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 30,
+          [ { "lineno": 31,
               "filename": "PanelRichText.js" },
-            { "lineno": 42,
+            { "lineno": 43,
               "filename": "PanelRichText.js" } ],
         "docs":
           { "summary": "The link's text.",
@@ -102,9 +102,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 52,
               "filename": "PanelRichText.js" },
-            { "lineno": 63,
+            { "lineno": 64,
               "filename": "PanelRichText.js" } ],
         "docs":
           { "summary": "The link's URL.",

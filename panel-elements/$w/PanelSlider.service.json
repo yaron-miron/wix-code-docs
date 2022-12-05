@@ -1,7 +1,8 @@
 { "name": "PanelSlider",
   "memberOf": "$w",
   "mixes":
-    [ "$w.HiddenCollapsedMixin" ],
+    [ "$w.HiddenCollapsedMixin",
+      "$w.Element" ],
   "labels":
     [ "changed" ],
   "location":
@@ -17,16 +18,15 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 76,
               "filename": "PanelSlider.js" },
-            { "lineno": 92,
+            { "lineno": 93,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -48,9 +48,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 55,
+          [ { "lineno": 56,
               "filename": "PanelSlider.js" },
-            { "lineno": 67,
+            { "lineno": 68,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -77,9 +77,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 166,
+          [ { "lineno": 167,
               "filename": "PanelSlider.js" },
-            { "lineno": 178,
+            { "lineno": 179,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's maximum value.",
@@ -96,9 +96,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 145,
+          [ { "lineno": 146,
               "filename": "PanelSlider.js" },
-            { "lineno": 157,
+            { "lineno": 158,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's minimum value.",
@@ -115,9 +115,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 125,
+          [ { "lineno": 126,
               "filename": "PanelSlider.js" },
-            { "lineno": 137,
+            { "lineno": 138,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets whether the slider's numeric input field is displayed.",
@@ -134,9 +134,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 187,
+          [ { "lineno": 188,
               "filename": "PanelSlider.js" },
-            { "lineno": 199,
+            { "lineno": 200,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's step value.",
@@ -153,9 +153,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 99,
+          [ { "lineno": 100,
               "filename": "PanelSlider.js" },
-            { "lineno": 117,
+            { "lineno": 118,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's numeric input suffix.",
@@ -178,9 +178,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 36,
               "filename": "PanelSlider.js" },
-            { "lineno": 49,
+            { "lineno": 50,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -208,9 +208,9 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 15,
               "filename": "PanelSlider.js" },
-            { "lineno": 29,
+            { "lineno": 30,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
@@ -246,7 +246,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 213,
+          [ { "lineno": 214,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",

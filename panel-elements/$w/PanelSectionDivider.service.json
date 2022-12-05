@@ -1,8 +1,10 @@
 { "name": "PanelSectionDivider",
   "memberOf": "$w",
   "mixes":
-    [ "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+    [ "$w.HiddenCollapsedMixin",
+      "$w.Element" ],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelSectionDivider.js" },
@@ -24,9 +26,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 37,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 48,
+            { "lineno": 49,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -53,9 +55,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 16,
+          [ { "lineno": 17,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 30,
+            { "lineno": 31,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",

@@ -1,7 +1,8 @@
 { "name": "PanelDropdown",
   "memberOf": "$w",
   "mixes":
-    [ "$w.HiddenCollapsedMixin" ],
+    [ "$w.HiddenCollapsedMixin",
+      "$w.Element" ],
   "labels":
     [ "changed" ],
   "location":
@@ -22,7 +23,7 @@
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
+        "defaultValue": "`\"long\"`",
         "locations":
           [ { "lineno": 95,
               "filename": "PanelDropdown.js" },
@@ -42,15 +43,15 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 55,
               "filename": "PanelDropdown.js" },
-            { "lineno": 68,
+            { "lineno": 66,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -71,18 +72,18 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
           { "name": "Array",
             "typeParams":
               [ "$w.PanelDropdown.option" ] },
-        "defaultValue": "empty array",
         "locations":
           [ { "lineno": 120,
               "filename": "PanelDropdown.js" },
-            { "lineno": 134,
+            { "lineno": 133,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the dropdown.",
@@ -95,18 +96,21 @@
         "extra":
           {  } },
       { "name": "placeholder",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 76,
+          [ { "lineno": 74,
               "filename": "PanelDropdown.js" },
             { "lineno": 88,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the placeholder text of an element.",
+            "description":
+              [ "The placeholder text is displayed only when no dropdown option is selected." ],
             "links": [],
             "examples":
               [ { "title": "Get an element's placeholder",
@@ -130,9 +134,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 35,
               "filename": "PanelDropdown.js" },
-            { "lineno": 50,
+            { "lineno": 49,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -155,22 +159,21 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 15,
               "filename": "PanelDropdown.js" },
-            { "lineno": 30,
+            { "lineno": 29,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
             "description":
-              [ "To reset the element, set the value",
-                " property to `null` or `undefined`.",
-                "",
-                "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
+              [ "To reset the element, set the value property to `null` or `undefined`.",
+                "Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
             "examples":
               [ { "title": "Get an element's value",
@@ -199,7 +202,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 151,
+          [ { "lineno": 150,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -233,7 +236,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 141,
+          [ { "lineno": 140,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",
