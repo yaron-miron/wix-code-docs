@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelThumbnails.js" },
@@ -17,11 +18,12 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
+        "defaultValue": "\"long\"",
         "locations":
           [ { "lineno": 76,
               "filename": "PanelThumbnails.js" },

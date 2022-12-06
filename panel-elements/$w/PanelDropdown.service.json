@@ -18,11 +18,12 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "`\"long\"`",
+        "defaultValue": "\"long\"",
         "locations":
           [ { "lineno": 94,
               "filename": "PanelDropdown.js" },
@@ -93,8 +94,7 @@
         "extra":
           {  } },
       { "name": "placeholder",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",

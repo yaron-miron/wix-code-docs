@@ -23,7 +23,7 @@
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "`\"long\"`",
+        "defaultValue": "\"long\"",
         "locations":
           [ { "lineno": 74,
               "filename": "PanelRadioButtonGroup.js" },
@@ -43,8 +43,7 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -127,8 +126,7 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
