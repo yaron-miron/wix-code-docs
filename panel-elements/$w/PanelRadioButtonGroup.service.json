@@ -18,15 +18,16 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
+        "defaultValue": "`\"long\"`",
         "locations":
-          [ { "lineno": 76,
+          [ { "lineno": 74,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 93,
+            { "lineno": 91,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -42,15 +43,15 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 57,
+          [ { "lineno": 56,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 69,
+            { "lineno": 67,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -80,9 +81,9 @@
               [ "$w.PanelRadioButtonGroup.option" ] },
         "defaultValue": "empty array",
         "locations":
-          [ { "lineno": 101,
+          [ { "lineno": 99,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 115,
+            { "lineno": 113,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the radio button group.",
@@ -101,9 +102,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 37,
+          [ { "lineno": 36,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 51,
+            { "lineno": 50,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -126,20 +127,20 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
           [ { "lineno": 15,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 31,
+            { "lineno": 30,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
             "description":
-              [ "To reset the element, set the value",
-                " property to `null` or `undefined`.",
+              [ "To reset the element, set the value property to `null` or `undefined`.",
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
@@ -170,7 +171,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 132,
+          [ { "lineno": 130,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -204,7 +205,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 120,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",

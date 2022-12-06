@@ -18,16 +18,15 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "`\"long\"`",
         "locations":
-          [ { "lineno": 95,
+          [ { "lineno": 94,
               "filename": "PanelDropdown.js" },
-            { "lineno": 112,
+            { "lineno": 111,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -43,8 +42,7 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -72,8 +70,7 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type":
@@ -81,9 +78,9 @@
             "typeParams":
               [ "$w.PanelDropdown.option" ] },
         "locations":
-          [ { "lineno": 120,
+          [ { "lineno": 119,
               "filename": "PanelDropdown.js" },
-            { "lineno": 133,
+            { "lineno": 132,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the dropdown.",
@@ -101,11 +98,10 @@
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 74,
               "filename": "PanelDropdown.js" },
-            { "lineno": 88,
+            { "lineno": 87,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the placeholder text of an element.",
@@ -159,8 +155,7 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -202,7 +197,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 150,
+          [ { "lineno": 149,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -236,7 +231,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 140,
+          [ { "lineno": 139,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",
