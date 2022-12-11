@@ -18,16 +18,15 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 76,
+          [ { "lineno": 75,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 93,
+            { "lineno": 92,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -71,7 +70,8 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -79,14 +79,26 @@
             "typeParams":
               [ "$w.PanelCheckboxGroup.option" ] },
         "locations":
-          [ { "lineno": 101,
+          [ { "lineno": 98,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 114,
+            { "lineno": 123,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
-          { "summary": "Sets or gets the options in the thumbnail selector.",
+          { "summary": "Sets or gets the options of the checkbox group.",
             "description":
-              [ "`options` is an array of objects, each representing an option available to a user." ],
+              [ "`options` is an array of objects, each representing an option available to a user.",
+                "Setting the `options` property sets all the options",
+                " available to a user.",
+                "",
+                " Getting the `options` property returns the current",
+                " list of options available to a user.",
+                "",
+                " You cannot modify the data array in-place. To add, change, or remove",
+                " individual checkbox options:",
+                "",
+                "   1. Store the value of the `options` property in a variable.",
+                "   1. Make changes to the options array.",
+                "   1. Reset the `options` property with the modified array." ],
             "links": [],
             "examples": [],
             "extra":
@@ -125,7 +137,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -146,17 +159,7 @@
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples":
-              [ { "title": "Get an element's value",
-                  "body":
-                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set an element's value",
-                  "body":
-                    [ "$w(\"#myElement\").value = \"42\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
@@ -173,7 +176,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 131,
+          [ { "lineno": 137,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -207,7 +210,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 121,
+          [ { "lineno": 129,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",
@@ -218,12 +221,13 @@
         "members":
           [ { "name": "label",
               "type": "string",
-              "doc": "The option's label, displayed below the thumbnail" },
+              "doc": "The label of the checkbox option. This is what a user sees." },
             { "name": "value",
               "type": "string",
-              "doc": "The option's value, which is used in code" } ],
+              "doc": "The value of the checkbox option. This is what you use in code." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     { "queryable": true } }

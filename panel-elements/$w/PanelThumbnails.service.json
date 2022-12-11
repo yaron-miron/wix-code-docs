@@ -18,8 +18,7 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -134,7 +133,8 @@
         "extra":
           {  } },
       { "name": "showLabels",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -145,7 +145,7 @@
             { "lineno": 176,
               "filename": "PanelThumbnails.js" } ],
         "docs":
-          { "summary": "Sets or gets whether the thumbnail labels are shown.",
+          { "summary": "Sets or gets whether the thumbnail labels are displayed.",
             "links": [],
             "examples": [],
             "extra":
@@ -207,7 +207,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -224,17 +225,7 @@
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples":
-              [ { "title": "Get an element's value",
-                  "body":
-                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set an element's value",
-                  "body":
-                    [ "$w(\"#myElement\").value = \"42\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
@@ -305,7 +296,7 @@
           [ { "lineno": 205,
               "filename": "PanelThumbnails.js" } ],
         "docs":
-          { "summary": "An object representing a thumbnail group option.",
+          { "summary": "An object representing a thumbnail option.",
             "links": [],
             "examples": [],
             "extra":
@@ -313,15 +304,16 @@
         "members":
           [ { "name": "label",
               "type": "string",
-              "doc": "The option's label, displayed below the thumbnail" },
+              "doc": "The label of the thumbnail option, optionally displayed below the thumbnail." },
             { "name": "value",
               "type": "string",
-              "doc": "The option's value, which is used in code" },
+              "doc": "The value of the thumbnail option. This is what you use in code." },
             { "name": "illustration",
               "type": "$w.PanelThumbnails.illustration",
               "doc": "The thumbnail illustration in SVG format" } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "changed" ] } ],
   "extra":
     { "queryable": true } }

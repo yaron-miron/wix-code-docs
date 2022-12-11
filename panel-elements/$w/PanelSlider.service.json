@@ -11,23 +11,42 @@
   "docs":
     { "summary": "Sliders allow users to select a number from a given range.",
       "description":
-        [ "Sliders offer your users a way to input a number by sliding a \"handle\" one way or the other along a track. You can set the range of values for the slider and also its default value." ],
+        [ "Sliders offer your users a way to input a number by sliding a \"handle\" one way or the other along a track. You can set the range of values for the slider and also its default value.",
+          " This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
         {  } },
   "properties":
-    [ { "name": "divider",
+    [ { "name": "defaultSelectedValue",
         "labels":
-          [ "changed" ],
+          [ "new" ],
+        "get": true,
+        "set": true,
+        "type": "number",
+        "locations":
+          [ { "lineno": 39,
+              "filename": "PanelSlider.js" },
+            { "lineno": 51,
+              "filename": "PanelSlider.js" } ],
+        "docs":
+          { "summary": "Sets or gets the default value of the slider.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "divider",
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 76,
+          [ { "lineno": 98,
               "filename": "PanelSlider.js" },
-            { "lineno": 93,
+            { "lineno": 115,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -43,15 +62,15 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 79,
               "filename": "PanelSlider.js" },
-            { "lineno": 68,
+            { "lineno": 90,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -78,9 +97,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 167,
+          [ { "lineno": 189,
               "filename": "PanelSlider.js" },
-            { "lineno": 179,
+            { "lineno": 201,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's maximum value.",
@@ -97,9 +116,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 146,
+          [ { "lineno": 168,
               "filename": "PanelSlider.js" },
-            { "lineno": 158,
+            { "lineno": 180,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's minimum value.",
@@ -116,9 +135,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 126,
+          [ { "lineno": 148,
               "filename": "PanelSlider.js" },
-            { "lineno": 138,
+            { "lineno": 160,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets whether the slider's numeric input field is displayed.",
@@ -135,9 +154,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 188,
+          [ { "lineno": 210,
               "filename": "PanelSlider.js" },
-            { "lineno": 200,
+            { "lineno": 222,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's step value.",
@@ -154,9 +173,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 100,
+          [ { "lineno": 122,
               "filename": "PanelSlider.js" },
-            { "lineno": 118,
+            { "lineno": 140,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets the slider's numeric input suffix.",
@@ -179,9 +198,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 59,
               "filename": "PanelSlider.js" },
-            { "lineno": 50,
+            { "lineno": 73,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -204,33 +223,24 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 16,
               "filename": "PanelSlider.js" },
-            { "lineno": 30,
+            { "lineno": 31,
               "filename": "PanelSlider.js" } ],
         "docs":
-          { "summary": "Sets or gets an element's value.",
+          { "summary": "Sets or gets the value of the slider.",
             "description":
               [ "Sets or gets the value of the slider. `value` is not bound by the [`min`](#min) or",
                 "[`max`](#max) values set for the slider.",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples":
-              [ { "title": "Get an element's value",
-                  "body":
-                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set an element's value",
-                  "body":
-                    [ "$w(\"#myElement\").value = \"42\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
@@ -247,7 +257,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 214,
+          [ { "lineno": 236,
               "filename": "PanelSlider.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",

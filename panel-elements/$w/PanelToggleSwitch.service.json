@@ -20,9 +20,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 34,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 46,
+            { "lineno": 45,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets whether the toggle switch is on or off.",
@@ -33,16 +33,15 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 53,
+          [ { "lineno": 52,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 70,
+            { "lineno": 69,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -58,15 +57,15 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
-        "defaultValue": "Empty string",
         "locations":
           [ { "lineno": 15,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 27,
+            { "lineno": 26,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -98,7 +97,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 78,
+          [ { "lineno": 77,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",

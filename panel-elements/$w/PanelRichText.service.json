@@ -35,7 +35,8 @@
         "extra":
           {  } },
       { "name": "content",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -45,7 +46,7 @@
             { "lineno": 24,
               "filename": "PanelRichText.js" } ],
         "docs":
-          { "summary": "Sets or gets the rich text content.",
+          { "summary": "Sets or gets the rich text content (without the link).",
             "links": [],
             "examples": [],
             "extra":
@@ -53,8 +54,7 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -78,7 +78,8 @@
         "extra":
           {  } },
       { "name": "richTextLabel",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -89,7 +90,7 @@
             { "lineno": 43,
               "filename": "PanelRichText.js" } ],
         "docs":
-          { "summary": "The link's text.",
+          { "summary": "Sets or gets the link's text.",
             "links": [],
             "examples": [],
             "extra":
@@ -97,7 +98,8 @@
         "extra":
           {  } },
       { "name": "richTextLink",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -108,7 +110,7 @@
             { "lineno": 64,
               "filename": "PanelRichText.js" } ],
         "docs":
-          { "summary": "The link's URL.",
+          { "summary": "Sets or gets the link's URL.",
             "links": [],
             "examples": [],
             "extra":
