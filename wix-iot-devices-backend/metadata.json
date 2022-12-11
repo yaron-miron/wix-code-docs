@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-iot-devices-backend",
+  "fingerprint": "b025a12bfad4b6682b4e40b2aca28c0d9c8a28660ac9a1fe4ed97eea",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-iot-devices-backend-velo-autogen",
+  "module": "wix-iot-devices-backend"
+}
