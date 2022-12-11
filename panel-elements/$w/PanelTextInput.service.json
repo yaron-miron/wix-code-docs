@@ -13,9 +13,8 @@
       "description":
         [ "A text input is an input field that receives strings.",
           "",
-          "<blockquote class=\"important\">__Important:__ ",
-          "This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons). ",
-          "</blockquote>" ],
+          "> **Important**:  ",
+          "> This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -28,9 +27,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 183,
+          [ { "lineno": 182,
               "filename": "PanelTextInput.js" },
-            { "lineno": 195,
+            { "lineno": 194,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets whether the input field is in focus.",
@@ -46,9 +45,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 43,
+          [ { "lineno": 42,
               "filename": "PanelTextInput.js" },
-            { "lineno": 54,
+            { "lineno": 53,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the default value of a text input.",
@@ -65,9 +64,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 119,
+          [ { "lineno": 118,
               "filename": "PanelTextInput.js" },
-            { "lineno": 136,
+            { "lineno": 135,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -88,9 +87,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 82,
+          [ { "lineno": 81,
               "filename": "PanelTextInput.js" },
-            { "lineno": 93,
+            { "lineno": 92,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -117,9 +116,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 281,
+          [ { "lineno": 280,
               "filename": "PanelTextInput.js" },
-            { "lineno": 293,
+            { "lineno": 292,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the maximum length of input text.",
@@ -135,9 +134,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 100,
+          [ { "lineno": 99,
               "filename": "PanelTextInput.js" },
-            { "lineno": 111,
+            { "lineno": 110,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the placeholder text of an element.",
@@ -164,9 +163,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 143,
+          [ { "lineno": 142,
               "filename": "PanelTextInput.js" },
-            { "lineno": 155,
+            { "lineno": 154,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets text that is displayed before the text input field.",
@@ -193,9 +192,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 163,
+          [ { "lineno": 162,
               "filename": "PanelTextInput.js" },
-            { "lineno": 175,
+            { "lineno": 174,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets whether the value of the input element is read-only (cannot be modified by users).",
@@ -212,9 +211,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 241,
+          [ { "lineno": 240,
               "filename": "PanelTextInput.js" },
-            { "lineno": 253,
+            { "lineno": 252,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the regex validation pattern.",
@@ -231,9 +230,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 202,
+          [ { "lineno": 201,
               "filename": "PanelTextInput.js" },
-            { "lineno": 214,
+            { "lineno": 213,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets whether the input field content is automatically selected on focus.",
@@ -250,9 +249,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 62,
+          [ { "lineno": 61,
               "filename": "PanelTextInput.js" },
-            { "lineno": 76,
+            { "lineno": 75,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -281,9 +280,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 221,
+          [ { "lineno": 220,
               "filename": "PanelTextInput.js" },
-            { "lineno": 233,
+            { "lineno": 232,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets whether the input field uses regex validation.",
@@ -300,9 +299,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 262,
+          [ { "lineno": 261,
               "filename": "PanelTextInput.js" },
-            { "lineno": 274,
+            { "lineno": 273,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets the error message that is displayed if the regex validation fails.",
@@ -313,15 +312,14 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 18,
               "filename": "PanelTextInput.js" },
-            { "lineno": 35,
+            { "lineno": 34,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
@@ -358,7 +356,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 307,
+          [ { "lineno": 306,
               "filename": "PanelTextInput.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
