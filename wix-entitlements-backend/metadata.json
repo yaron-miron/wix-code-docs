@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-entitlements-backend",
+  "fingerprint": "208fa4f42b41ad58a91205ff94ebbadd79746518a1d41e25dfa26dcc",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-entitlements-backend-velo-autogen",
+  "module": "wix-entitlements-backend"
+}
