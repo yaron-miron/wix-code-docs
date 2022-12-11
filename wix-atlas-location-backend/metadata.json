@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-atlas-location-backend",
+  "fingerprint": "2ac388894fb1db20760ef3cb28eeec02bc68f652f8799c692a8eaf40",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-atlas-location-backend-velo-autogen",
+  "module": "wix-atlas-location-backend"
+}
