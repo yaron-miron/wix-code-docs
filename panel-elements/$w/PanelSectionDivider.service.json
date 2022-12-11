@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelSectionDivider.js" },
@@ -14,7 +15,8 @@
           "",
           " ![Section Divider](images/section_divider.png)  ",
           "",
-          "This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
+          "> **Important**:  ",
+          "> This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -26,9 +28,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 39,
+          [ { "lineno": 40,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 50,
+            { "lineno": 51,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -55,9 +57,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 20,
               "filename": "PanelSectionDivider.js" },
-            { "lineno": 33,
+            { "lineno": 34,
               "filename": "PanelSectionDivider.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",

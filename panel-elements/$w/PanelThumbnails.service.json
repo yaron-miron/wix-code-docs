@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelThumbnails.js" },
@@ -12,7 +13,8 @@
       "description":
         [ "Thumbnails allow users to select an option using a set of thumbnail images.",
           "",
-          " This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
+          "> **Important**:  ",
+          "> This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -25,9 +27,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 78,
+          [ { "lineno": 79,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 95,
+            { "lineno": 96,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -49,9 +51,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 59,
+          [ { "lineno": 60,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 71,
+            { "lineno": 72,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -78,9 +80,9 @@
         "type": "number",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 102,
+          [ { "lineno": 103,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 114,
+            { "lineno": 115,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the number of thumbnail columns.",
@@ -100,9 +102,9 @@
               [ "$w.PanelThumbnails.option" ] },
         "defaultValue": "empty array",
         "locations":
-          [ { "lineno": 186,
+          [ { "lineno": 187,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 200,
+            { "lineno": 201,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the thumbnail group.",
@@ -121,9 +123,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 146,
+          [ { "lineno": 147,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 158,
+            { "lineno": 159,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets whether an empty thumbnail is shown.",
@@ -140,9 +142,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 166,
+          [ { "lineno": 167,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 178,
+            { "lineno": 179,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets whether the thumbnail labels are displayed.",
@@ -159,9 +161,9 @@
         "type": "string",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 123,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 138,
+            { "lineno": 139,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the thumbnail's height ratio.",
@@ -182,9 +184,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 39,
+          [ { "lineno": 40,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 53,
+            { "lineno": 54,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -212,9 +214,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 18,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 33,
+            { "lineno": 34,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
@@ -241,7 +243,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 225,
+          [ { "lineno": 226,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -275,7 +277,7 @@
   "messages":
     [ { "name": "illustration",
         "locations":
-          [ { "lineno": 217,
+          [ { "lineno": 218,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "An object representing an SVG illustration.",
@@ -292,7 +294,7 @@
         "labels": [] },
       { "name": "option",
         "locations":
-          [ { "lineno": 207,
+          [ { "lineno": 208,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "An object representing a thumbnail option.",
