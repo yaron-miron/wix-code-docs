@@ -11,7 +11,9 @@
   "docs":
     { "summary": "Checkbox groups are used for selecting any number of the given options.",
       "description":
-        [ "Checkbox groups consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code." ],
+        [ "Checkbox groups consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code.",
+          "",
+          " This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -24,9 +26,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 77,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 92,
+            { "lineno": 94,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -47,9 +49,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 58,
+          [ { "lineno": 60,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 69,
+            { "lineno": 71,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -70,8 +72,7 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type":
@@ -79,9 +80,9 @@
             "typeParams":
               [ "$w.PanelCheckboxGroup.option" ] },
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 100,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 123,
+            { "lineno": 125,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options of the checkbox group.",
@@ -112,9 +113,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 38,
+          [ { "lineno": 40,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 52,
+            { "lineno": 54,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -137,8 +138,7 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type":
@@ -146,9 +146,9 @@
             "typeParams":
               [ "string" ] },
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 17,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 32,
+            { "lineno": 34,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the value of the selected options.",
@@ -176,7 +176,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 137,
+          [ { "lineno": 139,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -210,7 +210,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 129,
+          [ { "lineno": 131,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",
@@ -227,7 +227,6 @@
               "doc": "The value of the checkbox option. This is what you use in code." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     { "queryable": true } }

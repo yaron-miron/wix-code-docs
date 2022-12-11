@@ -1,7 +1,8 @@
 { "name": "PanelToggleSwitch",
   "memberOf": "$w",
   "mixes":
-    [ "$w.HiddenCollapsedMixin" ],
+    [ "$w.HiddenCollapsedMixin",
+      "$w.HiddenCollapsedMixin" ],
   "labels":
     [ "changed" ],
   "location":
@@ -9,6 +10,8 @@
       "filename": "PanelToggleSwitch.js" },
   "docs":
     { "summary": "Toggle switches are used for a single binary choice.",
+      "description":
+        [ "This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -20,9 +23,9 @@
         "set": true,
         "type": "boolean",
         "locations":
-          [ { "lineno": 34,
+          [ { "lineno": 37,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 45,
+            { "lineno": 48,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets whether the toggle switch is on or off.",
@@ -39,9 +42,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 52,
+          [ { "lineno": 55,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 69,
+            { "lineno": 72,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -57,15 +60,14 @@
         "extra":
           {  } },
       { "name": "label",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 18,
               "filename": "PanelToggleSwitch.js" },
-            { "lineno": 26,
+            { "lineno": 29,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -97,7 +99,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 77,
+          [ { "lineno": 80,
               "filename": "PanelToggleSwitch.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",

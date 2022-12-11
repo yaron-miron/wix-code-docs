@@ -11,7 +11,9 @@
   "docs":
     { "summary": "Radio button groups are used for selecting one of a number of options.",
       "description":
-        [ "Radio button groups consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code." ],
+        [ "Radio button groups consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code.",
+          "",
+          " This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -24,9 +26,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 76,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 91,
+            { "lineno": 93,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -47,9 +49,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 58,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 67,
+            { "lineno": 69,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -79,9 +81,9 @@
               [ "$w.PanelRadioButtonGroup.option" ] },
         "defaultValue": "empty array",
         "locations":
-          [ { "lineno": 99,
+          [ { "lineno": 101,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 113,
+            { "lineno": 115,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the radio button group.",
@@ -100,9 +102,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 36,
+          [ { "lineno": 38,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 50,
+            { "lineno": 52,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -125,15 +127,14 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 17,
               "filename": "PanelRadioButtonGroup.js" },
-            { "lineno": 30,
+            { "lineno": 32,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
@@ -159,7 +160,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 130,
+          [ { "lineno": 132,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -193,7 +194,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 120,
+          [ { "lineno": 122,
               "filename": "PanelRadioButtonGroup.js" } ],
         "docs":
           { "summary": "An object representing a radio button option.",
@@ -210,7 +211,6 @@
               "doc": "The value of the radio button option. This is what you use in code." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     { "queryable": true } }

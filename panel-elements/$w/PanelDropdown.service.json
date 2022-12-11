@@ -11,7 +11,9 @@
   "docs":
     { "summary": "Dropdowns are used for selecting one of a number of options.",
       "description":
-        [ "Dropdowns consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code." ],
+        [ "Dropdowns consist of a list of options. Each option contains a label, which is what the user sees, and a value, which is what is used in code.",
+          "",
+          " This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -24,9 +26,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 96,
               "filename": "PanelDropdown.js" },
-            { "lineno": 111,
+            { "lineno": 113,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -47,9 +49,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 55,
+          [ { "lineno": 57,
               "filename": "PanelDropdown.js" },
-            { "lineno": 66,
+            { "lineno": 68,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the label of an element.",
@@ -78,9 +80,9 @@
             "typeParams":
               [ "$w.PanelDropdown.option" ] },
         "locations":
-          [ { "lineno": 119,
+          [ { "lineno": 121,
               "filename": "PanelDropdown.js" },
-            { "lineno": 132,
+            { "lineno": 134,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the dropdown.",
@@ -98,9 +100,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 76,
               "filename": "PanelDropdown.js" },
-            { "lineno": 87,
+            { "lineno": 89,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the placeholder text of an element.",
@@ -129,9 +131,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 37,
               "filename": "PanelDropdown.js" },
-            { "lineno": 49,
+            { "lineno": 51,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -154,15 +156,14 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 15,
+          [ { "lineno": 17,
               "filename": "PanelDropdown.js" },
-            { "lineno": 29,
+            { "lineno": 31,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets an element's value.",
@@ -187,7 +188,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 149,
+          [ { "lineno": 151,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -221,7 +222,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 139,
+          [ { "lineno": 141,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "An object representing a dropdown option.",
@@ -238,7 +239,6 @@
               "doc": "The value of the dropdown option. This is what you use in code." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     { "queryable": true } }

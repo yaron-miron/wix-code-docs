@@ -3,12 +3,15 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
   "docs":
     { "summary": "A button on your panel.",
+      "description":
+        [ "This element is available only in [custom panels built in Blocks](https://support.wix.com/en/article/wix-blocks-designing-custom-panels-for-your-widgets-action-bar-buttons)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -20,9 +23,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 52,
               "filename": "PanelButton.js" },
-            { "lineno": 62,
+            { "lineno": 63,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the button's label (the text that appears on the button).",
@@ -39,9 +42,9 @@
         "type": "string",
         "defaultValue": "\"long\"",
         "locations":
-          [ { "lineno": 189,
+          [ { "lineno": 190,
               "filename": "PanelButton.js" },
-            { "lineno": 206,
+            { "lineno": 207,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the type of divider displayed under the element.",
@@ -63,9 +66,9 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 165,
+          [ { "lineno": 166,
               "filename": "PanelButton.js" },
-            { "lineno": 177,
+            { "lineno": 178,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets whether the button is stretched to the full width of the panel.",
@@ -81,9 +84,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 34,
+          [ { "lineno": 35,
               "filename": "PanelButton.js" },
-            { "lineno": 45,
+            { "lineno": 46,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the text above the button (field title).",
@@ -110,9 +113,9 @@
         "type": "$w.PanelButton.icon",
         "defaultValue": "`undefined`",
         "locations":
-          [ { "lineno": 124,
+          [ { "lineno": 125,
               "filename": "PanelButton.js" },
-            { "lineno": 136,
+            { "lineno": 137,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the icon that precedes the button's label (in SVG format).",
@@ -129,9 +132,9 @@
         "type": "string",
         "defaultValue": "`\"medium\"`",
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 99,
               "filename": "PanelButton.js" },
-            { "lineno": 115,
+            { "lineno": 116,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the button's size.",
@@ -153,9 +156,9 @@
         "type": "string",
         "defaultValue": "`\"standard\"`",
         "locations":
-          [ { "lineno": 70,
+          [ { "lineno": 71,
               "filename": "PanelButton.js" },
-            { "lineno": 91,
+            { "lineno": 92,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the button's skin.",
@@ -181,9 +184,9 @@
         "type": "$w.PanelButton.icon",
         "defaultValue": "`undefined`",
         "locations":
-          [ { "lineno": 144,
+          [ { "lineno": 145,
               "filename": "PanelButton.js" },
-            { "lineno": 156,
+            { "lineno": 157,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets the icon that follows the button's label (in SVG format).",
@@ -200,9 +203,9 @@
         "type": "string",
         "defaultValue": "Empty string",
         "locations":
-          [ { "lineno": 14,
+          [ { "lineno": 15,
               "filename": "PanelButton.js" },
-            { "lineno": 28,
+            { "lineno": 29,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Sets or gets an element's tooltip.",
@@ -236,7 +239,7 @@
           { "type": "$w.Element",
             "doc": "The element to which the event handler was added." },
         "locations":
-          [ { "lineno": 212,
+          [ { "lineno": 213,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the element is clicked.",
@@ -266,7 +269,7 @@
   "messages":
     [ { "name": "icon",
         "locations":
-          [ { "lineno": 244,
+          [ { "lineno": 245,
               "filename": "PanelButton.js" } ],
         "docs":
           { "summary": "An object representing an SVG icon.",
