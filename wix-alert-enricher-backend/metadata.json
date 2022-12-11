@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-alert-enricher-backend",
+  "fingerprint": "3eabaeff8edc8a8fd3a4367e8ca8436a863ccf07cf3b951f63e918f2",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-alert-enricher-backend-velo-autogen",
+  "module": "wix-alert-enricher-backend"
+}
