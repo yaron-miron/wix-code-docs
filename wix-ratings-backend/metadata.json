@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-ratings-backend",
+  "fingerprint": "8da27441af17d18c72ca4033280a3cdd2c797d94b327804706d39ff1",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-ratings-backend-velo-autogen",
+  "module": "wix-ratings-backend"
+}
