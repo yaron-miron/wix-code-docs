@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelCheckboxGroup.js" },
@@ -72,7 +73,8 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -82,7 +84,7 @@
         "locations":
           [ { "lineno": 101,
               "filename": "PanelCheckboxGroup.js" },
-            { "lineno": 126,
+            { "lineno": 127,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Sets or gets the options of the checkbox group.",
@@ -101,7 +103,31 @@
                 "   1. Make changes to the options array.",
                 "   1. Reset the `options` property with the modified array." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the list of options and the first option's label and value from a checkbox group",
+                  "body":
+                    [ "let checkboxGroupOptions = $w(\"#myCheckboxGroup\").options;",
+                      "",
+                      "let firstLabel = checkboxGroupOptions[0].label;   // \"First Label\"",
+                      "let firstValue = checkboxGroupOptions[0].value;   // \"first_value\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the list of options for a checkbox group",
+                  "body":
+                    [ "$w(\"#myCheckboxGroup\").options = [",
+                      "  {\"label\": \"Who's on first!\", \"value\": \"first\"},",
+                      "  {\"label\": \"What's on second\", \"value\": \"second\"},",
+                      "  {\"label\": \"I Don't Know is on third\", \"value\": \"third\"}",
+                      "];" ],
+                  "extra":
+                    {  } },
+                { "title": "Add an option to a checkbox group",
+                  "body":
+                    [ "let opts = $w(\"#myCheckboxGroup\").options;",
+                      "opts.push({\"label\": \"New Label\", \"value\": \"New Value\"});",
+                      "$w(\"#myCheckboxGroup\").options = opts;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -186,7 +212,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 140,
+          [ { "lineno": 141,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -220,7 +246,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 132,
+          [ { "lineno": 133,
               "filename": "PanelCheckboxGroup.js" } ],
         "docs":
           { "summary": "An object representing a checkbox option.",

@@ -3,8 +3,7 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -127,8 +126,7 @@
         "extra":
           {  } },
       { "name": "size",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -162,8 +160,7 @@
         "extra":
           {  } },
       { "name": "skin",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
