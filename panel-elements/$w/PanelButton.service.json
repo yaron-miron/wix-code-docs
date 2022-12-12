@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -36,7 +37,8 @@
         "extra":
           {  } },
       { "name": "divider",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -54,7 +56,17 @@
                 "* `\"short\"`",
                 "* `\"none\"`" ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get an element's divider type",
+                  "body":
+                    [ "let divider = $w(\"#myElement\").divider;  // \"none\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's divider type",
+                  "body":
+                    [ "$w(\"#myElement\").divider = \"none\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
