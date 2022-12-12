@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-forum-backend",
+  "fingerprint": "58241b495018a6825ec1f072dfa228c5ed9770a75bf6296dd95f3774",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-forum-backend-velo-autogen",
+  "module": "wix-forum-backend"
+}
