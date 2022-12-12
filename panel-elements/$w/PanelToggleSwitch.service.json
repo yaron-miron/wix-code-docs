@@ -19,7 +19,8 @@
         {  } },
   "properties":
     [ { "name": "checked",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -31,14 +32,23 @@
         "docs":
           { "summary": "Sets or gets whether the toggle switch is on or off.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get whether a switch is toggled on or off",
+                  "body":
+                    [ "let isChecked = $w(\"#mySwitch\").checked;  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a switch to be toggled on",
+                  "body":
+                    [ "$w(\"#mySwitch\").checked = true;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",

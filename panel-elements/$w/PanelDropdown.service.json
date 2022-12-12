@@ -21,8 +21,7 @@
         {  } },
   "properties":
     [ { "name": "divider",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -84,7 +83,8 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -94,14 +94,38 @@
         "locations":
           [ { "lineno": 122,
               "filename": "PanelDropdown.js" },
-            { "lineno": 135,
+            { "lineno": 136,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the dropdown.",
             "description":
               [ "`options` is an array of objects, each representing an option available to a user." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the list of options and the first option's label and value from dropdown",
+                  "body":
+                    [ "let dropdownOptions = $w(\"#myDropdown\").options;",
+                      "",
+                      "let firstLabel = dropdownOptions[0].label;  // \"First Label\"",
+                      "let firstValue = dropdownOptions[0].value;  // \"first_value\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the list of options for a dropdown",
+                  "body":
+                    [ "$w(\"#myDropdown\").options = [",
+                      "  {\"label\": \"Who's on first!\", \"value\": \"first\"},",
+                      "  {\"label\": \"What's on second\", \"value\": \"second\"},",
+                      "  {\"label\": \"I Don't Know is on third\", \"value\": \"third\"}",
+                      "];" ],
+                  "extra":
+                    {  } },
+                { "title": "Add an option to a dropdown",
+                  "body":
+                    [ "let opts = $w(\"#myDropdown\").options;",
+                      "opts.push({\"label\": \"New Label\", \"value\": \"New Value\"});",
+                      "$w(\"#myDropdown\").options = opts;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -210,7 +234,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 152,
+          [ { "lineno": 153,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -244,7 +268,7 @@
   "messages":
     [ { "name": "option",
         "locations":
-          [ { "lineno": 142,
+          [ { "lineno": 143,
               "filename": "PanelDropdown.js" } ],
         "docs":
           { "summary": "An object representing a dropdown option.",
