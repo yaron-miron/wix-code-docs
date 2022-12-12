@@ -223,7 +223,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -239,7 +240,17 @@
                 "[`max`](#max) values set for the slider.",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get an element's value",
+                  "body":
+                    [ "let sliderValue = $w(\"#mySlider\").value; // 46" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's value",
+                  "body":
+                    [ "$w(\"#mySlider\").value = 46;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":

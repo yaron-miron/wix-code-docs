@@ -139,7 +139,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -160,7 +161,17 @@
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the values of the selected options",
+                  "body":
+                    [ "let myValue = $w(\"#myCheckboxGroup\").value;  // [\"value1\", \"value2\"]" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the selected options by values",
+                  "body":
+                    [ "$w(\"#myCheckboxGroup\").value = [\"value1\", \"value2\"];" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":

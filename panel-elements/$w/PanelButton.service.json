@@ -127,7 +127,8 @@
         "extra":
           {  } },
       { "name": "size",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -145,13 +146,24 @@
                 "* `\"medium\"`",
                 "* `\"large\"`" ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a button's size",
+                  "body":
+                    [ "let label = $w(\"#myButton\").skin;  // \"premium\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a button's size",
+                  "body":
+                    [ "$w(\"#myButton\").skin = \"premium\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "skin",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -173,7 +185,17 @@
                 "* `\"alert secondary\"`",
                 "* `\"inverted\"`" ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a button's skin",
+                  "body":
+                    [ "let label = $w(\"#myButton\").skin;  // \"premium\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a button's skin",
+                  "body":
+                    [ "$w(\"#myButton\").skin = \"premium\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":

@@ -157,7 +157,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -172,7 +173,17 @@
               [ "To reset the element, set the value property to `null` or `undefined`.",
                 "Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get an element's value",
+                  "body":
+                    [ "let myValue = $w(\"#myElement\").value; // \"option-1\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set an element's value",
+                  "body":
+                    [ "$w(\"#myElement\").value = \"42\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":

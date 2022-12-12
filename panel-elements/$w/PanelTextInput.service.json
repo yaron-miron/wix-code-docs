@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelTextInput.js" },
@@ -156,7 +157,8 @@
         "extra":
           {  } },
       { "name": "prefix",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -169,17 +171,7 @@
         "docs":
           { "summary": "Sets or gets text that is displayed before the text input field.",
             "links": [],
-            "examples":
-              [ { "title": "Get a text input's prefix",
-                  "body":
-                    [ "let tooltip = $w(\"#myElement\").prefix;  // \"Mr.\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set a text input's prefix",
-                  "body":
-                    [ "$w(\"#myElement\").prefix = \"New prefix\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
@@ -311,7 +303,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -328,17 +321,7 @@
                 "",
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
-            "examples":
-              [ { "title": "Get an element's value",
-                  "body":
-                    [ "let myValue = $w(\"#myElement\").value; // \"42\"" ],
-                  "extra":
-                    {  } },
-                { "title": "Set an element's value",
-                  "body":
-                    [ "$w(\"#myElement\").value = \"42\";" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "extra":
