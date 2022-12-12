@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelThumbnails.js" },
@@ -102,7 +103,8 @@
         "extra":
           {  } },
       { "name": "options",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type":
@@ -113,14 +115,38 @@
         "locations":
           [ { "lineno": 187,
               "filename": "PanelThumbnails.js" },
-            { "lineno": 201,
+            { "lineno": 202,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Sets or gets the options in the thumbnail group.",
             "description":
               [ "`options` is an array of objects, each representing an option available to a user." ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the list of options and the first option's label and value from a thumbnail group",
+                  "body":
+                    [ "let thumbnailsOptions = $w(\"#myThumbnails\").options;",
+                      "",
+                      "let firstLabel = thumbnailsOptions[0].label;  // \"First Label\"",
+                      "let firstValue = thumbnailsOptions[0].value;  // \"first_value\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the list of options for a thumbnail group",
+                  "body":
+                    [ "$w(\"#myThumbnails\").options = [",
+                      "  {\"label\": \"Who's on first!\", \"value\": \"first\"},",
+                      "  {\"label\": \"What's on second\", \"value\": \"second\"},",
+                      "  {\"label\": \"I Don't Know is on third\", \"value\": \"third\"}",
+                      "];" ],
+                  "extra":
+                    {  } },
+                { "title": "Add an option to a thumbnail group",
+                  "body":
+                    [ "let opts = $w(\"#myThumbnails\").options;",
+                      "opts.push({\"label\": \"New Label\", \"value\": \"New Value\"});",
+                      "$w(\"#myThumbnails\").options = opts;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -262,7 +288,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 226,
+          [ { "lineno": 227,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an input element's value\n is changed.",
@@ -296,7 +322,7 @@
   "messages":
     [ { "name": "illustration",
         "locations":
-          [ { "lineno": 218,
+          [ { "lineno": 219,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "An object representing an SVG illustration.",
@@ -313,7 +339,7 @@
         "labels": [] },
       { "name": "option",
         "locations":
-          [ { "lineno": 208,
+          [ { "lineno": 209,
               "filename": "PanelThumbnails.js" } ],
         "docs":
           { "summary": "An object representing a thumbnail option.",

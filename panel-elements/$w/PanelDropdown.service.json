@@ -102,7 +102,7 @@
               [ "`options` is an array of objects, each representing an option available to a user." ],
             "links": [],
             "examples":
-              [ { "title": "Get the list of options and the first option's label and value from dropdown",
+              [ { "title": "Get the list of options and the first option's label and value from a dropdown",
                   "body":
                     [ "let dropdownOptions = $w(\"#myDropdown\").options;",
                       "",
