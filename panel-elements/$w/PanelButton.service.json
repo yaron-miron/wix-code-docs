@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -127,7 +128,8 @@
         "extra":
           {  } },
       { "name": "prefixIcon",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -140,7 +142,19 @@
         "docs":
           { "summary": "Sets or gets the icon that precedes the button's label (in SVG format).",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a button's prefix icon",
+                  "body":
+                    [ "let skin = $w(\"#myButton\").prefixIcon;  // {svgId: \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\"}" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a button's prefix icon",
+                  "body":
+                    [ "const mySvg = \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\";",
+                      "",
+                      "$w(\"#myButton\").prefixIcon = {svgId: mySvg};" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -218,7 +232,8 @@
         "extra":
           {  } },
       { "name": "suffixIcon",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -231,7 +246,19 @@
         "docs":
           { "summary": "Sets or gets the icon that follows the button's label (in SVG format).",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a button's suffix icon",
+                  "body":
+                    [ "let skin = $w(\"#myButton\").prefixIcon;  // {svgId: \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\"}" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a button's suffix icon",
+                  "body":
+                    [ "const mySvg = \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\";",
+                      "",
+                      "$w(\"#myButton\").prefixIcon = {svgId: mySvg};" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
