@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelRichText.js" },
@@ -18,11 +19,12 @@
         {  } },
   "properties":
     [ { "name": "alignCenter",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
-        "type": "string",
-        "defaultValue": "Empty string",
+        "type": "boolean",
+        "defaultValue": "false",
         "locations":
           [ { "lineno": 76,
               "filename": "PanelRichText.js" },
@@ -31,13 +33,24 @@
         "docs":
           { "summary": "Sets or gets whether the text is centered.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get whether the text is centered",
+                  "body":
+                    [ "let isCenterAligned = $w(\"#myText\").alignCenter;  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the text to be centered",
+                  "body":
+                    [ "let isCenterAligned = $w(\"#myText\").alignCenter;  // true" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "content",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -49,7 +62,17 @@
         "docs":
           { "summary": "Sets or gets the rich text content (without the link).",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the rich text content",
+                  "body":
+                    [ "let myContent = $w(\"#myText\").content;  // \"Some text\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the rich text content",
+                  "body":
+                    [ "$w(\"#myText\").content = \"Some text\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -89,7 +112,8 @@
         "extra":
           {  } },
       { "name": "richTextLabel",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -102,13 +126,24 @@
         "docs":
           { "summary": "Sets or gets the link's text.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the link text",
+                  "body":
+                    [ "let myLinkLabel = $w(\"#myText\").richTextLabel;  // \"Learn More\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the link text",
+                  "body":
+                    [ "$w(\"#myText\").richTextLabel = \"Learn More\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "richTextLink",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -121,7 +156,17 @@
         "docs":
           { "summary": "Sets or gets the link's URL.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the link",
+                  "body":
+                    [ "let myLink = $w(\"#myText\").richTextLink;  // \"https://link.com\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the link",
+                  "body":
+                    [ "$w(\"#myText\").richTextLink = \"https://link.com\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":

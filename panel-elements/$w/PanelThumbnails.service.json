@@ -161,8 +161,7 @@
         "extra":
           {  } },
       { "name": "showEmptyThumbnail",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -220,7 +219,8 @@
         "extra":
           {  } },
       { "name": "thumbnailHeight",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -240,7 +240,7 @@
             "examples":
               [ { "title": "Get the thumbnails' height ratio",
                   "body":
-                    [ "let columns = $w(\"#myThumbnails\").thumbnailHeight; // \"Fluid\"" ],
+                    [ "let height = $w(\"#myThumbnails\").thumbnailHeight; // \"Fluid\"" ],
                   "extra":
                     {  } },
                 { "title": "Set the thumbnails' height ratio",
