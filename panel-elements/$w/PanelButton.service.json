@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelButton.js" },
@@ -230,7 +231,8 @@
         "extra":
           {  } },
       { "name": "suffixIcon",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "$w.PanelButton.icon",
@@ -246,14 +248,14 @@
             "examples":
               [ { "title": "Get a button's suffix icon",
                   "body":
-                    [ "let skin = $w(\"#myButton\").prefixIcon;  // {svgId: \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\"}" ],
+                    [ "let skin = $w(\"#myButton\").suffixIcon;  // {svgId: \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\"}" ],
                   "extra":
                     {  } },
                 { "title": "Set a button's suffix icon",
                   "body":
                     [ "const mySvg = \"<svg> <circle cx=\\\"5\\\" cy=\\\"5\\\" r=\\\"4\\\" fill=\\\"white\\\" /> </svg>\";",
                       "",
-                      "$w(\"#myButton\").prefixIcon = {svgId: mySvg};" ],
+                      "$w(\"#myButton\").suffixIcon = {svgId: mySvg};" ],
                   "extra":
                     {  } } ],
             "extra":

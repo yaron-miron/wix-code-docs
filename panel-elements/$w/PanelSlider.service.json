@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelSlider.js" },
@@ -100,7 +101,8 @@
         "extra":
           {  } },
       { "name": "max",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -113,13 +115,24 @@
         "docs":
           { "summary": "Sets or gets the slider's maximum value.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a slider's maximum value",
+                  "body":
+                    [ "let sliderMax = $w(\"#mySlider\").max; // 10" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a slider's maximum value",
+                  "body":
+                    [ "$w(\"#mySlider\").max = 10;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "min",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -132,13 +145,24 @@
         "docs":
           { "summary": "Sets or gets the slider's minimum value.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a slider's minimum value",
+                  "body":
+                    [ "let sliderMin = $w(\"#mySlider\").min; // 0" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a slider's minimum value",
+                  "body":
+                    [ "$w(\"#mySlider\").min = 0;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "showNumericInput",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -151,13 +175,24 @@
         "docs":
           { "summary": "Sets or gets whether the slider's numeric input field is displayed.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get whether the slider's numeric input field is displayed",
+                  "body":
+                    [ "let numericInputShown = $w(\"#mySlider\").showNumericInput;  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the slider's numeric input field to be displayed",
+                  "body":
+                    [ "$w(\"#mySlider\").showNumericInput = true;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "step",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -170,7 +205,17 @@
         "docs":
           { "summary": "Sets or gets the slider's step value.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get a slider's step value",
+                  "body":
+                    [ "let sliderStep = $w(\"#mySlider\").step; // 5" ],
+                  "extra":
+                    {  } },
+                { "title": "Set a slider's step value",
+                  "body":
+                    [ "$w(\"#mySlider\").step = 5;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -232,7 +277,8 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -249,12 +295,12 @@
                 "> **Note**: Changing an element's `value` in code does not trigger an `onChange` event." ],
             "links": [],
             "examples":
-              [ { "title": "Get an element's value",
+              [ { "title": "Get a slider's value",
                   "body":
                     [ "let sliderValue = $w(\"#mySlider\").value; // 46" ],
                   "extra":
                     {  } },
-                { "title": "Set an element's value",
+                { "title": "Set a slider's value",
                   "body":
                     [ "$w(\"#mySlider\").value = 46;" ],
                   "extra":

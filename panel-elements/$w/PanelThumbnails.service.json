@@ -3,7 +3,8 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "PanelThumbnails.js" },
@@ -83,7 +84,8 @@
         "extra":
           {  } },
       { "name": "numberOfColumns",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "number",
@@ -96,7 +98,17 @@
         "docs":
           { "summary": "Sets or gets the number of thumbnail columns.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the number of thumbnail columns",
+                  "body":
+                    [ "let columns = $w(\"#myThumbnails\").numberOfColumns; // 2" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the number of thumbnail columns",
+                  "body":
+                    [ "$w(\"#myThumbnails\").numberOfColumns = 2;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -150,7 +162,8 @@
         "extra":
           {  } },
       { "name": "showEmptyThumbnail",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -161,7 +174,7 @@
             { "lineno": 159,
               "filename": "PanelThumbnails.js" } ],
         "docs":
-          { "summary": "Sets or gets whether an empty thumbnail is shown.",
+          { "summary": "Sets or gets whether empty thumbnails are shown.",
             "links": [],
             "examples": [],
             "extra":
@@ -169,7 +182,8 @@
         "extra":
           {  } },
       { "name": "showLabels",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -182,13 +196,24 @@
         "docs":
           { "summary": "Sets or gets whether the thumbnail labels are displayed.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get whether the thumbnail labels are displayed",
+                  "body":
+                    [ "let labelsShown = $w(\"#myThumbnails\").showLabels;  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set thumbnail labels to be displayed",
+                  "body":
+                    [ "$w(\"#myThumbnails\").showLabels = true;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "thumbnailHeight",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": true,
         "type": "string",
@@ -199,13 +224,23 @@
             { "lineno": 139,
               "filename": "PanelThumbnails.js" } ],
         "docs":
-          { "summary": "Sets or gets the thumbnail's height ratio.",
+          { "summary": "Sets or gets the thumbnails' height ratio.",
             "description":
               [ "The height ratio can be:",
                 "* `\"Fixed ratio (1:1)\"`",
                 "* `\"Fluid\"`" ],
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get the thumbnails' height ratio",
+                  "body":
+                    [ "let columns = $w(\"#myThumbnails\").thumbnailHeight; // \"Fluid\"" ],
+                  "extra":
+                    {  } },
+                { "title": "Set the thumbnails' height ratio",
+                  "body":
+                    [ "$w(\"#myThumbnails\").thumbnailHeight = \"Fluid\";" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
