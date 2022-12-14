@@ -21,8 +21,7 @@
         {  } },
   "properties":
     [ { "name": "autoFocus",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -132,8 +131,7 @@
         "extra":
           {  } },
       { "name": "maxLength",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -190,8 +188,7 @@
         "extra":
           {  } },
       { "name": "prefix",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
@@ -220,8 +217,7 @@
         "extra":
           {  } },
       { "name": "readOnly",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -267,12 +263,12 @@
             "examples":
               [ { "title": "Get a text input's regex validation pattern",
                   "body":
-                    [ "let myPrefix = $w(\"#myTextInput\").prefix;  // \"Mr.\"" ],
+                    [ "let myRegex = $w(\"#myTextInput\").regexPattern;  // \"^([1-9]|10)$\"" ],
                   "extra":
                     {  } },
                 { "title": "Set a text input's regex validation pattern",
                   "body":
-                    [ "$w(\"#myTextInput\").prefix = \"New prefix\";" ],
+                    [ "$w(\"#myTextInput\").regexPattern = \"^([1-9]|10)$\"; // Allow only numbers between 1-10" ],
                   "extra":
                     {  } } ],
             "extra":
@@ -280,8 +276,7 @@
         "extra":
           {  } },
       { "name": "selectTextOnFocus",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -341,8 +336,7 @@
         "extra":
           {  } },
       { "name": "usePatternValidation",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -388,12 +382,12 @@
             "examples":
               [ { "title": "Get a text input's validation message",
                   "body":
-                    [ "let myRegex = $w(\"#myTextInput\").regexPattern;  // \"^([1-9]|10)$\"" ],
+                    [ "let myValidationMessage = $w(\"#myTextInput\").validationMessage;  // \"Please enter a number between 1 and 10.\"" ],
                   "extra":
                     {  } },
                 { "title": "Set a text input's validation message",
                   "body":
-                    [ "$w(\"#myTextInput\").regexPattern = \"^([1-9]|10)$\"; // Allow only numbers between 1-10" ],
+                    [ "$w(\"#myTextInput\").validationMessage = \"Please enter a number between 1 and 10.\";" ],
                   "extra":
                     {  } } ],
             "extra":
