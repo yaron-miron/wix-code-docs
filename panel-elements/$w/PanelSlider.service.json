@@ -3,8 +3,7 @@
   "mixes":
     [ "$w.HiddenCollapsedMixin",
       "$w.Element" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "PanelSlider.js" },
@@ -101,8 +100,7 @@
         "extra":
           {  } },
       { "name": "max",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -131,8 +129,7 @@
         "extra":
           {  } },
       { "name": "min",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -161,8 +158,7 @@
         "extra":
           {  } },
       { "name": "showNumericInput",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -191,8 +187,7 @@
         "extra":
           {  } },
       { "name": "step",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -277,8 +272,7 @@
         "extra":
           {  } },
       { "name": "value",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",

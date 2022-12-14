@@ -84,8 +84,7 @@
         "extra":
           {  } },
       { "name": "numberOfColumns",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "number",
@@ -176,14 +175,23 @@
         "docs":
           { "summary": "Sets or gets whether empty thumbnails are shown.",
             "links": [],
-            "examples": [],
+            "examples":
+              [ { "title": "Get whether empty thumbnails are shown",
+                  "body":
+                    [ "let emptyThumbnailsShown = $w(\"#myThumbnails\").showEmptyThumbnail;  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Set empty thumbnails to be shown",
+                  "body":
+                    [ "$w(\"#myThumbnails\").showEmptyThumbnail = true;" ],
+                  "extra":
+                    {  } } ],
             "extra":
               {  } },
         "extra":
           {  } },
       { "name": "showLabels",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "boolean",
@@ -212,8 +220,7 @@
         "extra":
           {  } },
       { "name": "thumbnailHeight",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": true,
         "type": "string",
