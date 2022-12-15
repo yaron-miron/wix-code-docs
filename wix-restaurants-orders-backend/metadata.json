@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-restaurants-orders-backend",
+  "fingerprint": "769e247ef3e0384959d15c284dd72b05f459ed6216ed9397685dd518",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-restaurants-orders-backend-velo-autogen",
+  "module": "wix-restaurants-orders-backend"
+}
