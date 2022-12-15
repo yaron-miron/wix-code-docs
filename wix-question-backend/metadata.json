@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-question-backend",
+  "fingerprint": "014ee9e3a5759afa14f838f961efb27c5323662ba06ad7bf22322c71",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-question-backend-velo-autogen",
+  "module": "wix-question-backend"
+}
