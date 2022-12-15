@@ -10,55 +10,6 @@
   "properties": [],
   "operations": [
     {
-      "name": "calendarServerQuerySessions",
-      "params": [
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Sessions.CalendarServerQuerySessionsOptions"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-bookings-backend-v2.Sessions.V2QuerySessionsResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "summary": "TBD.",
-        "description": [],
-        "examples": [
-          {
-            "title": "calendarServerQuerySessions example",
-            "body": [
-              "",
-              "    function calendarServerQuerySessions() {",
-              "",
-              "  }",
-              "",
-              "  "
-            ]
-          }
-        ]
-      },
-      "isVeloEvent": false
-    },
-    {
       "name": "getSession",
       "params": [
         {
