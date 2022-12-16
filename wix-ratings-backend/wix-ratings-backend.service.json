@@ -1252,6 +1252,28 @@
       }
     },
     {
+      "name": "QueryRatingsOptions",
+      "members": [
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "undefined"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "QueryRatingsRequest",
       "members": [
         {
