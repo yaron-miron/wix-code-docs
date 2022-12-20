@@ -33,7 +33,7 @@
       "name": "AttributeSummary",
       "members": [
         {
-          "name": "attributeId",
+          "name": "attributeName",
           "optional": true,
           "type": [
             {
@@ -636,7 +636,7 @@
       "name": "GetEntitySummaryOptions",
       "members": [
         {
-          "name": "attributeIds",
+          "name": "attributeNames",
           "optional": true,
           "type": [
             {
@@ -673,7 +673,7 @@
       "name": "GetEntitySummaryRequest",
       "members": [
         {
-          "name": "attributeIds",
+          "name": "attributeNames",
           "optional": true,
           "type": [
             {
@@ -775,7 +775,7 @@
       "name": "GetGroupSummaryOptions",
       "members": [
         {
-          "name": "attributeIds",
+          "name": "attributeNames",
           "optional": true,
           "type": [
             {
@@ -812,7 +812,7 @@
       "name": "GetGroupSummaryRequest",
       "members": [
         {
-          "name": "attributeIds",
+          "name": "attributeNames",
           "optional": true,
           "type": [
             {
@@ -1085,8 +1085,7 @@
       "name": "ListAttributeAveragesByEntityOptions",
       "members": [
         {
-          "name": "attributeId",
-          "optional": true,
+          "name": "attributeName",
           "type": [
             {
               "nativeType": "string"
@@ -1132,8 +1131,7 @@
       "name": "ListAttributeAveragesByEntityRequest",
       "members": [
         {
-          "name": "attributeId",
-          "optional": true,
+          "name": "attributeName",
           "type": [
             {
               "nativeType": "string"
@@ -1424,7 +1422,7 @@
           "doc": "Represents the time this Rating was last updated"
         },
         {
-          "name": "attributeId",
+          "name": "attributeName",
           "optional": true,
           "type": [
             {
@@ -1585,7 +1583,7 @@
           "doc": "Represents the time this Rating was last updated"
         },
         {
-          "name": "attributeId",
+          "name": "attributeName",
           "optional": true,
           "type": [
             {
