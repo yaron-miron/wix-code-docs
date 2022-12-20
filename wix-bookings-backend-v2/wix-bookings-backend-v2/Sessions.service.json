@@ -144,7 +144,18 @@
     },
     {
       "name": "queryEventSessionInstances",
-      "params": [],
+      "params": [
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Sessions.QueryEventSessionInstancesOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
       "requiredFields": [],
       "ret": {
         "type": [
@@ -2088,7 +2099,32 @@
     },
     {
       "name": "QueryEventSessionInstancesOptions",
-      "members": [],
+      "members": [
+        {
+          "name": "fromDate",
+          "type": [
+            {
+              "nativeType": "undefined"
+            },
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "toDate",
+          "type": [
+            {
+              "nativeType": "undefined"
+            },
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        }
+      ],
       "docs": {
         "description": [
           ""
