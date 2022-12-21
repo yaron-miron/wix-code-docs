@@ -728,26 +728,6 @@
       }
     },
     {
-      "name": "CalendarServerQuerySessionsOptions",
-      "members": [
-        {
-          "name": "query",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Sessions.Query1klimitQueryV2"
-            }
-          ],
-          "doc": "TBD"
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "CursorPaging",
       "members": [
         {
@@ -2223,7 +2203,6 @@
         },
         {
           "name": "query",
-          "optional": true,
           "type": [
             {
               "referenceType": "wix-bookings-backend-v2.Sessions.QueryV2"
@@ -2263,7 +2242,6 @@
         },
         {
           "name": "query",
-          "optional": true,
           "type": [
             {
               "referenceType": "wix-bookings-backend-v2.Sessions.QueryV2"
@@ -3155,13 +3133,12 @@
       "members": [
         {
           "name": "query",
-          "optional": true,
           "type": [
             {
               "referenceType": "wix-bookings-backend-v2.Sessions.Query1klimitQueryV2"
             }
           ],
-          "doc": "TBD"
+          "doc": "The query containing filters, paging and field sets."
         }
       ],
       "docs": {
@@ -3181,7 +3158,7 @@
               "referenceType": "wix-bookings-backend-v2.Sessions.PagingMetadataV2"
             }
           ],
-          "doc": "TBD"
+          "doc": "Paging metadata."
         },
         {
           "name": "sessions",
@@ -3198,7 +3175,7 @@
               }
             }
           ],
-          "doc": "TBD"
+          "doc": "The sessions matching the given query."
         }
       ],
       "docs": {
