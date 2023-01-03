@@ -61,10 +61,20 @@
             "title": "getSession example",
             "body": [
               "",
-              "    function getSession() {",
+              "    ",
+              "    import { sessions } from 'wix-bookings-backend.v2';",
+              "  ",
+              "    ",
+              "    async function getSession(id, options) {",
+              "      try {",
+              "        const result = await sessions.getSession(id, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
@@ -131,10 +141,20 @@
             "title": "listSessions example",
             "body": [
               "",
-              "    function listSessions() {",
+              "    ",
+              "    import { sessions } from 'wix-bookings-backend.v2';",
+              "  ",
+              "    ",
+              "    async function listSessions(ids, options) {",
+              "      try {",
+              "        const result = await sessions.listSessions(ids, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
@@ -182,10 +202,20 @@
             "title": "queryEventSessionInstances example",
             "body": [
               "",
-              "    function queryEventSessionInstances() {",
+              "    ",
+              "    import { sessions } from 'wix-bookings-backend.v2';",
+              "  ",
+              "    ",
+              "    async function queryEventSessionInstances(options) {",
+              "      try {",
+              "        const result = await sessions.queryEventSessionInstances(options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
