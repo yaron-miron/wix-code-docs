@@ -1,0 +1,7 @@
+{
+  "name": "@wix/wix-notifications-backend",
+  "fingerprint": "572630a3496a7c00cf3e7aa1490d94aaa34b1e7e41cdec4de884a389",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-notifications-backend-velo-autogen",
+  "module": "wix-notifications-backend"
+}
