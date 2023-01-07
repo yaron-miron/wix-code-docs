@@ -1,0 +1,7 @@
+{
+  "name": "@wix/auto-velo-edm-wix-echo",
+  "fingerprint": "09e32d7be82a5162b348480a3e0d8ab7720dfceec69033db962ed9db",
+  "groupId": "com.wixpress.velo-autogen",
+  "artifactId": "wix-echo",
+  "module": "auto-velo-edm-wix-echo"
+}
