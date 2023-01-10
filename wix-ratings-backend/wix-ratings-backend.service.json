@@ -196,15 +196,6 @@
             }
           ],
           "doc": "ID of the rating to delete."
-        },
-        {
-          "name": "revision",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "The revision number of the rating."
         }
       ],
       "docs": {
@@ -1250,40 +1241,8 @@
       }
     },
     {
-      "name": "QueryRatingsOptions",
-      "members": [
-        {
-          "name": "namespace",
-          "type": [
-            {
-              "nativeType": "undefined"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "QueryRatingsRequest",
       "members": [
-        {
-          "name": "namespace",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Ability to set override namespace"
-        },
         {
           "name": "query",
           "optional": true,
