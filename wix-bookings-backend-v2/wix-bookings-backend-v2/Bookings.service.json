@@ -10,174 +10,6 @@
   "properties": [],
   "operations": [
     {
-      "name": "bookingsConfirmBooking",
-      "params": [
-        {
-          "name": "bookingId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "ID of the booking to confirm.",
-          "required": true
-        },
-        {
-          "name": "revision",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Revision number, which increments by 1 each time the booking is updated.\nTo prevent conflicting changes, the current revision must be passed when\nmanaging the booking.",
-          "required": true
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Bookings.BookingsConfirmBookingOptions"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [
-        "bookingId",
-        "revision"
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-bookings-backend-v2.Bookings.ConfirmBookingResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "summary": "Confirms a booking request and changes the booking status to `CONFIRMED`.",
-        "description": [
-          "Calling this endpoint doesn't check whether a slot or schedule is still\navailable at this time.\n\nYou can only confirm bookings for services that require the owner's manual\napproval for bookings and that have a status of `PENDING`.\n\nFor appointment services the slot may become unavailable, depending on the\n[service's](https://dev.wix.com/api/rest/wix-bookings/services/service/service-object)\n`policy.bookingApprovalPolicy.requestsAffectsAvailability`.\n\nCalling this endpoint also changes the\n[session's](https://dev.wix.com/api/rest/wix-bookings/schedules-and-sessions/session/get-session)\n`participants.approvalStatus` to `APPROVED`.\n\nYou can pass a `participantNotification.message` to notify the customer of\nthe confirmation. You also need to pass `participantNotification.notifyParticipants`\nas `true` to actually send the message.\n\nBookings are automatically confirmed when the\nservice is configured to [automatically confirm](https://dev.wix.com/api/rest/wix-bookings/services/service/create-service)\nbookings and the eCommerce order (coming soon)\nhas been approved. The slot's or schedule's availability is checked just\nbefore confirming the booking as part of the automatic flow."
-        ],
-        "examples": [
-          {
-            "title": "bookingsConfirmBooking example",
-            "body": [
-              "",
-              "    ",
-              "    import { bookings } from 'wix-bookings-backend.v2';",
-              "  ",
-              "    ",
-              "    async function bookingsConfirmBooking(bookingId, revision, options) {",
-              "      try {",
-              "        const result = await bookings.bookingsConfirmBooking(bookingId, revision, options);",
-              "",
-              "        return result;",
-              "        } catch (error) {",
-              "          console.error(error);",
-              "          // Handle the error",
-              "        }",
-              "    }",
-              "  "
-            ]
-          }
-        ]
-      },
-      "isVeloEvent": false
-    },
-    {
-      "name": "bookingsDeclineBooking",
-      "params": [
-        {
-          "name": "bookingId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "ID of the booking to decline.",
-          "required": true
-        },
-        {
-          "name": "revision",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Revision number, which increments by 1 each time the booking is updated.\nTo prevent conflicting changes, the current revision must be passed when\nmanaging the booking.",
-          "required": true
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Bookings.BookingsDeclineBookingOptions"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [
-        "bookingId",
-        "revision"
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-bookings-backend-v2.Bookings.DeclineBookingResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "summary": "Declines a `PENDING` booking request and changes the booking status to\n`DECLINED`.",
-        "description": [
-          "Calling this endpoint also changes the\n[session's](https://dev.wix.com/api/rest/wix-bookings/schedules-and-sessions/session/get-session)\n`participants.approvalStatus` to `DECLINED`.\n\nYou can only decline bookings for services that require the owner's manual\napproval for bookings and that have a status of `PENDING`.\n\nYou can pass a `participantNotification.message` to notify the customer of\nthe decline. You also need to pass `participantNotification.notifyParticipants`\nas `true` to actually send the message."
-        ],
-        "examples": [
-          {
-            "title": "bookingsDeclineBooking example",
-            "body": [
-              "",
-              "    ",
-              "    import { bookings } from 'wix-bookings-backend.v2';",
-              "  ",
-              "    ",
-              "    async function bookingsDeclineBooking(bookingId, revision, options) {",
-              "      try {",
-              "        const result = await bookings.bookingsDeclineBooking(bookingId, revision, options);",
-              "",
-              "        return result;",
-              "        } catch (error) {",
-              "          console.error(error);",
-              "          // Handle the error",
-              "        }",
-              "    }",
-              "  "
-            ]
-          }
-        ]
-      },
-      "isVeloEvent": false
-    },
-    {
       "name": "bookingsUpdateNumberOfParticipants",
       "params": [
         {
@@ -311,6 +143,174 @@
               "    async function cancelBooking(bookingId, options) {",
               "      try {",
               "        const result = await bookings.cancelBooking(bookingId, options);",
+              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
+              "  "
+            ]
+          }
+        ]
+      },
+      "isVeloEvent": false
+    },
+    {
+      "name": "confirmBooking",
+      "params": [
+        {
+          "name": "bookingId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the booking to confirm.",
+          "required": true
+        },
+        {
+          "name": "revision",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Revision number, which increments by 1 each time the booking is updated.\nTo prevent conflicting changes, the current revision must be passed when\nmanaging the booking.",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.ConfirmBookingOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "bookingId",
+        "revision"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-bookings-backend-v2.Bookings.ConfirmBookingResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Confirms a booking request and changes the booking status to `CONFIRMED`.",
+        "description": [
+          "Calling this endpoint doesn't check whether a slot or schedule is still\navailable at this time.\n\nYou can only confirm bookings for services that require the owner's manual\napproval for bookings and that have a status of `PENDING`.\n\nFor appointment services the slot may become unavailable, depending on the\n[service's](https://dev.wix.com/api/rest/wix-bookings/services/service/service-object)\n`policy.bookingApprovalPolicy.requestsAffectsAvailability`.\n\nCalling this endpoint also changes the\n[session's](https://dev.wix.com/api/rest/wix-bookings/schedules-and-sessions/session/get-session)\n`participants.approvalStatus` to `APPROVED`.\n\nYou can pass a `participantNotification.message` to notify the customer of\nthe confirmation. You also need to pass `participantNotification.notifyParticipants`\nas `true` to actually send the message.\n\nBookings are automatically confirmed when the\nservice is configured to [automatically confirm](https://dev.wix.com/api/rest/wix-bookings/services/service/create-service)\nbookings and the eCommerce order (coming soon)\nhas been approved. The slot's or schedule's availability is checked just\nbefore confirming the booking as part of the automatic flow."
+        ],
+        "examples": [
+          {
+            "title": "confirmBooking example",
+            "body": [
+              "",
+              "    ",
+              "    import { bookings } from 'wix-bookings-backend.v2';",
+              "  ",
+              "    ",
+              "    async function confirmBooking(bookingId, revision, options) {",
+              "      try {",
+              "        const result = await bookings.confirmBooking(bookingId, revision, options);",
+              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
+              "  "
+            ]
+          }
+        ]
+      },
+      "isVeloEvent": false
+    },
+    {
+      "name": "declineBooking",
+      "params": [
+        {
+          "name": "bookingId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the booking to decline.",
+          "required": true
+        },
+        {
+          "name": "revision",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Revision number, which increments by 1 each time the booking is updated.\nTo prevent conflicting changes, the current revision must be passed when\nmanaging the booking.",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.DeclineBookingOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "bookingId",
+        "revision"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-bookings-backend-v2.Bookings.DeclineBookingResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Declines a `PENDING` booking request and changes the booking status to\n`DECLINED`.",
+        "description": [
+          "Calling this endpoint also changes the\n[session's](https://dev.wix.com/api/rest/wix-bookings/schedules-and-sessions/session/get-session)\n`participants.approvalStatus` to `DECLINED`.\n\nYou can only decline bookings for services that require the owner's manual\napproval for bookings and that have a status of `PENDING`.\n\nYou can pass a `participantNotification.message` to notify the customer of\nthe decline. You also need to pass `participantNotification.notifyParticipants`\nas `true` to actually send the message."
+        ],
+        "examples": [
+          {
+            "title": "declineBooking example",
+            "body": [
+              "",
+              "    ",
+              "    import { bookings } from 'wix-bookings-backend.v2';",
+              "  ",
+              "    ",
+              "    async function declineBooking(bookingId, revision, options) {",
+              "      try {",
+              "        const result = await bookings.declineBooking(bookingId, revision, options);",
               "",
               "        return result;",
               "        } catch (error) {",
@@ -1520,46 +1520,6 @@
       }
     },
     {
-      "name": "BookingsConfirmBookingOptions",
-      "members": [
-        {
-          "name": "participantNotification",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Bookings.ParticipantNotification"
-            }
-          ],
-          "doc": "Information about whether to notify the customer about the confirmation and\nthe message to send."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "BookingsDeclineBookingOptions",
-      "members": [
-        {
-          "name": "participantNotification",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-bookings-backend-v2.Bookings.ParticipantNotification"
-            }
-          ],
-          "doc": "Information about whether to notify the customer about the decline and\nthe message to send."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "BookingsGatewayCancelBookingOptions",
       "members": [
         {
@@ -1580,6 +1540,26 @@
             }
           ],
           "doc": "Revision number, which increments by 1 each time the booking is updated.\nTo prevent conflicting changes,\nthe current revision must be passed when managing the booking."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BookingsGatewayConfirmBookingOptions",
+      "members": [
+        {
+          "name": "participantNotification",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.ParticipantNotification"
+            }
+          ],
+          "doc": "Information about whether to notify the customer about the confirmation and\nthe message to send."
         }
       ],
       "docs": {
@@ -1716,6 +1696,26 @@
             }
           ],
           "doc": "Information about the slot to create a booking for.\nIf you set `slot.location.locationType` to `CUSTOM`, the created slot's\nlocation is set to `slot.location.formattedAddress` when provided.\nOtherwise it's set to `contactDetails.fullAddress.formattedAddress`."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BookingsGatewayDeclineBookingOptions",
+      "members": [
+        {
+          "name": "participantNotification",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.ParticipantNotification"
+            }
+          ],
+          "doc": "Information about whether to notify the customer about the decline and\nthe message to send."
         }
       ],
       "docs": {
@@ -2724,7 +2724,7 @@
       }
     },
     {
-      "name": "ConfirmOrDeclineOptions",
+      "name": "ConfirmOrDeclineBookingOptions",
       "members": [
         {
           "name": "contactId",
@@ -2754,7 +2754,7 @@
       }
     },
     {
-      "name": "ConfirmOrDeclineRequest",
+      "name": "ConfirmOrDeclineBookingRequest",
       "members": [
         {
           "name": "bookingId",
@@ -2793,8 +2793,108 @@
       }
     },
     {
+      "name": "ConfirmOrDeclineBookingResponse",
+      "members": [
+        {
+          "name": "booking",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.Booking"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ConfirmOrDeclineOptions",
+      "members": [
+        {
+          "name": "contactId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Contact's ID."
+        },
+        {
+          "name": "paymentStatus",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Will be updated on the booking to indicate the payment status."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ConfirmOrDeclineRequest",
+      "members": [
+        {
+          "name": "bookingId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the booking to be confirmed or declined."
+        },
+        {
+          "name": "contactId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Contact's ID."
+        },
+        {
+          "name": "paymentStatus",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Will be updated on the booking to indicate the payment status."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "ConfirmOrDeclineResponse",
-      "members": [],
+      "members": [
+        {
+          "name": "booking",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-bookings-backend-v2.Bookings.Booking"
+            }
+          ],
+          "doc": ""
+        }
+      ],
       "docs": {
         "description": [
           ""
