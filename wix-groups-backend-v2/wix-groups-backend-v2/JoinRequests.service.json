@@ -59,10 +59,20 @@
             "title": "approveJoinGroupRequests example",
             "body": [
               "",
-              "    function approveJoinGroupRequests() {",
+              "    ",
+              "    import { joinRequests } from 'wix-groups-backend.v2';",
+              "  ",
+              "    ",
+              "    async function approveJoinGroupRequests(groupId, options) {",
+              "      try {",
+              "        const result = await joinRequests.approveJoinGroupRequests(groupId, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
@@ -120,10 +130,20 @@
             "title": "listJoinGroupRequests example",
             "body": [
               "",
-              "    function listJoinGroupRequests() {",
+              "    ",
+              "    import { joinRequests } from 'wix-groups-backend.v2';",
+              "  ",
+              "    ",
+              "    async function listJoinGroupRequests(groupId, options) {",
+              "      try {",
+              "        const result = await joinRequests.listJoinGroupRequests(groupId, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
@@ -183,10 +203,20 @@
             "title": "queryJoinGroupRequests example",
             "body": [
               "",
-              "    function queryJoinGroupRequests() {",
+              "    ",
+              "    import { joinRequests } from 'wix-groups-backend.v2';",
+              "  ",
+              "    ",
+              "    async function queryJoinGroupRequests(groupId, options) {",
+              "      try {",
+              "        const result = await joinRequests.queryJoinGroupRequests(groupId, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
@@ -244,10 +274,20 @@
             "title": "rejectJoinGroupRequests example",
             "body": [
               "",
-              "    function rejectJoinGroupRequests() {",
+              "    ",
+              "    import { joinRequests } from 'wix-groups-backend.v2';",
+              "  ",
+              "    ",
+              "    async function rejectJoinGroupRequests(groupId, options) {",
+              "      try {",
+              "        const result = await joinRequests.rejectJoinGroupRequests(groupId, options);",
               "",
-              "  }",
-              "",
+              "        return result;",
+              "        } catch (error) {",
+              "          console.error(error);",
+              "          // Handle the error",
+              "        }",
+              "    }",
               "  "
             ]
           }
