@@ -24,10 +24,10 @@
       "hidden": true
     },
     {
-      "name": "products",
+      "name": "orders",
       "type": [
         {
-          "referenceType": "wix-stores-backend-v2.Products"
+          "referenceType": "wix-stores-backend-v2.Orders"
         }
       ],
       "docs": {
